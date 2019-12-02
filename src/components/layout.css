@@ -1,0 +1,98 @@
+:root {
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: slack-lato;
+  src: url("https://a.slack-edge.com/bv1-8-8cacda2/lato-regular-d9ce515.woff2");
+}
+
+body {
+  font-color: #333;
+  font-family: slack-lato, Lato, sans-serif;
+  letter-spacing: 0.05rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body a:link,
+body a:visited {
+  color: rgb(18, 100, 163);
+}
+
+body h1 {
+  font-size: 3rem;
+}
+
+body h2 {
+  font-size: 2rem;
+}
+
+body h3 {
+  font-size: 1.5rem;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-weight: 900;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body ol,
+body ul,
+body p {
+  margin-bottom: 1.25rem;
+}
+
+body code {
+  background: #eaeaea7a;
+  border: 1px solid rgba(29, 28, 29, 0.13);
+  border-radius: 3px;
+  padding: 2px 3px 1px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
+  font-size: 0.8rem;
+  tab-size: 4;
+  white-space: pre-wrap;
+  word-break: normal;
+  word-wrap: break-word;
+  line-height: 1.50001;
+  font-variant-ligatures: none;
+  color: #e01e5a;
+}
+
+pre code {
+  display: block;
+  margin: 1.75rem 0;
+  padding: 0.5rem 1rem;
+}
+
+body ol,
+body ul {
+  padding-left: 2rem;
+  list-style-position: outside;
+}
+
+body ol {
+  list-style-type: decimal;
+}
+
+body ul {
+  list-style-type: disc;
+}
+
+body li {
+  padding-left: 0.35em;
+}
+
+hr + ul {
+  list-style-type: decimal;
+  background: white;
+  margin-top: -1px;
+}
