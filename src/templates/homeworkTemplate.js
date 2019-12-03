@@ -12,7 +12,9 @@ export default function Template({ data }) {
       <div
         className="homework-content"
         dangerouslySetInnerHTML={{
-          __html: html.replace(/ -- /g, " &mdash; "),
+          __html: html
+            .replace(/ -- /g, " &mdash; ")
+            .replace(/checkbox" disabled>/g, 'checkbox">'),
         }}
       />
       <Link className="mt-16 block" to="/">
