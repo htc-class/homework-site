@@ -15,7 +15,7 @@ _New stuff we learned this week:_ 🤔
 
 #### Regex
 
-- `\b` means _word boundary_, and matches beginning/end of lines, spaces, tabs -- basically everything that you untuitively think marks the beginning or end of a _word_.
+- `\b` means _word boundary_, and matches beginning/end of lines, spaces, tabs -- basically everything that you intuitively think marks the beginning or end of a _word_.
 - `\w` is a special token that means _a word-like character_. Technically it's alphanumeric plus underscore. It's exactly equivalent to writing out the _character set_ `[A-Za-z0-9_]`
 - a `?` character that is _directly after a_ `*` or `+` quantifier makes it _LAZY_ -- it will no longer match as many characters as possible, it will rather stop _as soon as possible_.
 
