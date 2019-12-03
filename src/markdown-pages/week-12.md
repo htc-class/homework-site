@@ -65,6 +65,40 @@ _New stuff we learned this week:_ 🤔
 - [TouchType.co](http://touchtype.co)
 - [How To Type](https://www.howto-type.com)
 - [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [CCCS #10](https://htc-viewer.netlify.com/?id=nwDq4adJwzM)
+
+---
+
+## Homework Plan:
+
+- 1 day creating new flash cards
+- 2 days reviewing all flash cards
+- 2 days CLI practice
+- 2 days touch-typing practice
+- 2 days Web practice
+- 1 day watch [CCCS#10](https://htc-viewer.netlify.com/?id=nwDq4adJwzM)
+
+### Homework day 1
+
+- [ ] create new flash cards
+- [ ] review all flash cards
+- [ ] CLI Homework #1
+
+### Homework day 1
+
+- [ ] watch [CCCS#10](https://htc-viewer.netlify.com/?id=nwDq4adJwzM)
+- [ ] touch-typing practice
+- [ ] Web Homework #1
+
+### Homework day 1
+
+- [ ] review all flash cards
+- [ ] CLI Homework #2
+
+### Homework day 1
+
+- [ ] touch-typing practice
+- [ ] Web Homework #2
 
 ---
 
@@ -105,3 +139,97 @@ _New stuff we learned this week:_ 🤔
 - write a new regex that changes all the occurrences of the word `I` to `ME` -- but be sure to _avoid_ changing the beginning of words like `It` and `Ishamel`.
 - write a new regex that changes all words that are _at least 9 characters long_ into: `BIGSCARYWORD` -- there should be **4** of them.
 - write a new regex that _removes all of the punctuation marks_ in the text.
+
+---
+
+### CLI Homework #2
+
+---
+
+- `ssh` into your home dir, then `cd` into the `week12/` dir
+- type a command to barf to standard out the full path to the directory you're currently in
+- redirect the output of the command from step 2 into a new file called `here.txt`
+- make a new empty file (without vim) called `names.txt`
+- use three commands (without `vim`, instead combine `echo` and the redirect which _appends_) to add 3 new lines to `names.txt` containing your first, middle and last name - be sure to capitalize the first letter of each
+- `cat` out your `names.txt` file and pipe it to `perl` with a regex that removes _every letter EXCEPT the capital letters at the beginning of your name_.
+- repeat step 6, but this time, redirect the output into a file called `initials.txt`
+- in one command, make a directory called `sweet` inside of the `week12` dir, and another inside of that called `path` -- all in one command
+- change directories down into the `path/` folder you just made
+- from the `path/` dir, use `cat` and a _relative_ path to see the contents of the `here.txt` file you made in step 3.
+- print out your current working directory
+- repeat the last step, but this time **append** the output of the last command to the `here.txt` that you made in step 3 (hint: you'll need to use a _redirect_ and the relative path up to where that file is)
+- repeat step 10 -- there should be two lines in the file now, with two different paths
+- make a new file in the `path/` dir (where you currently are) using `vim` -- give it 3 short lines. Save it as `horse.txt`
+- use `cd` and an _ABSOLUTE PATH_ to move back to your `week12/` dir in one shot.
+- from the `week12/` dir, move the `horse.txt` file you made in step 13 into your current directory.
+- in one command, remove the `sweet` dir and the `path` dir inside of it.
+- use a single `cat` command and _shell_ expansion to print out to standard out the contents of _all of the files in your current directory_
+- repeat step 18, but this time pipe the output through `perl -pe` and write a regular expression and replacement that causes _every line_ to begin with `<<<` and end with `>>>`
+- repeat step 19, but this time _redirect_ the output to a file called `combined.txt`
+- type a set of commands to see the first 3 lines only of `combined.txt` barfed to standard out
+- repeat the last step, but showing only _the last 3 lines_
+- **Extra Credit:** ✨ type a set of commands that will barf to standard out _only the three lines containing your initials_ (they will be wrapped in `<<<` and `>>>`)
+- type a command that will print to standard out all of the recent bash commands you've executed
+- repeat the last step, but pipe to `perl` so that every instance of the command `cat` becomes `kitty` (**Extra Credit:** ✨first add something to your command to filter out all of the commands that don't contain `cat`, so that every line ends up containing `kitty`)
+- type a command that makes a new file called `dir-contents.txt` that contains a listing of the contents of the current directory
+- repeat the last step, but this time name the file `dir-contents-all.txt` and have it _also include HIDDEN files_.
+- `cat` out the files from the previous two steps to make sure you got the correct content in them.
+- in one command, using shell expansion, delete _just the two files you made in step 26 and 27_
+- make a new _bash variable_ called `MOOD` that contains your current mood (hint: check week 8 homework notes if you don't remember)
+- echo out a string to standard out that says "I am feeling <mood>" -- but use the variable you created instead of typing `<mood>` so that it prints something like `I am feeling silly`
+
+---
+
+### Web Homework #1
+
+---
+
+- `ssh` into your home dir, then `cd` into your `www` dir
+- make a new dir called `week12` inside of `www` (this is different from the dir for the CLI homework, since this is also inside of `www`)
+- `cd` into your `www/week12` dir, then copy all the files from `/www-assets` into your current working dir
+- now, copy your local copy of `boilerplate.html` into a new file called `whacky.html` and open that new file to edit it in `vim`.
+- write some HTML and some random text, you must use **ALL** of the following tags:
+  - `<h1>`
+  - `<h2>`
+  - `<p>`
+  - `<div>`
+  - `<ul>`
+  - `<li>`
+  - `<img>`
+  - `<span>`
+  - `<i>`
+  - `<b>`
+- view your page in a browser at: `http://<yourname>.howtocomputer.link/week12/whacky.html`
+- now, use **ALL** of the below listed styling concepts at least once to make your webpage look hideously whacky:
+  - `color`
+  - `font-size`
+  - `font-family`
+  - `border-width`, `border-style`, `border-color`
+  - `margin`
+  - `padding`
+  - `background-color`
+- now, figure out one HTML element that has a _default display value_ of `block`, and change it to `inline`
+- now, figure out one HTML element that has a _default display value_ of `inline`, and change it to `block`
+- share the link to your whacky page in slack so we can all see it!
+
+---
+
+### Web Homework #2
+
+---
+
+- `ssh` into your home dir, then `cd` down into `www/week12`
+- make another copy of `boilerplate.html` saving it as `table.html`
+- make a _table_ displaying data about 5 quaker books, here's the data: (Title, Author, edition, pages, and price)
+  - Walk in the Spirit, Hugh Turford, updated, 122, \$4.99
+  - Journal of George Fox, George Fox, original, 1322, \$15.34
+  - Saved to the Uttermost, Robert Barclay, updated, 288, \$6.34
+  - Letter to a Backslidden Brother, Catherine Payton, modernized, 17, \$1.43
+- add a _row on top of the table_ labeling what the 4 colums are
+- add some _styling to the top row_ so it looks different than the rows containing the book data
+- add a _header_ above the table describing what it is
+- add a `<p>` tag below the table encouraging people to check out the books, and have part of your sentence be a link to the MSF early quakers page, the URL is `https://www.marketstreetfellowship.com/early-quakers/`
+- add an _image of a goat_ at the bottom of the page
+- make a _stylish border_ around the goat image using style tags
+- style at least 5 other tags to make the whole page look super nifty
+- share your link in slack so we can see your web page!
