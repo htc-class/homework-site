@@ -11,7 +11,9 @@ export default function Template({ data }) {
       <Seo />
       <div
         className="homework-content"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{
+          __html: html.replace(/ -- /g, " &mdash; "),
+        }}
       />
       <Link className="mt-16 block" to="/">
         &larr; All homework

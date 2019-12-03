@@ -5,7 +5,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="p-10 max-w-4xl">
+      <div className="p-10 max-w-3xl">
         <main>{children}</main>
       </div>
     </div>
