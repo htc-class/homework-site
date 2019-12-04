@@ -84,18 +84,18 @@ _New stuff we learned this week:_ 🤔
 - [ ] review all flash cards
 - [ ] CLI Homework #1
 
-### Homework day 1
+### Homework day 2
 
 - [ ] watch [CCCS#10](https://htc-viewer.netlify.com/?id=nwDq4adJwzM)
 - [ ] touch-typing practice
 - [ ] Web Homework #1
 
-### Homework day 1
+### Homework day 3
 
 - [ ] review all flash cards
 - [ ] CLI Homework #2
 
-### Homework day 1
+### Homework day 4
 
 - [ ] touch-typing practice
 - [ ] Web Homework #2
