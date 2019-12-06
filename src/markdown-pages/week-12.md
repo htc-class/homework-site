@@ -225,7 +225,7 @@ _New stuff we learned this week:_ 🤔
   - Journal of George Fox, George Fox, original, 1322, \$15.34
   - Saved to the Uttermost, Robert Barclay, updated, 288, \$6.34
   - Letter to a Backslidden Brother, Catherine Payton, modernized, 17, \$1.43
-- add a _row on top of the table_ labeling what the 4 colums are
+- add a _row on top of the table_ labeling what the 5 columns are
 - add some _styling to the top row_ so it looks different than the rows containing the book data
 - add a _header_ above the table describing what it is
 - add a `<p>` tag below the table encouraging people to check out the books, and have part of your sentence be a link to the MSF early quakers page, the URL is `https://www.marketstreetfellowship.com/early-quakers/`
