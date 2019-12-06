@@ -150,7 +150,7 @@ _New stuff we learned this week:_ 🤔
 - type a command to barf to standard out the full path to the directory you're currently in
 - redirect the output of the command from step 2 into a new file called `here.txt`
 - make a new empty file (without vim) called `names.txt`
-- use three commands (without `vim`, instead combine `echo` and the redirect which _appends_) to add 3 new lines to `names.txt` containing your first, middle and last name - be sure to capitalize the first letter of each
+- use three commands (without `vim`, instead combine `echo` and the redirect which _appends_) to add **3 new lines** to `names.txt` containing your first, middle and last name - be sure to capitalize the first letter of each
 - `cat` out your `names.txt` file and pipe it to `perl` with a regex that removes _every letter EXCEPT the capital letters at the beginning of your name_.
 - repeat step 6, but this time, redirect the output into a file called `initials.txt`
 - in one command, make a directory called `sweet` inside of the `week12` dir, and another inside of that called `path` -- all in one command
