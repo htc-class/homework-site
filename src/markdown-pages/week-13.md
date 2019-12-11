@@ -145,6 +145,7 @@ console.log('I like goats:', myBoolean);
 
 - sort out your `REGEX` category flashcards and review them
 - complete all of the lessons on [RegexOne](https://regexone.com/) -- try to use the concepts introduced in each lesson to complete the task, and don't do the minimum required to get the "continue" button to turn green, try to fully and perfectly complete each step
+- **STOP** at _Lesson X: Infinity and beyond!_ -- do not "continue to Additional Problems"
 
 ---
 
