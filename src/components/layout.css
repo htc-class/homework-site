@@ -63,10 +63,45 @@ body code {
   color: #e01e5a;
 }
 
+div.gatsby-highlight {
+  margin-bottom: 1.5rem;
+}
+
+div.gatsby-highlight pre {
+  border-width: 0;
+  border-radius: 0;
+}
+
+.gatsby-highlight {
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+  background-color: #f5f2f0;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left;
+  min-width: 100%;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+.line-numbers-rows {
+  opacity: 0.4;
+  border-right-color: #ddd !important;
+}
+
 pre code {
   display: block;
-  margin: 1.75rem 0;
-  padding: 0.5rem 1rem;
+  border-width: 0;
 }
 
 body ol,
@@ -111,4 +146,20 @@ hr {
 
 .task-list-item input {
   margin-right: 0.35rem;
+}
+
+body code.language-text {
+  background: #eaeaea7a;
+  border: 1px solid rgba(29, 28, 29, 0.13);
+  border-radius: 3px;
+  padding: 2px 3px 1px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
+  font-size: 0.8rem;
+  tab-size: 4;
+  white-space: pre-wrap;
+  word-break: normal;
+  word-wrap: break-word;
+  line-height: 1.50001;
+  font-variant-ligatures: none;
+  color: #e01e5a;
 }
