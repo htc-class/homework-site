@@ -2,21 +2,17 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function Template({ data }) {
-  const { markdownRemark } = data
-  const { html } = markdownRemark
+  const { mdx } = data
+  const { body } = mdx
   return (
     <Layout>
       <Seo />
-      <div
-        className="homework-content"
-        dangerouslySetInnerHTML={{
-          __html: html
-            .replace(/ -- /g, " &mdash; ")
-            .replace(/checkbox" disabled>/g, 'checkbox">'),
-        }}
-      />
+      <div className="homework-content">
+        <MDXRenderer>{body}</MDXRenderer>
+      </div>
       <Link className="mt-16 block" to="/">
         &larr; All homework
       </Link>
@@ -26,8 +22,8 @@ export default function Template({ data }) {
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
       frontmatter {
         path
       }

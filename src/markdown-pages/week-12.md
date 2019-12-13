@@ -176,7 +176,7 @@ _New stuff we learned this week:_ 🤔
 - `cat` out the files from the previous two steps to make sure you got the correct content in them.
 - in one command, using shell expansion, delete _just the two files you made in step 26 and 27_
 - make a new _bash variable_ called `MOOD` that contains your current mood (hint: check week 8 homework notes if you don't remember)
-- echo out a string to standard out that says "I am feeling <mood>" -- but use the variable you created instead of typing `<mood>` so that it prints something like `I am feeling silly`
+- echo out a string to standard out that says "I am feeling &lt;MOOD>" -- but use the variable you created instead of typing `<mood>` so that it prints something like `I am feeling silly`
 
 ---
 
