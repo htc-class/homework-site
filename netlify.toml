@@ -1,0 +1,7 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "v12.13.1"
+
