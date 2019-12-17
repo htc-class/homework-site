@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +13,9 @@ const IndexPage = () => (
       </span>
     </h1>
     <ul className="text-xl leading-loose">
+      <li>
+        <Link to="./week-14">Week 14 Homework</Link>
+      </li>
       <li>
         <Link to="./week-13">Week 13 Homework</Link>
       </li>
@@ -45,6 +48,6 @@ const IndexPage = () => (
       </li>
     </ul>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
