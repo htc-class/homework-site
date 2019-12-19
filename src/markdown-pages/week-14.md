@@ -185,7 +185,7 @@ _Note: we won't be meeting Dec 21, so you can spread this out for 2 weeks_
 ## Flashcard Assignment
 
 - review your current stack of flashcards
-- make one new `BASH` flashcard for the command `ps`
+- make one new `SHELL` flashcard for the command `ps`
 - make 3 new `VIM` flashcards for `:split <filename>` and `:vsplit <filename>` and `<CTRL-w><CTRL-w>`
 - make 3 new `CSS` flashcards for:
   - `display: inline-block`
