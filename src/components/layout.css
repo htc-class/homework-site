@@ -135,12 +135,176 @@ hr + ul {
   margin-top: -3.5rem;
 }
 
-div.gatsby-highlight + ul {
+hr + ul + div.gatsby-highlight + ul,
+hr + ul + div.gatsby-highlight + ul + div.gatsby-highlight + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul {
   list-style-type: none;
 }
 
 hr + ul > li::before,
-div.gatsby-highlight + ul > li::before {
+hr + ul + div.gatsby-highlight + ul > li::before,
+hr + ul + div.gatsby-highlight + ul + div.gatsby-highlight + ul > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before,
+hr
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  + div.gatsby-highlight
+  + ul
+  > li::before {
   counter-increment: lol;
   content: counter(lol) ".";
   font-weight: bold;
