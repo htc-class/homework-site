@@ -123,15 +123,37 @@ body li {
   padding-bottom: 0.6rem;
 }
 
+ul ul {
+  list-style-type: circle;
+  margin-bottom: 0;
+}
+
 hr + ul {
-  list-style-type: decimal;
+  counter-reset: lol;
+  list-style-type: none;
   background: white;
   margin-top: -3.5rem;
 }
 
-ul ul {
-  list-style-type: circle;
-  margin-bottom: 0;
+div.gatsby-highlight + ul {
+  list-style-type: none;
+}
+
+hr + ul > li::before,
+div.gatsby-highlight + ul > li::before {
+  counter-increment: lol;
+  content: counter(lol) ".";
+  font-weight: bold;
+  margin-right: 0.5em;
+  margin-left: -3.5em;
+  font-family: monospace;
+  width: 3em;
+  display: inline-block;
+  text-align: right;
+}
+
+hr + ul ul {
+  /* list-style-type */
 }
 
 hr {
