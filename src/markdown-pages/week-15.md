@@ -216,11 +216,11 @@ console.log(x); // 💔 NOPE: `x` lives in inner `add` scope
 - try again with `typeof console` -- guess beforehand and check if you were right
 - close the node repl by typing `.exit`
 - `cd` into your `~/node` dir and make a new directory called `week-15`
-- `cd` into the `week15` dir and create a new file with vim called `functions.js`
+- `cd` into the `week15` dir and create a new file with vim called `fns1.js`
 - declare 3 functions: `add`, `multiply`, and `print`. `add` should take 2 numbers and return the sum of them added together, `multiply` should be the same except it multiplies 2 numbers, and `print` just takes a value and `console.log`s it.
 - at the bottom of the file, below the declaration of the 3 functions, on 3 new lines, **invoke** each function once, passing in some arguments
-- save and close the file, then execute it from the shell (by typing `node functions.js`) -- can you explain why you only see one line of output?
-- edit the `functions.js` file again, and change 2 of the lines where you invoked your `add` and `multiply` functions, making it so you will see the output of these functions when you execute the file from the shell.
+- save and close the file, then execute it from the shell (by typing `node fns1.js`) -- can you explain why you only see one line of output?
+- edit the `fns1.js` file again, and change 2 of the lines where you invoked your `add` and `multiply` functions, making it so you will see the output of these functions when you execute the file from the shell.
 - save, close, and execute the file -- you should see 3 lines of output, and no errors
 - use `cp` to make a copy of `fns1.js` but call the copy `fns2.js`
 - edit `fns2.js` with `vim` and delete the 3 lines near the bottom where you used the declared functions -- but do this with **a SINGLE vim command**
