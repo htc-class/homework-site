@@ -288,7 +288,7 @@ process.stdout.write(String(myObject.foo));
 ```
 
 - save, close and execute the file -- you should have no errors, but you'll notice that all of the values got globbed together on one line -- `process.stdout.write` does not add newlines like `console.log()` does
-- edit the `object.js` file again, and add 3 new lines to put newlines between each of your `process.stdout.write()` calls -- pass the string `"\n"` in -- that's the "newline" character in js (and most programming languages)
+- edit the `object.js` file again, and add 5 new lines to put newlines between each of your `process.stdout.write()` calls -- pass the string `"\n"` in -- that's the "newline" character in js (and most programming languages)
 - save, close, and execute the file -- it should look like it did back when we were using `console.log()`
 - make a new file called `process.js` - in it, `console.log()` out 3 things:
   - the process id
@@ -345,7 +345,7 @@ Hi there Leo, glad to see you!
 $ node multipler.js Betty 3 4
 Hola Betty! 3 times 4 is 12.
 $ node multipler.js Sally 5 10
-Hola Betty! 5 times 10 is 50.
+Hola Sally! 5 times 10 is 50.
 ```
 
 - hints for last problem:
