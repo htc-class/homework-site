@@ -232,7 +232,9 @@ console.log(x); // 💔 NOPE: `x` lives in inner `add` scope
 - edit `fns3.js` with vim, and below the function declarations, create an `object` called `myObject` with 3 properties, named `doAdd`, `doMultiply` and `doPrint` -- the _value_ of the `doAdd` property should be the `add` function, and so on for the other 2 functions.
 - now, below the spot where you declared `myObject` -- use the `myObject.doPrint` function to print out the word 'BEEP'
 - save, close, and execute the `fns3.js` file, you should see the word `BEEP` barfed to standard out
-- next, edit the `fns3.js` file, and delete the line where you printed `BEEP`. Then, using only the functions that exist on the `myObject` object, and using ALL THREE functions on the object, write a few lines of javascript so that when you execute it from the shell it looks like this:
+- next, edit the `fns3.js` file, and delete the line where you printed `BEEP`.
+- next, change the `print` function so it takes 4 arguments, and passes them all along in order to `console.log` -- if you don't do this, the next step won't turn out right.
+- Then, using only the functions that exist on the `myObject` object, and using ALL THREE functions on the object, write a few lines of javascript so that when you execute it from the shell it looks like this:
 
 ```sh
 $ node fns3.js
