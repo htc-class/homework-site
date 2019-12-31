@@ -233,7 +233,7 @@ console.log(x); // 💔 NOPE: `x` lives in inner `add` scope
 - now, below the spot where you declared `myObject` -- use the `myObject.doPrint` function to print out the word 'BEEP'
 - save, close, and execute the `fns3.js` file, you should see the word `BEEP` barfed to standard out
 - next, edit the `fns3.js` file, and delete the line where you printed `BEEP`.
-- next, change the `print` function so it takes 4 arguments, and passes them all along in order to `console.log` -- if you don't do this, the next step won't turn out right.
+- next, change the `print` function so it's just another name for `console.log` -- like so: `let print = console.log;` -- otherwise the next steps won't work.
 - Then, using only the functions that exist on the `myObject` object, and using ALL THREE functions on the object, write a few lines of javascript so that when you execute it from the shell it looks like this:
 
 ```sh
