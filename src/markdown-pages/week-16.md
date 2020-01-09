@@ -214,7 +214,7 @@ body.onclick = greet;
 - `ssh` into your home dir
 - copy into your home dir the file `/camel-case.sh`
 - open your copy of the file with `vim` and follow the instructions inside
-- next, inside your home dir, create a new file called `permissions` and move into it
+- next, inside your home dir, create a new directory called `permissions` and move into it
 - in a single unix command, create three blank empty files called `one`, `two`, and `three`
 - modify the file `one` using `chmod` so that the _user_ can read, write, and execute, but the group and world cannot do anything
 - type `ls -l` -- the `one` file should show permissions as `-rwx------` - if it doesn't, repeat the step above
@@ -269,6 +269,7 @@ body.onclick = greet;
   - 4 seconds after he is "set free" pop up a message that says "thanks for setting me free, but I'm homesick"
   - after the pop up is closed, he should go back to where he came from, back in the flow of the document
   - (HINT: you'll want to make 5 or 6 named functions to pull this off, things like `setFree` and `moveToUpperRight` -- and probably one function called `clickAnimal` that runs when clicked and uses `setTimeout` and the other named functions you made)
+  - (HINT 2: for absolute positioning, you'll want to set the two sides that are _not_ `0` to `"auto"` to make it work properly)
 
 ---
 
