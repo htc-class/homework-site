@@ -16,6 +16,11 @@ body a:visited {
   color: rgb(18, 100, 163);
 }
 
+li > p {
+  margin-top: -1.65em;
+  margin-bottom: 0 !important;
+}
+
 body h1 {
   font-size: 2.75rem;
 }
