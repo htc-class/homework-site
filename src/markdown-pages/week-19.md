@@ -240,6 +240,8 @@ $ node mario.js 6
 
 ## Web Homework
 
+---
+
 - First, slowly and carefully read through "New Stuff" -- make sure you read all of the code samples and fully understand what each sample is showing, and how it works.
 - `ssh` into your home dir, make a new dir at `~/www/week19` and `cd` into it
 - make 3 new files, `web.html`, `web.js`, and `web.css`
