@@ -132,6 +132,77 @@ if (color !== "blue") {
 
 ---
 
+## Useful Links:
+
+- [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [TouchType.co](http://touchtype.co)
+- [How To Type](https://www.howto-type.com)
+- [CCCS #18](https://htc-viewer.netlify.com/?id=26QPDBe-NB8)
+
+---
+
+## Homework Plan:
+
+- 1 day creating new flash cards
+- 1 days reviewing all flash cards
+- 1 day short regex practice (see below)
+- 2 days touch-typing practice
+- 1 day Unix practice
+- 1 day Node practice
+- 1 day Web practice
+- 1 day watch [CCCS #18](https://htc-viewer.netlify.com/?id=26QPDBe-NB8)
+
+### Homework day 1
+
+- [ ] create new flash cards
+- [ ] review all flash cards
+- [ ] Regex practice
+
+### Homework day 2
+
+- [ ] touch-typing practice
+- [ ] unix Homework
+
+### Homework day 3
+
+- [ ] watch [CCCS #18](https://htc-viewer.netlify.com/?id=26QPDBe-NB8)
+- [ ] node homework
+
+### Homework day 4
+
+- [ ] touch-typing practice
+- [ ] Web Homework
+
+---
+
+### Flashcard Assignment
+
+- review your current stack of flashcards
+- make 3 new `bash` cards:
+  - `$PATH`
+  - `which`
+  - `source`
+- make 7 new `CSS` cards
+  - `vw`
+  - `vh`
+  - `background-image`
+  - `background-size`
+  - `background-position`
+  - `background-repeat`
+  - `background-attachment`
+
+---
+
+### Regex Homework
+
+---
+
+- sort out your `REGEX` category flashcards and review them
+- complete all of the lessons on [RegexOne](https://regexone.com/) -- try to use the concepts introduced in each lesson to complete the task, and don't do the minimum required to get the "continue" button to turn green, try to fully and perfectly complete each step
+- **STOP** at _Lesson X: Infinity and beyond!_ -- do not "continue to Additional Problems"
+
+---
+
 ### Unix Homework
 
 ---
