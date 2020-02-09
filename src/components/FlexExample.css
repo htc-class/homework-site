@@ -1,0 +1,41 @@
+.FlexExample {
+  background: #f7fafc;
+}
+
+.FlexExample:nth-of-type(even) {
+  background: #f0fff4;
+}
+
+.Flex {
+  width: calc(100vw - 7rem);
+  height: 21rem;
+}
+
+.child {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+style[contenteditable] {
+  display: block;
+  width: calc(100vw - 7rem);
+  background: #333;
+  color: white;
+  font: 13px/1.8 Monaco, Mono-Space;
+  padding: 16px;
+  white-space: pre;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+style:focus {
+  outline: none;
+}
+
+.inner ul {
+  padding-bottom: 0;
+  padding-top: 1rem;
+}
+
+.inner li {
+  line-height: 1.2em;
+}
