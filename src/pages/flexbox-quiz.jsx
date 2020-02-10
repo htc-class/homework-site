@@ -269,7 +269,7 @@ export default function() {
 
 function QuizQuestion({ num, styles, numItems = 4, xc = false }) {
   return (
-    <div className="FlexExample h-screen box-border p-12">
+    <div className="FlexExample box-border p-12">
       <h2>
         Problem #{num}
         {xc ? " (extra credit: ✨)" : ""}

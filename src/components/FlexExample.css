@@ -1,4 +1,5 @@
 .FlexExample {
+  min-height: 100vh;
   background: #f7fafc;
 }
 

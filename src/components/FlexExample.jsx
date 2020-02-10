@@ -11,7 +11,7 @@ export default function FlexExample({
   children,
 }) {
   return (
-    <div className="FlexExample h-screen box-border p-12">
+    <div className="FlexExample box-border p-12">
       <h2 className="">{title}</h2>
       {subtitle && (
         <h3 className="italic text-xl text-gray-800 pl-4">
