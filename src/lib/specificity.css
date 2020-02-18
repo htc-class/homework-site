@@ -1,0 +1,117 @@
+/* For each of the below chunks, fill in TWO things
+   1) the specificity score
+   2) the english version of what the CSS selector means */
+
+/* Example Exercize */
+div img {
+  width: 100px;
+}
+/* specificity = 0,0,2 */
+/* english: "select img tags inside of div tags" */
+
+/* Question #1 */
+p h1 {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 0,0,2 */
+/* ANSWER: english = "select h1 tags inside of p tags" */
+
+/* Question #2 */
+.foo p {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 0,1,1 */
+/* ANSWER: english = "select p tags inside of elements with class of 'foo'" */
+
+/* Question #3 */
+#bar div h2 {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 1,0,2 */
+/* ANSWER: english = "select h2 tags inside of divs inside of element with id=bar" */
+
+/* Question #4 */
+body .foo .bar {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 0,2,1 */
+/* ANSWER: english = "select elements with class of 'bar' inside of elements with class of 'foo' inside the body tag" */
+
+/* Question #5 */
+div > p {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 0,0,2 */
+/* ANSWER: english = "select p tags that are DIRECT children of div tags" */
+
+/* Question #6 */
+#foo .bar #baz div h1 span {
+  color: red;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 2,1,3 */
+/* ANSWER: english = "select spans inside h1's inside divs inside element with id=baz inside element with class=bar inside element with id=foo" */
+
+/* Question #7 */
+.foobar > h1 {
+  color: red !important;
+}
+/* specificity = X,X,X */
+/* english = "XXXXXX" */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 1,0,0,1,1 -- NOTE the !important */
+/* ANSWER: english = "select h1 tags that are DIRECT children of element with class=foobar" */
+
+/* Question #8 */
+<p style="color: red">Hello</p>
+
+/* specificity = ???????? */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWER: specificity = 1,0,0,0 -- Inline style */
+
+/* Question 8 */
+div p {
+  color: red;
+}
+div p {
+  color: blue;
+}
+
+/* what color will the `p` tags be?  XXXXXXXXX  */
+
+/* cursor on this line and type `100dd` to check your answer */
+
+/* ANSWSER: blue, tie goes to LAST rule */
