@@ -7,8 +7,8 @@ export default function FlexExample({
   num,
   styles,
   numChildren = 4,
-  subtitle,
-  children,
+  subtitle = "",
+  children = null,
 }) {
   return (
     <div className="FlexExample box-border p-12">
@@ -27,7 +27,19 @@ export default function FlexExample({
   );
 }
 
-export function FlexSquare({ idNum, numItems, bg, styles = "" }) {
+interface FlexSquareProps {
+  idNum: number;
+  numItems: number | number[][];
+  bg: string;
+  styles?: string;
+}
+
+const FlexSquare: React.FC<FlexSquareProps> = ({
+  idNum,
+  numItems,
+  bg,
+  styles = "",
+}) => {
   const items = [];
   for (let i = 1; i <= numItems; i++) {
     items.push(i);
@@ -42,7 +54,9 @@ export function FlexSquare({ idNum, numItems, bg, styles = "" }) {
       </div>
     </>
   );
-}
+};
+
+export { FlexSquare };
 
 export function EditableFlexSquare({ idNum, numItems, styles }) {
   return (

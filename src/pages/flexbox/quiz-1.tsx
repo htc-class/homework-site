@@ -1,10 +1,18 @@
 import React from "react";
-import { FlexSquare, EditableFlexSquare } from "../components/FlexExample";
-import { css } from "../lib/css";
+import QuizQuestion from "../../components/flexbox/QuizQuestion";
+import { css } from "../../lib/css";
+import Seo from "../../components/Seo";
 
 export default function() {
   return (
     <div className="box-border">
+      <style>{css`
+        .child {
+          width: 4.25rem;
+          height: 4.25rem;
+        }
+      `}</style>
+      <Seo title="Quiz 1: Flexbox" />
       <h1 className="px-12 mt-6 mb-8 underline">Flexbox Quiz</h1>
       <p className="px-12">
         For each section below, make the blue second section match the
@@ -241,6 +249,7 @@ export default function() {
       <QuizQuestion
         num={15}
         xc
+        kc
         numItems={8}
         styles={css`
           #ex-115 {
@@ -260,36 +269,6 @@ export default function() {
           #ex-115 .child-1 {
             order: 2;
             flex-grow: 4;
-          }
-        `}
-      />
-    </div>
-  );
-}
-
-function QuizQuestion({ num, styles, numItems = 4, xc = false }) {
-  return (
-    <div className="FlexExample box-border p-12">
-      <h2>
-        Problem #{num}
-        {xc ? " (extra credit: ✨)" : ""}
-        {num === 15 ? " (Kiah only)" : ""}
-      </h2>
-      <FlexSquare
-        idNum={num + 100}
-        numItems={numItems}
-        bg="purple-200"
-        styles={styles}
-      />
-      <div className="h-6"></div>
-      <EditableFlexSquare
-        idNum={num}
-        numItems={numItems}
-        bg="purple-200"
-        styles={css`
-          #ex-${num} {
-          }
-          #ex-${num} .child {
           }
         `}
       />

@@ -1,6 +1,6 @@
-import React from "react"
-import "./tailwind.css"
-import "./layout.css"
+import React from "react";
+import "./tailwind.css";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

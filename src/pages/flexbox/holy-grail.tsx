@@ -1,9 +1,11 @@
 import React from "react";
-import { css } from "../lib/css";
+import Seo from "../../components/Seo";
+import { css } from "../../lib/css";
 
 export default function() {
   return (
     <>
+      <Seo title="Holy Grail Layout" />
       <div className="Wrap">
         <nav className="bg-blue-200">Nav</nav>
         <div id="content">

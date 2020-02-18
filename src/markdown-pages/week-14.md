@@ -120,7 +120,7 @@ process.stdout.write("barf me to standard out please");
 
 - when you _execute_ a node.js program and pass _arguments_ from the command line, these are available to javascript as an _array_ on the `process` object called `process.argv`. So if execute a `*.js` script with extra arguments, like this:
 
-```sh
+```bash
 $ node my-script.js foo bar
 ```
 
@@ -313,7 +313,7 @@ process.stdout.write(String(myObject.foo));
 - below the function declaration, _invoke_ the function 3 times in a row
 - save, close, and execute the file -- it should look like this:
 
-```sh
+```bash
 $ node fns.js
 My name is Tabitha.
 My name is Tabitha.
@@ -323,7 +323,7 @@ My name is Tabitha.
 - edit the file again, and change the function so that it takes _one argument_ called `name`, then change the three invocations so that you pass in three names: `"Shadrach"`, `"Meshach"`, and `"Abednego"`
 - save, close, and execute the file -- it should look like this:
 
-```sh
+```bash
 $ node fns.js
 My name is Shadrach.
 My name is Meshach.
@@ -332,7 +332,7 @@ My name is Abednego.
 
 - make a new file called `greeting.js`, in it make a function called `greet` that takes no arguments, but rather reads a single argument from `process.argv` and displays a greeting message that says, `Hi there <somename>, glad to see you!`. If you've done it write you should be able to invoke it from the shell with different names and get different outputs, like this:
 
-```sh
+```bash
 $ node greeting.js Bob
 Hi there Bob, glad to see you!
 $ node greeting.js Leo
@@ -341,7 +341,7 @@ Hi there Leo, glad to see you!
 
 - finally, make a new file called `multiplier.js` -- write javascript in it such that you can execute it from the shell with **3 arguments** - one string and two numbers, and it should work like this (see hints below for help):
 
-```sh
+```bash
 $ node multipler.js Betty 3 4
 Hola Betty! 3 times 4 is 12.
 $ node multipler.js Sally 5 10

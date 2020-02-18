@@ -1,10 +1,12 @@
 import React from "react";
-import FlexExample from "../components/FlexExample";
-import { css } from "../lib/css";
+import FlexExample from "../../components/FlexExample";
+import Seo from "../../components/Seo";
+import { css } from "../../lib/css";
 
 export default function() {
   return (
     <div className="box-border">
+      <Seo title="Flexbox Playground" />
       <h1 className="px-12 mt-6 mb-8 underline">Flexbox</h1>
       <FlexExample
         title="Example 1"

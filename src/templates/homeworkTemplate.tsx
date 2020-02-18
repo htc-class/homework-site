@@ -1,12 +1,12 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import Seo from "../components/Seo";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 export default function Template({ data }) {
-  const { mdx } = data
-  const { body } = mdx
+  const { mdx } = data;
+  const { body } = mdx;
   return (
     <Layout>
       <Seo />
@@ -17,7 +17,7 @@ export default function Template({ data }) {
         &larr; All homework
       </Link>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -29,4 +29,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

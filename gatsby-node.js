@@ -1,9 +1,9 @@
-const path = require(`path`)
+const path = require(`path`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const homeworkTemplate = path.resolve(`src/templates/homeworkTemplate.js`)
+  const homeworkTemplate = path.resolve(`src/templates/homeworkTemplate.tsx`);
 
   const result = await graphql(`
     {
@@ -17,12 +17,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `)
+  `);
 
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
   result.data.allMdx.edges.forEach(({ node }) => {
@@ -30,6 +30,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: homeworkTemplate,
       context: {}, // additional data can be passed via context
-    })
-  })
-}
+    });
+  });
+};

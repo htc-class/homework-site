@@ -92,7 +92,7 @@ p em {
 
 ---
 
-- carefully read and work through [the review page](./flexbox-properties)
+- carefully read and work through [the review page](./flexbox/properties)
 - each chunk has a few _numbered steps_ -- **carefully do all the numbered steps**
 
 --
@@ -101,7 +101,7 @@ p em {
 
 ---
 
-- work through all of the problems on [the quiz page](./flexbox-quiz)
+- work through all of the problems on [the quiz page](./flexbox/quiz-1)
 - by editing the CSS style tag, make the blue section look like the purple section
 
 ---
@@ -111,7 +111,7 @@ p em {
 ---
 
 - Make sure you've done the Flexbox Review _and_ Flexbox Quiz sections of the homework first.
-- view [this page](./holy-grail) -- which is a full implementation of _The Holy Grail Layout_ -- and change your browser size bigger and smaller to see how it looks at various screen sizes -- (but DON'T peek at the HTML _or_ CSS!)
+- view [this page](./flexbox/holy-grail) -- which is a full implementation of _The Holy Grail Layout_ -- and change your browser size bigger and smaller to see how it looks at various screen sizes -- (but DON'T peek at the HTML _or_ CSS!)
 - make a webpage called `holy-grail.html` in new `week21/` dir in your `www/` dir - when you're done it should look and work like the example linked above, with the following stipulations:
   - the colors/font, text, padding, spacing don't have to perfectly match
   - the middle section (green on my page) must come _BEFORE_ the sidebar and ads section **_in the HTML_**. (This is a key part of the layout being "the Holy Grail" -- for search engines, web site creators want to be able to put the most important content FIRST, even if in the design there is a sidebar to the left of it).

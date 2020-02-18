@@ -236,7 +236,7 @@ console.log(x); // 💔 NOPE: `x` lives in inner `add` scope
 - next, change the `print` function so it's just another name for `console.log` -- like so: `let print = console.log;` -- otherwise the next steps won't work.
 - Then, using only the functions that exist on the `myObject` object, and using ALL THREE functions on the object, write a few lines of javascript so that when you execute it from the shell it looks like this:
 
-```sh
+```bash
 $ node fns3.js
 2 + 3 equals 5
 2 * 3 equals 6
@@ -246,7 +246,7 @@ Robots say BEEP BOOP.
 - next use `cp` to copy `fns3.js` to a new file called `fns-argv.js`, then edit the new file with `vim`
 - only changing the bottom part of the file where you use the functions on the `myObject` object, alter the code so that the NUMBERS and the ROBOT TEXT can be passed in as _command line arguments_ such that when you invoke from the shell, it works like this:
 
-```sh
+```bash
 $ node fns-argv.js 4 3 Howdy
 4 + 3 equals 7
 4 * 3 equals 12

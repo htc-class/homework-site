@@ -187,13 +187,13 @@ newImg.setAttribute('src', './frog.jpg');
 - `ssh` into your home dir, then move down into your `node` dir, and create a new directory called `week18`
 - make a new file called `pick-a-number.js` that you can execute from the command line like this:
 
-```sh
+```bash
 $ node pick-a-number.js 7
 ```
 
 - the code should pull the number from `process.argv` and compare to a number you have pre-selected. If the number matches, then `console.log` out something like `YAY! You guessed my number!`. If it doesn't match, log out something like `No bueno, try again`. So if your number was 3, interacting with the program from the CLI would look like this:
 
-```sh
+```bash
 $ node pick-a-number.js 7
 > No bueno, try again.
 $ node pick-a-number.js 2
@@ -206,7 +206,7 @@ $ node pick-a-number.js 3
 
 - next, make a new file called `htc-greet.js` so that it can be invoked from the shell like this:
 
-```sh
+```bash
 $ node htc-greet.js jared
 ```
 

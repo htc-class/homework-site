@@ -1,7 +1,7 @@
-import React from "react"
-import Helmet from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
-function SEO({ title = "HTC Homework" }) {
+const SEO: React.FC<{ title?: string }> = ({ title = "HTC Homework" }) => {
   return (
     <Helmet
       htmlAttributes={{
@@ -15,7 +15,7 @@ function SEO({ title = "HTC Homework" }) {
         rel="stylesheet"
       ></link>
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

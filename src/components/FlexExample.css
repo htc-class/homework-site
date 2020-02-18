@@ -12,11 +12,6 @@
   height: 21rem;
 }
 
-.child {
-  width: 4.25rem;
-  height: 4.25rem;
-}
-
 style[contenteditable] {
   display: block;
   width: calc(100vw - 7rem);
