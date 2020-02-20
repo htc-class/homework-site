@@ -206,7 +206,7 @@ for (let i = 0; i < foo.length; i++) {
 ---
 
 - make sure you've done the "Flexbox Review & Quiz Homework" above _first_
-- `ssh` into your home dir, make a new directory: `~/www/week/22`, `cd` into it
+- `ssh` into your home dir, make a new directory: `~/www/week22`, `cd` into it
 - there, recreate the 3 nested flexbox example pages linked below, for each one:
   - don't worry about matching the colors
   - put `min-height: 100vh` on the outermost flex container (probably the `body` tag)
@@ -231,7 +231,7 @@ for (let i = 0; i < foo.length; i++) {
 ---
 
 - slowly and carefully review the "CSS Media Queries" section of "new stuff" above.
-- `ssh` into your home dir, make a new directory: `~/www/week/22`, `cd` into it
+- `ssh` into your home dir, make a new directory: `~/www/week22`, `cd` into it
 - make a new webpage called `mq1.html`, when you're done with it, it should meet these specifications:
   - it should have an external stylesheet
   - it's background should be change color when the screen width is _wider than 500px_

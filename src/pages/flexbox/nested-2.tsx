@@ -3,7 +3,7 @@ import Seo from "../../components/Seo";
 
 const Nested: React.FC = () => (
   <>
-    <Seo title="Nested #1 - Flexbox" />
+    <Seo title="Nested #2 - Flexbox" />
     <div className="Wrap min-h-screen flex">
       <div className="bg-red-300 flex-grow flex flex-col">
         <div className="flex-grow bg-blue-500" style={{ flexBasis: 200 }}></div>
