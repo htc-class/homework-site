@@ -73,7 +73,7 @@ p { color: blue !important; }
 - the `<feature>` area is where the action is -- in it you can test for [lots of cool things](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features), but the most common is to test for the **width of the screen** so that you can do _Responsive Web Design_, like this:
 
 ```CSS
-@media (width > 1000) {
+@media (min-width: 1000px) {
   /* any rules here will only apply when
      the window is WIDER than 1000px */
   body {
@@ -81,11 +81,19 @@ p { color: blue !important; }
   }
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   /* any rules here will only apply when
      the window is less than or equal to 768px */
   body {
     background-color: blue;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  /* any rules here will only apply when
+     the window is BETWEEN 400px and 600px wide*/
+  body {
+    background-color: purple;
   }
 }
 
