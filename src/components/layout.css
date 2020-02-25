@@ -129,7 +129,7 @@ body li {
 }
 
 ul ul {
-  list-style-type: circle;
+  list-style-type: lower-latin;
   margin-top: 0.75em;
   margin-bottom: 0;
 }
