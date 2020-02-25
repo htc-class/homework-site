@@ -250,7 +250,7 @@ nums.slice(2); // returns [3, 4, 5]
 ### Homework day 3
 
 - [ ] touch typing practice
-- [ ] watch [CCCS #20](https://htc-viewer.netlify.com/?id=KN8YgJnShPM)
+- [ ] watch [CCCS #21](https://htc-viewer.netlify.com/?id=OtDxDvCpPL4)
 
 ### Homework day 4
 
