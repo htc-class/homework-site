@@ -134,6 +134,10 @@ ul ul {
   margin-bottom: 0;
 }
 
+ul ul ul {
+  list-style-type: lower-roman;
+}
+
 hr + ul {
   counter-reset: lol;
   list-style-type: none;
@@ -354,4 +358,37 @@ body code.language-text {
   line-height: 1.50001;
   font-variant-ligatures: none;
   color: #e01e5a;
+}
+
+.form-example {
+  position: relative;
+  padding: 1rem;
+  background: #ebf8ff;
+}
+
+.form-example label {
+  display: block;
+}
+
+.form-example::after {
+  content: attr(data-text);
+  font-family: monospace;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: black;
+  opacity: 0.4;
+}
+
+.form-example input {
+  border-width: initial;
+}
+
+.form-example input[type="checkbox"] {
+  margin-right: 0.25rem;
+}
+
+.gatsby-highlight + .form-example {
+  margin-top: -1.52rem;
+  margin-bottom: 2.45rem;
 }
