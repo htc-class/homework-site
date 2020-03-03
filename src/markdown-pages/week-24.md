@@ -280,18 +280,18 @@ let joined = nums.concat(strs);
 - when you're done, it should work like this:
 
 ```bash
-$ node numbers.js 1 55 325 4 45 180
+$ node numbers.js 1 55 325 4 45 180 111
 => $1012.5
 => $512.5
 => $5660.5
 ```
 
-- use the this string of arguments to check you work: `1 55 325 4 45 180`, it should output the exact same numbers as shown above
+- use the this string of arguments to check you work: `1 55 325 4 45 180 111`, it should output the exact same numbers as shown above
 - **Extra Credit: ✨** format the numbers so that any number over 1000 has a comma in the right place, so it comes out like this:
 - Slack us when you've finished!
 
 ```bash
-$ node numbers.js 1 55 325 4 45 180
+$ node numbers.js 1 55 325 4 45 180 111
 => $1,012.5
 => $512.5
 => $5,660.5
