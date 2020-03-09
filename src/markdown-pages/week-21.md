@@ -8,7 +8,7 @@ _New stuff we learned this week:_ 🤔
 
 ## Flexbox 🏹 🔫
 
-- For a full review of Flexbox, see [this page.](/flexbox-properties)
+- For a full review of Flexbox, see [this page.](/flexbox/properties)
 
 ## CSS
 
