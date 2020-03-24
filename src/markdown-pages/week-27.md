@@ -191,4 +191,6 @@ div#menu:hover li {
 - take a screenshot of your git commit graph and post it in slack
 - use git log to show your old commits, then copy one of the short (or long) SHA's from an old commit
 - detach your HEAD by checking out that old commit: `git checkout <SHA>`
-- read and laugh at the output git gives you. When you're ready to re-attach your head, checkout master again by doing `git checkout master`. Phew!
+- read and laugh at the output git gives you.
+- in your "detached head" state, compare the output of `git log --oneline` and `git log --oneline --all`. See if that helps you understand part of what `--all` does for you.
+- When you're ready to re-attach your head, checkout master again by doing `git checkout master`. Phew!
