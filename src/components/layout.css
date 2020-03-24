@@ -145,6 +145,10 @@ hr + ul {
   margin-top: -3.5rem;
 }
 
+.homework-content p > img {
+  margin: 0 auto;
+}
+
 hr + ul + div.gatsby-highlight + ul,
 hr + ul + div.gatsby-highlight + ul + div.gatsby-highlight + ul,
 hr
