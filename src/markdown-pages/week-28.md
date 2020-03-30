@@ -1,0 +1,298 @@
+---
+path: "/week-28"
+---
+
+# Week 28 Homework 💻 🦅
+
+_New stuff we learned this week:_
+
+## Vim
+
+- in _visual mode_ (and _visual block mode_) you can switch the "cursor" back and forth from either side of the selection using `o` -- think of it as short for **other** -- switch to the **o**ther side.
+- if you want to **reselect the last thing you had _visually selected_** you can type `gv` from normal mode
+- use `<CTRL-v>` to ender **visual block mode**. This mode lets you edit multiple lines at once.
+- in _visual block mode_ typing `I` will allow you to insert text _to the left of all the lines you have selected at once._ (Remember, when you're changing stuff in visual mode, you'll only _see_ one line changing until you hit `<esc>` to go back to normal mode).
+- in _visual block mode_ typing `A` will allow you to insert text _to the RIGHT of all the lines you have selected_.
+- in _visual block mode_ typing `c` will allow you to **change all the lines** at once, substituting the selected part on each line for the new stuff you type in insert mode.
+- in _visual block mode_ typing `d` will **delete** everything you have selected.
+- in _visual block mode_ typing `r` will **replace** everything you have selected with the character you type.
+- you can also select lines with "ragged" (uneven) right edges, by using the "end-of-line" motion character, which is `$` and then moving up or down with `j` or `k`.
+
+## Git
+
+- after you've made modifications to a file and you want to **throw away those changes**, you can do `git checkout -- <file>` -- to **discard changes to that file**. Think of it like "checking out" the file from the last commit. There is NO undo for this.
+- once you've "staged" a file (added it to the truck) you can **unstage** it by doing `git reset HEAD <file>`. This doesn't change the file at all or lose any work, it just removes it from going into the next commit. 99% of the time you can get away with leaving out the `HEAD` part, so you can just type `git reset <file>`.
+- if you do `git reset <commit-sha>` then git _throws away the commits after that SHA_ but **keeps the changes**. So your files stay exactly the same, but any changes made _after_ that commit now show up as modifications in your working directory.
+- if you do `git reset --hard <commit-sha>` then git removes the commits after that SHA **AND deletes all the changes from those commits.** Use this when you really want to throw away forever some work you've done.
+
+## Node.js
+
+- if you pass the node `require()` function a _string that immediately starts with a letter_, like `require('cowsay')` rather than `require('./my-module')` -- then that is called passing a **Bare String**. You can remember it by thinking, that "it's not wearing it's dot-slash."
+- when they tiny Ryan Dahl inside your computer gets a _bare string_ he first checks if there is a **built-in node core module** of that name. If there is, `require` returns the core module.
+- if there is no core module named the same as the bare string, then Ryan looks in your current directory for a `./node_modules` dir, and tries to find a module in there. If the module is named `foobar` then `./node_modules/foobar.js` would be loaded, or `./node_modules/foobar/index.js` would also work.
+- if there is no file in `node_modules` that matches, Ryan starts climbing **up** the directory structure of your computer, looking for other `node_modules` dirs, until he quits and errors if he can't find a matching module.
+- `npm` is a program (which I already installed on our HTC computer) that allows you to install free javascript modules from the internet by doing `npm install <module-name>`. `npm` puts downloaded modules _into the_ `node_modules` directory.
+
+## Core Modules -- Node.js
+
+- the `fs` module is a **core module** in node for working with the **file system**.
+- you can access it by requiring the _bare string_ `fs`: `let fs = require('fs');`
+- you can _read a file into memory_ by calling the `readFileSync()` method, which returns a Buffer of binary data, which can be converted to a string by calling `.toString()`, like so:
+
+```js
+let fs = require("fs");
+
+let filePath = "./my-file.txt";
+let buffer = fs.readFileSync(filePath);
+let fileContent = buffer.toString();
+```
+
+- the `fs` module has a `writeFileSync()` method which allows you to write out files to the filesystem as well:
+
+```js
+let fs = require("fs");
+
+fs.writeFileSync("./my-password.txt", "goatbanjorodeo");
+```
+
+- the `os` module is a **core module** that give you information about the host _operating system_, it has a bunch of nifty methods, like:
+
+```js
+let os = require("os");
+
+os.homedir();
+os.cpus();
+os.arch();
+os.platform();
+```
+
+---
+
+## Useful Links:
+
+- [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [TouchType.co](http://touchtype.co)
+- [How To Type](https://www.howto-type.com)
+- [CCCS #26](https://htc-viewer.netlify.com/?id=XIGSJshYb90)
+
+---
+
+## Homework Plan:
+
+- 1 day adding to and reviewing flashcards
+- 2 days vim homework
+- 1 day Node Core Modules homework
+- 1 day Non-Core Modules homework
+- 1 day watch [CCCS #26](https://htc-viewer.netlify.com/?id=XIGSJshYb90)
+
+### Homework day 1
+
+- [ ] flashcard assignment
+- [ ] vim homework #1
+
+### Homework day 2
+
+- [ ] touch typing practice
+- [ ] Node Core modules homework
+
+### Homework day 3
+
+- [ ] Vim homework 2
+- [ ] watch [CCCS #26](https://htc-viewer.netlify.com/?id=XIGSJshYb90)
+- [ ] touch typing practice
+
+### Homework day 4
+
+- [ ] Node non-core modules homework
+
+---
+
+### Flashcard Assignment
+
+---
+
+- add 2 new `vim` flashcards
+  - `gv`
+  - `o` (when in visual or visual-block mode)
+- add 4 new flashcards in the `git` category:
+  - `git checkout -- <file>`
+  - `git reset HEAD <file>`
+  - `git reset <commit-sha>`
+  - `git reset --hard <commit-sha>`
+- add 3 new `node` flashcards
+  - `fs.readFileSync(<filepath>)` - explain what it does, and _what it returns_
+  - `fs.writeFileSync(<filepath>, <data>)`
+  - `Buffer.toString()`
+- carefully review all of your flashcards, stopping to reinforce any you get wrong
+
+---
+
+## Vim Homework #1
+
+---
+
+- carefully review the `vim` section of "New Stuff" above ^.
+- `ssh` into your home dir, make and move into a new dir called `htc-vimtutor`
+- copy down a file from `/vimtutor/visual-block-1.txt` into your current directory
+- open the file with `vim`, you'll see it's like a addition to `vimtutor` that I wrote.
+- go through all the steps carefully
+- when you finish, delete the file, and copy it again, and complete all the steps a _second time_.
+
+---
+
+## Vim Homework #2
+
+---
+
+- At least 1 day must have passed since you did Vim homework #1, STOP if it hasn't.
+- do your Flashcard assignment first -- STOP if you haven't
+- `ssh` into your home dir, move into the dir `htc-vimtutor`
+- copy down a file from `/vimtutor/visual-block-2.txt` into your current directory -- _this file is mostly the same as the other, but removes the hints_
+- open the file with `vim`
+- go through all the steps carefully
+- when you finish, delete the file, and copy it again, and complete all the steps a _second time_.
+
+---
+
+## Node Core Modules Homework
+
+---
+
+- carefully review the 2 sections on node, AND the git section in "New Stuff" above ^.
+- `ssh` into your home dir and make and cd into a dir: `~/node/week28`
+- initialize the new directory as a git repo
+- create a new node script called `machine.js`. To start, just `require` the built-in `'os'` module, and console.log out the whole module.
+- execute your script from the shell, and see if you can figure out which things seem like functions you might be able to call.
+- before you do anything else, add the new file to git and commit your work.
+- now, edit the file so that it outputs a nice summary of the system, that reads like this: (only the stuff to the _left_ of the `:` on each line should be hardcoded, the real values come from calling functions on the `os` module -- you might need to console.log the module a bunch of times to find the right method names):
+
+```bash
+$ node os.js
+Architechture: x64
+Platform: linux
+Your home dir: /home/ubuntu
+Number of CPUs: 1
+Running for seconds: 1032342
+```
+
+- when you've got it working, stage the changes in `git`, but DON'T COMMIT YET.
+- next unstage (remove from truck) the file. (BE CAREFUL, I just want to you un-stage it, not throw away your work).
+- once it's unstaged, re-stage it with git add and then commit your work.
+- now, modify your file so that it also adds a line at the bottom of the output that says something like: `Memory: 242342153`.
+- commit your work
+- double-check that you did the above step -- if you type `git status` it should say "working tree clean"
+- now, from the shell, delete your `os.js` file.
+- ACKK! we lost our work, what should we do? Never fear, git will save us.
+- type `git status` -- git will show you that it noticed that `os.js` was deleted.
+- throw away the changes (which was the deleting of the file) by typing `git checkout -- os.js`
+- cat out the `os.js` file to see that it's back. Thanks git!
+- now make one more change to `os.js`, adding the output of one more `os` function, it doesn't matter if you understand what it means.
+- commit your work
+- next, let's combine your last two commits into a single one using `git reset`. To do that, first:
+  - type a command to see your commits and their sha's
+  - copy a sha 2 or 3 commit's back
+  - type `git reset <SHA>` with the sha you committed
+  - type `git status` to see that your work is still all there
+  - view git log again to see that the commits after the SHA you copied are gone
+  - git add and git commit, thus combining into one commit.
+- next, with vim create a file called `facts.txt` two lines, each with one sentence, the sentences should read:
+  - (line 1) `I believe Louisiana is the Pelican state.`
+  - (line 2) `My phone number is 867-5309.`
+- next, create a new file called `fs.js`, in it:
+  - require the `fs` core module
+  - read the contents of the `facts.txt` file into memory
+  - console.log out the contents of `facts.txt`
+- save your work with git
+- next, use a regular expression to modify the output of the script so that it prepends each line with `FACT:` like this:
+
+```bash
+$ node fs.js
+> FACT: I believe Louisiana is the Pelican state.
+> FACT: My phone number is 867-5309.
+```
+
+- save your work with git
+- change the `fns.js` file so that instead of console.log-ing the output, it saves the output to a new file called `actual-facts.txt`.
+- save your work with git
+- make another change to the `fs.js` file so that instead of saving the file to `actual-facts.txt` that it saves the file to whatever the user supplies as an argument when invoking the script, so that for instance if it typed `node fs.js foo.txt` it would save it to a file called `foo.txt`.
+- save your work with git
+- using `git reset` combine the last two commits into one.
+- make sure you committed properly, check git status -- should be clean.
+- destroy the code in `fns.js` by replacing it with the text "teddy bear" -- do this from the shell, **_without using vim._**
+- commit your weird change.
+- now do a "hard" reset to throw away the last "teddy bear" commit and throw away the work.
+- cat out the `fs.js` file -- it should be back to how it was before.
+- do a `git status` you should have a clean status, your teddy bear rampage is gone forever.
+- **Extra Credit: ✨** - create a node script called `cat-replace.js` that takes three arguments, the first is the path to a file on the filesystem, the second is a search work, and the third is a replace word. When invoked it should print out the contents of the file (from the first arg), but, with all instances of the second arg replaced with the third arg. So for instance, I could do:
+
+```bash
+$ node cat-replace ./facts.txt is WAS
+> I believe Louisiana WAS the Pelican state.
+> My phone number WAS 867-5309.
+```
+
+---
+
+## Non-Core Modules Homework
+
+---
+
+- carefully review the 2 sections on node, AND the git section in "New Stuff" above ^.
+- `ssh` into your home dir and move into the `~/node/week28` dir
+- practice a couple of variations of `git log`
+- make and checkout a new branch in one git command, name the branch `user-module`
+- view git log -- and make sure you understand how it is showing you that two branches are pointing at the same commit.
+- where is `HEAD` pointing? Why?
+- type a git command to move `HEAD` so it points at master
+- move HEAD back to `feat-npm`
+- make a new node script called `module.js`
+- in the `module.js` file require a non-existent module called `'user-name'` (bare string).
+- execute the script from the shell, you should get an error
+- say out loud what different things node checked to try to find the `user-name` module before it gave up and errored.
+- now, create a file called `user-name.js` but put it in a special location to trick the tiny Ryan Dahl into finding it.
+- once you've got it where you want it, edit the file with vim, and have it export a single string with your username.
+- go back to your `module.js` file and console.log out the value of the `user-name` module, it should work something like this:
+
+```bash
+$ node module.js
+> tabitha
+```
+
+- now, do a `git add .` and then a `git status` -- there should be two files added to the truck. DON'T COMMIT YET.
+- pretend you wanted to do a commit just creating the `user-name.js` module, so use your git skills to take the `module.js` change _off of the truck_.
+- now, commit just the new user-name module file.
+- then commit the change to `module.js`
+- next, change the `user-name.js` file so that it doesn't return a hard-coded value, but actually determines the username somehow (hint, you could use the `os` core module, or you could use the `process` object).
+- review your work with `git diff` and then commit.
+- next, change the name of the the `user-name.js` file ot `index.js` -- and then change _where_ it is located so that Ryan Dahl can still find it (hint: review New Stuff if you're confused...)
+- make sure the script still works, and commit your work.
+- using the new git techniques we learned, combine your last two commits into one.
+- merge your `user-module` branch into master, then delete the branch
+- what type of merge happened?
+- make and checkout a new branch called `filter-odd`
+- make a new node script called `filter-odd.js` that takes any number of numeric arguments from process.argv, and logs out all of the odd numbers. You don't know how to test if a number is odd yet, that's OK -- use _wishful thinking_ to imagine that you had a function called `isOdd` -- that will be George's problem.
+- write the script, including using the faked-out `isOdd` function
+- run the script from the shell, you should get an error like `isOdd is not defined`, that's OK.
+- commit your work.
+- now, instead of being George and writing an `isOdd` function, let's let the internet help us! Install a package from the Node Package Manager (npm) called `is-odd`. To do that, type this command: `npm install is-odd`.
+- after the command finishes, do `tree .` to see what `npm` did for you.
+- go spelunking down into the `node_modules` dir and see what's in some of the files. You won't understand all of them, but just poke around.
+- see how much of the code in `./node_modules/is-odd/index.js` you understand. What part's don't you understand?
+- now, go back to your `filter-odd.js` file and import the `isOdd` function from your node*modules dir \_using a bare string*.
+- now that you've got a function for `isOdd` you should be able to get your script working, so that it works like this (hint, use Array.map and `Number` to convert to numbers before filtering):
+
+```bash
+$ node filter-odd.js 1 2 5 8 10 11
+> [1, 5, 11]
+```
+
+- commit your work
+- merge your branch back into master
+- **Extra Credit: ✨** change the output so it reads like this:
+
+```bash
+$ node filter-odd.js 1 2 5 8 10 11
+> The odd numbers are: 1, 5, 11
+```
+
+- **Kiah Credit: ✨** doing the `npm install` in the previous step blew away our node_modules directory, so we lost the `user-name` module. Detach your HEAD and go back to a commit where that module existed, then temporarily copy that file to some other directory. Re-attach your head, and move the file into your working directory. Modify `module.js` so that it `require`s the module the correct way (now that it's out of `node_modules`), make sure it works, and commit your changes.

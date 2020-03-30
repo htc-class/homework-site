@@ -1,0 +1,115 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Lesson 19.1 - Switching Sides in Visual Mode
+
+  1. Move the cursor to the line marked --->.
+  2. Visually select the word "potato" by using `v`
+  3. Practice moving the "handle" or cursor of your visual selection
+     back and forth by typing the `o` key.
+  4. Expand your selection forward by two words to also include "were boiling".
+  5. Expand your selection backward now to also include `and`.
+  6. Now change the text to "was sleeping".
+
+--> The carrot and potato were boiling in the pot.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Lesson 19.x - Prepending Text in Visual Block Mode
+        
+  1. In the chunk of javascript below, I forgot to add `let ` before
+     each line.
+  2. Move your cursor to the `f` in `foo`.
+  3. Type `<CTRL-v>` to enter Visual block mode.
+  4. Type `jj` or `2j` to expand your selection down two lines.
+  5. Type `I` to go into insert mode before the selected characters.
+  6. In insert mode, type `let ` and then `<esc>` to exit to normal mode.
+  7. All three lines should have updated!
+  
+foo = true;
+bar = ["hello"];
+baz = undefined;
+            
+            
+            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Lesson 19.x - Changing Text in Visual Block Mode
+        
+  1. move your cursor to the `s` of the first `sweet` in the code below.
+  2. enter visual block mode, and select the word `sweet` on all 3 lines.
+  3. practice toggling the "handle" of your visual selection with `o`.
+  4. change all three lines at once by typing `c`, then type "rad" and
+     <esc> to exit insert mode.
+  5. All three lines should have changed to say `radFoo` `radBar` & `radBaz`.
+  6. undo your change
+  7. type `gv` to reselect the same visual selection you last used.
+  8. use the `o` key to make sure your cursor or handle is on the LEFT.
+  9. move left 4 characters to also select the `let ` on all 3 lines.
+ 10. use `c` to replace `let sweet` on all three lines with "var my"
+     so the first line should read `var myFoo = ...` and so on.
+
+let sweetFoo = true;
+let sweetBar = ["hello"];
+let sweetBaz = undefined;
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Lesson 19.x - Deleting Text in Visual Block Mode
+
+  1. Move your cursor to the `a` char on the first line of code below.
+  2. Using visual block mode, select the word `awesome` on all 3 lines.
+  3. Type `d` to delete the word `awesome` on all three lines at once.
+
+let myawesomeFoo = true;
+let myawesomeBar = ["hello"];
+let myawesomeBaz = undefined;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Lesson 19.x - Appending Text in Visual Block Mode
+
+  1. Move your cursor to the `m` char on the first line of code below.
+  2. Using visual block mode, select all 3 variable names at once.
+  3. Type `A` to insert text AFTER the selection, then type "_goat"
+     and press <esc> to get back to normal mode.
+  4. All three variable names should have `_goat` on the end of them
+     now, like `myFoo_goat`, `myBar_goat`.
+
+let myFoo = true;
+let myBar = ["hello"];
+let myBaz = undefined;
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Lesson 19.x - Replacing in Visual Block Mode
+
+    1. Select the `-` characters in the LEFT block below by going
+       into visual block mode.
+    2. Replace them with the character `+` by typing `r+`.
+    3. If you did it right it should look like the square on the right.
+
+  %%%%%%%%%%%%        %%%%%%%%%%%%
+  %%--------%%        %%++++++++%%
+  %%--------%%        %%++++++++%%
+  %%--------%%        %%++++++++%%
+  %%--------%%        %%++++++++%%
+  %%--------%%        %%++++++++%%
+  %%%%%%%%%%%%        %%%%%%%%%%%%
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Lesson 19.x - Appending to Ragged Right in Visual Block Mode
+
+  1. Some savages failed to add semicolons to their javascript!
+  2. Move your cursor to the `m` on the first line of the code chunk below.
+  3. go into visual block mode with <CTRL-v>
+  4. Move your cursor to the end of the line by typing `$`
+  5. Move down two lines with `jj`.
+  6. Append a semicolon by typing `A;<esc>`
+  7. All three lines should now have semicolons at the end.
+  8. Why did I say to type `A;<esc>`?
+
+let myFoo = true
+let myBar = ["hello"]
+let myBaz = null
