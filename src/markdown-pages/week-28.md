@@ -161,7 +161,7 @@ os.platform();
 - carefully review the 2 sections on node, AND the git section in "New Stuff" above ^.
 - `ssh` into your home dir and make and cd into a dir: `~/node/week28`
 - initialize the new directory as a git repo
-- create a new node script called `machine.js`. To start, just `require` the built-in `'os'` module, and console.log out the whole module.
+- create a new node script called `os.js`. To start, just `require` the built-in `'os'` module, and console.log out the whole module.
 - execute your script from the shell, and see if you can figure out which things seem like functions you might be able to call.
 - before you do anything else, add the new file to git and commit your work.
 - now, edit the file so that it outputs a nice summary of the system, that reads like this: (only the stuff to the _left_ of the `:` on each line should be hardcoded, the real values come from calling functions on the `os` module -- you might need to console.log the module a bunch of times to find the right method names):
