@@ -4,7 +4,7 @@ path: "/week-28"
 
 # Week 28 Homework 💻 🦅
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
 ## Vim
 

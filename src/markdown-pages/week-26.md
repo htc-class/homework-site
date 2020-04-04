@@ -4,7 +4,7 @@ path: "/week-26"
 
 # Week 26 Homework 💻 🦞
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
 ## Git
 
