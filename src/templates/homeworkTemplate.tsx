@@ -1,8 +1,10 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import Layout from "../components/layout";
-import Seo from "../components/Seo";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXProvider } from "@mdx-js/react";
+import Layout from "../components/layout";
+import Checkable from "../components/Checkable";
+import Seo from "../components/Seo";
 
 export default function Template({ data }) {
   const { mdx } = data;
@@ -11,7 +13,9 @@ export default function Template({ data }) {
     <Layout>
       <Seo />
       <div className="homework-content">
-        <MDXRenderer>{body}</MDXRenderer>
+        <MDXProvider components={{ Checkable }}>
+          <MDXRenderer>{body}</MDXRenderer>
+        </MDXProvider>
       </div>
       <Link className="mt-16 block" to="/">
         &larr; All homework
