@@ -212,17 +212,27 @@ $ node fs.js
 ```
 
 - save your work with git
-- change the `fns.js` file so that instead of console.log-ing the output, it saves the output to a new file called `actual-facts.txt`.
+- change the `fn.js` file so that instead of console.log-ing the output, it saves the output to a new file called `actual-facts.txt`.
 - save your work with git
 - make another change to the `fs.js` file so that instead of saving the file to `actual-facts.txt` that it saves the file to whatever the user supplies as an argument when invoking the script, so that for instance if it typed `node fs.js foo.txt` it would save it to a file called `foo.txt`.
 - save your work with git
 - using `git reset` combine the last two commits into one.
 - make sure you committed properly, check git status -- should be clean.
-- destroy the code in `fns.js` by replacing it with the text "teddy bear" -- do this from the shell, **_without using vim._**
+- destroy the code in `fn.js` by replacing it with the text "teddy bear" -- do this from the shell, **_without using vim._**
 - commit your weird change.
 - now do a "hard" reset to throw away the last "teddy bear" commit and throw away the work.
 - cat out the `fs.js` file -- it should be back to how it was before.
 - do a `git status` you should have a clean status, your teddy bear rampage is gone forever.
+- **Extra Credit: ✨** To do the extra credit below, you have to know a _new way_ to create a _regular expression_. So far I've only taught what is called a **regular expression literal** -- but you can also construct a Regex out of a string, as shown here:
+
+```js
+let regexLiteral = /^foo/gi;
+
+// you can get the same result like this:
+let regexConstructed = new RegExp("^foo", "gi");
+// notice: the FLAGS go in the 2nd arg ----^^
+```
+
 - **Extra Credit: ✨** - create a node script called `cat-replace.js` that takes three arguments, the first is the path to a file on the filesystem, the second is a search work, and the third is a replace word. When invoked it should print out the contents of the file (from the first arg), but, with all instances of the second arg replaced with the third arg. So for instance, I could do:
 
 ```bash
@@ -244,7 +254,7 @@ $ node cat-replace ./facts.txt is WAS
 - view git log -- and make sure you understand how it is showing you that two branches are pointing at the same commit.
 - where is `HEAD` pointing? Why?
 - type a git command to move `HEAD` so it points at master
-- move HEAD back to `feat-npm`
+- move HEAD back to `user-module`
 - make a new node script called `module.js`
 - in the `module.js` file require a non-existent module called `'user-name'` (bare string).
 - execute the script from the shell, you should get an error
