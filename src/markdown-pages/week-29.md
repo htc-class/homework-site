@@ -188,7 +188,7 @@ div p::before {
 - 1 day adding to and reviewing flashcards
 - 2 days touch-typing practice
 - 3 days Git / CSS homework
-- 1 day watch [CCCS #26](https://htc-viewer.netlify.com/?id=XIGSJshYb90)
+- 1 day watch [CCCS #27](https://htc-viewer.netlify.com/?id=TEAtmCYYKZA)
 
 ### Homework day 1
 
