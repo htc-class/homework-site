@@ -273,7 +273,13 @@ div p::before {
 - **Kiah Credit: ✨** modify the javascript again, so that the opacity only cycles when the user has their mouse over the overlay.
 - You may have to wait for to do these final steps -- but after at least one other of the students has slacked that they pushed their branch to my repo, type a git command to add a new remote which is _their_ repository. (Hint: their git url will be exactly like the one you used to clone, except changing out `ubuntu` for their username).
 - once you have added another student's repo as a remote, use `git fetch` to retrieve all of their work, syncing your local git repo to have all their commits and branches.
-- after you git fetch, you should be able to checkout their branch (which should be named their name). Check out their branch and view it in your browser.
+- after you git fetch, you should be able to checkout their branch (which should be named their name). To do this you need to type `git checkout -b <new-branch> <remote>/<remote-branch>`, so if you're trying to check out Tabitha's `tabitha` branch, it would be:
+
+```bash
+$ git checkout -b my-tabitha tabitha/tabitha
+```
+
+- once it's checked out, view it in your browser.
 - check out your own named branch again, and then _push_ your branch to their remote, so they can see your work too.
 
 ---
