@@ -276,7 +276,7 @@ name => console.log("Greetings", name);
 - add your `dream-house.json` and commit your work.
 - make and checkout a new branch called `js-json`
 - create a new node script called `parse-me.js`, when invoked from the shell, it should:
-  - use the built-in `fs` module to read the contents of `me.js` into a variable
+  - use the built-in `fs` module to read the contents of `me.json` into a variable
   - call a javascript function to _parse_ the JSON string, capturing the result into another variable called `me`
   - console.log the `me` variable
   - when executed you should see a multi-colored node console log of an _object_ created by parsing your `me.json`
