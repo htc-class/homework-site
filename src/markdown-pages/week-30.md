@@ -366,7 +366,7 @@ $ node create-json.js foo:bar jim:33 lol:true
 ---
 
 - carefully review the Javascript portion of "new stuff" above
-- ssh into your home dir, and cd into the `~/week30/node` dir (create it if you haven't already)
+- ssh into your home dir, and cd into the `~/node/week30` dir (create it if you haven't already)
 - copy into that dir the file with the path `/arrow-test.js`
 - edit the `arrow-test.js` file with vim, following the instructions
 - make a new directory called `arrow-fun` and `cd` into it
@@ -375,10 +375,10 @@ $ node create-json.js foo:bar jim:33 lol:true
 - figure out what file `npm` added for you... what format is it in?
 - type a command to pipe the new file into the `jq` utility, and see how much of the file you can understand.
 - add and commit the new package.json file
-- now, we'll install a node package to help us with our task, to do so, run the command `npm -i is-odd`
+- now, we'll install a node package to help us with our task, to do so, run the command `npm i is-odd`
 - run git status to see what's new
 - do a `git add .` and then commit ALL the new files
-- OOPS! Let's pretend we didn't mean to commit the `node_modules/` dir. Type a command that will eliminate the last commit, but won't throw away and work or files.
+- OOPS! Let's pretend we didn't mean to commit the `node_modules/` dir. Type a command that will eliminate the last commit, but won't throw away any work or files.
 - now, create a .gitignore file and make it so that git **ignores the node_modules** directory.
 - type `git status` now -- it should only show the `.gitignore` file and the new `package-lock.json` file.
 - add these two files and commit your work.
