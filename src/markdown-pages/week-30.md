@@ -222,7 +222,7 @@ name => console.log("Greetings", name);
 - 1 day Arrow function practice
 - 1 day Web / Git practice
 - 2 days touch typing practice
-- 1 day watch [CCCS #33](https://htc-viewer.netlify.com/?id=jhXCTbFnK8o)
+- 2 days watch [CCCS #33](https://htc-viewer.netlify.com/?id=jhXCTbFnK8o)
 
 ### Homework day 1
 
@@ -239,6 +239,10 @@ name => console.log("Greetings", name);
 <Checkable id="cccs">Watch CCCS</Checkable>
 <Checkable id="arrow">Arrow Function practice</Checkable>
 <Checkable id="type-2">touch typing practice</Checkable>
+
+### Homework day 4
+
+<Checkable id="cccs-2">Watch CCCS again</Checkable>
 
 ---
 
