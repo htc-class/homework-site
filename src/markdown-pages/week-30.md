@@ -215,6 +215,15 @@ name => console.log("Greetings", name);
 
 ---
 
+## Useful Links:
+
+- [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [TouchType.co](http://touchtype.co)
+- [How To Type](https://www.how-to-type.com)
+- [CCCS #27](https://htc-viewer.netlify.com/?id=TEAtmCYYKZA)
+
+---
+
 ## Homework Plan:
 
 - 1 day adding to and reviewing flashcards
