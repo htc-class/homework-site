@@ -19,6 +19,7 @@ const Checkable: React.FC<{ id: string }> = ({ children, id }) => {
           setChecked(newState);
           Cookies.set(cookieKey(id), newState ? "complete" : "incomplete", {
             path: "",
+            expires: 14,
           });
         }}
       />
