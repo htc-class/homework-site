@@ -329,7 +329,7 @@ $ node create-json.js foo:bar jim:33 lol:true
 - Ack! I left in a dumb commit I meant to remove ;) -- it has the commit message `TEMP: add todo.md` -- rewrite the history again so that that entire commit and it's work _never existed_.
 - next, the final two commits, adding the goat image, and prepping the student work, you decide you want to reverse the order, so that the goat image commit is _last_. Rewrite the history again, swapping the order of these two commits. Run git log afterwards to make sure it worked.
 - now, edit the styles.css file and change the background color to something else
-- I have a commit created the stylesheet and set the background to `papayawhip`. Let's pretend that instead of making a _new commit_ with a new background color, you want to re-write the history so that your changes get applied to that commit that I made. To do that, follow these steps:
+- I have a commit created the stylesheet and set the background to `saddlebrown`. Let's pretend that instead of making a _new commit_ with a new background color, you want to re-write the history so that your changes get applied to that commit that I made. To do that, follow these steps:
   - first, we need to temporarily store the work you just did changing the background color. Type a git command that will temporarily store this work somewhere so you can start an interactive rebase
   - then, start an interactive rebase, using a commit SHA before the one about the stylesheet and background color
   - next, in the vim window that pops up, type something to instruct git that you want to change the commit with the message: "stylesheet + background papayawhip", and save and close the file
@@ -348,7 +348,6 @@ $ node create-json.js foo:bar jim:33 lol:true
   - then take the array of strings map over them again, this time turning converting the array of strings into an array of DOM nodes, each node should be an `li` element with the `innerHTML` set to be what the string was before
   - finally, use `Array.forEach` on the array of dom nodes, and insert each one into the DOM
 - when you've got it working, commit your work
-- commit your work
 - now, change your code so that each list item says `Student: Tabitha Artinian` or `Teacher: Jared Henderson`, based on who the member is.
 - commit your work
 - now, add some CSS in the `styles.css` file to make it look snazzy.
