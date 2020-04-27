@@ -103,7 +103,7 @@ Host howtocomputer.link
 - 1 day GitLab Homework
 - 1 day Web Homework
 - 2 days touch typing practice
-- 2 days watch [CCCS #27](https://htc-viewer.netlify.com/?id=TEAtmCYYKZA)
+- 2 days watch [CCCS #28](https://htc-viewer.netlify.com/?id=3QhU9jd03a0)
 
 ### Homework day 1
 
