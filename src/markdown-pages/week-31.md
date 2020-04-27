@@ -62,6 +62,9 @@ Host howtocomputer.link
 ```
 
 - if you have this in your `~/.ssh/config` file, then you can just type `ssh howtocomputer.link` and you're golden! (I _think_ it also unlocks _tab-completion_ for the host as well 👍).
+- if you get confused on any of this, simply refer to this diagram:
+
+![ssh-made-easy](http://screenshots.pro.photo/jared/2020-04-26_13-32-42.png)
 
 ### Github / Gitlab
 
