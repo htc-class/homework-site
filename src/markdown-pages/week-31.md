@@ -214,7 +214,6 @@ Host *
 - open the file that contains the page you're reading right now, it is (from the repo root dir) in the path `src/markdown-pages/week-31.md` -- open it with vim.
 - don't worry if you don't understand all of what you see (it's written in a format called `markdown` which I haven't taught you yet, but it's similar to how you can type special things in Slack)
 - Find part of this homework page that you think could be improved or made more clear. If you noticed a mistake, or something like that, use vim's search feature to find that chunk in the code. Once you found something to change, make the change and commit your work.
-- commit your work
 - next you're going to _push your branch up to your own fork on GitLab_ (try telling that to your mom and see what she says, haha). To do this, you'll use the `git push` command, in the format: `git push <remote> <branch>`.
 - if you did it right, you should see a URL show up in the _terminal output_ offering you to **create a Merge Request**. You can either copy that URL, or try holding down command or control and clicking right on it. Most terminals will allow you to click a URL if you hold down command or control. But if clicking doesn't work, just copy the URL and paste it into a new tab of your web browser.
 - on the Merge Request screen, edit the title and description to give me a nice explanation of why I should merge your changes, then click to **submit** the PR.
