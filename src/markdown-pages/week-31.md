@@ -165,6 +165,8 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ### SSH Homework #2
 
+---
+
 - complete SSH homework #1 first
 - on your _own computer_, cd into your home dir, and create an `.ssh` dir if it doesn't exist.
 - `cd` into the `~/.ssh` dir, and do a `ls` to make sure there's not already a `id_rsa` key pair. If there is (which I doubt), Slack me and I'll tell you what to do.
