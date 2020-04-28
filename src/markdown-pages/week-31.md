@@ -154,7 +154,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   - `id_rsa` should be set to `-rw-------`
 - congrats, you've made an ssh key, now we just need to get the public key onto another server so we can use it.
 - cat out the _public_ key and copy it
-- next, one time we're going to `ssh` into the practice machine I made using a password. To do that, type `ssh <your-name>@ssh-practice.howtocomputer.link`. The password is the one I showed you in class yesterday.,
+- next, one time we're going to `ssh` into the practice machine I made using a password. To do that, type `ssh <your-name>@ssh-practice.howtocomputer.link`. The password is the one I showed you in class yesterday.
 - once you're connected to the practice computer, make a `~/.ssh` folder and inside it, create an `authorized_keys` file that contains **one line** -- the ssh public key you copied in step 15.
 - exit out of the practice computer, which will bring you back to the HTC computer.
 - now, you should be able to connect to the practice computer **without being prompted for a password**. Try it by typing `ssh <yourname>@ssh-practice.howtocomputer.link`. If you get in without typing the password, it worked! If not, try to review the previous steps carefully checking if you did each on correct.
@@ -227,7 +227,7 @@ Host *
 
 ---
 
-- go to the HTC _group_ on GitLab, and find the repo called `week-31-cars`
+- NOTE: make sure you have done the GitLab homework first. Go to the HTC _group_ on GitLab, and find the repo called `week-31-cars`
 - make your own **fork** of the repo
 - clone the repo down into a `~/www/week31` dir that you create after ssh-ing in to the HTC computer.
 - once it's cloned, cd into the repo, and make and switch to a **new branch**.
