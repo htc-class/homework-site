@@ -83,6 +83,7 @@ Host howtocomputer.link
 - [TouchType.co](http://touchtype.co)
 - [How To Type](https://www.how-to-type.com)
 - [CCCS #28](https://htc-viewer.netlify.com/?id=3QhU9jd03a0)
+- [gitlab.howtocomputer.link](https://gitlab.howtocomputer.link)  
 
 ---
 
