@@ -150,6 +150,9 @@ hr + ul {
 }
 
 hr + ul + div.gatsby-highlight + ul,
+hr + ul + p + ul,
+hr + ul + p + ul + p + ul,
+hr + ul + p + ul + p + ul + p + ul,
 hr + ul + div.gatsby-highlight + ul + div.gatsby-highlight + ul,
 hr
   + ul
@@ -232,6 +235,9 @@ hr
   list-style-type: none;
 }
 
+hr + ul + p + ul > li::before,
+hr + ul + p + ul + p + ul > li::before,
+hr + ul + p + ul + p + ul + p + ul > li::before,
 hr + ul > li::before,
 hr + ul + div.gatsby-highlight + ul > li::before,
 hr + ul + div.gatsby-highlight + ul + div.gatsby-highlight + ul > li::before,
