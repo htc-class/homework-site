@@ -52,12 +52,30 @@ $ vim /this/is/a/really/long/path/i/dont/want/to/retype.js
 
 ## Homework Plan:
 
-- 1 day something_goes_here
-- 2 day something_goes_here
-- 1 day something_goes_here
-- 1 day something_goes_here
-- 2 day something_goes_here
+- 1 day flashcard assignment
+- 2 day touch typing practice
+- 1 day VSCode homework
+- 2 days web homework
 - 2 days watch [CCCS #29](https://htc-viewer.netlify.com/?id=AEaKrq3SpW8)
+
+---
+
+### Homework day 1
+
+<Checkable id="flash">flashcard assignment</Checkable>
+<Checkable id="vscode">VSCode Homework</Checkable>
+<Checkable id="type-1">touch typing practice</Checkable>
+
+### Homework day 2
+
+<Checkable id="cccs-1">Watch CCCS (the first time)</Checkable>
+<Checkable id="web-1">Start Web Homework</Checkable>
+
+### Homework day 3
+
+<Checkable id="type-2">touch typing practice</Checkable>
+<Checkable id="cccs-2">Watch CCCS (the second time)</Checkable>
+<Checkable id="web-2">Finish Web Homework</Checkable>
 
 ---
 
@@ -77,7 +95,7 @@ $ vim /this/is/a/really/long/path/i/dont/want/to/retype.js
 
 ---
 
-## VSCode Assignment
+## VSCode Homework
 
 ---
 
