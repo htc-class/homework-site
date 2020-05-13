@@ -4,7 +4,7 @@ path: "/week-33"
 
 # Week 33 Homework 💻
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
 ## HTML
 
@@ -170,7 +170,7 @@ server.get("/users/:id", (req, res) => {
 - now, edit the code in `web-server.js` to change the HTML that is sent down.
 - make another request in your browser. Is your change visible? It should _not_ be visible. 🧐
 - The reason you can't see your change is that you need to _stop and restart the web-server_ -- it's still listening with the old function you passed it the last time you started the server. To stop the server, open the integrated terminal and send a signal to stop the current process (Control C). Then restart the server by typing `node web-server.js` again. Test in a browser that you see your new HTML string.
-- let's add a little console.logging. Up until now, in the `runOnEveryRequest` function, we're just ignoring the `request` variable. Let's change that. Before the line where you call `request.writeHead(200)` add this log: `console.log(request.url)`.
+- let's add a little console.logging. Up until now, in the `runOnEveryRequest` function, we're just ignoring the `request` variable. Let's change that. Before the line where you call `response.writeHead(200)` add this log: `console.log(request.url)`.
 - stop and restart your webserver so your changes can get applied.
 - Before you try to see what got logged out, ask yourself this: **WHERE** will the console.log appear? In your browser? Or in the terminal window? Can you answer that? Think hard for a minute...
 - Now visit `http://localhost:<your-port>` again, and test your hypothesis from the previous step.
