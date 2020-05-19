@@ -293,6 +293,7 @@ test("the goat", () => {
 - [How To Type](https://www.how-to-type.com)
 - [CCCS #31](https://htc-viewer.netlify.com/?id=bPVaOlJ6ln0&vl)
 - [GitLab](https://gitlab.howtocomputer.link)
+- [Flexbox Froggy](https://flexboxfroggy.com/) 🐸
 
 ---
 
@@ -302,6 +303,7 @@ test("the goat", () => {
 - 2 day touch typing practice
 - 3 days JS homework
 - 1 day doing other students testing challenges
+- 1 day Flexbox review with [Flexbox Froggy](https://flexboxfroggy.com/) 🐸
 - 1 day watch [CCCS #31](https://htc-viewer.netlify.com/?id=bPVaOlJ6ln0&vl)
 
 ---
@@ -324,6 +326,7 @@ test("the goat", () => {
 
 ### Homework day 4
 
+<Checkable id="froggy">All levels of Flexbox Froggy</Checkable>
 <Checkable id="js-student">Student testing challenges</Checkable>
 
 ---
@@ -373,6 +376,7 @@ test("the goat", () => {
 - now connect to the remote host with vscode and open the newly created folder called `~/node/week34/week-34-objects-2/` which was created by cloning
 - run the `Bank` tests by typing `jest Bank.spec.js` into the integrated terminal, then one by one make the tests pass
 - run the `Student` tests by typing `jest Student.spec.js`, then one by one unskip and make the tests pass.
+- push up a Merge Request and Slack me the URL so I can leave you feedback and possibly have you change some things.
 
 ---
 
