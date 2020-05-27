@@ -189,7 +189,7 @@ const sorted = pets.sort(sortByAge);
 
 <Checkable id="review-flash-2">review all flashcards</Checkable>
 <Checkable id="typing-1">touch typing practice</Checkable>
-<Checkable id="destructure">short destructuring/template literal assignment (coming soon)</Checkable>
+<Checkable id="destructure">short destructuring/template literal assignment</Checkable>
 
 ### Homework (week 3)
 
@@ -206,3 +206,17 @@ const sorted = pets.sort(sortByAge);
   - `destructuring objects`
   - `destructuring arrays`
   - `Array.sort()`
+
+---
+
+## Destructuring Assignment
+
+---
+
+- very carefully and slowly review the **Destructuring** section of "New Stuff" above ^^.
+- ssh into your home dir, create a new directory at `~/node/week35/` and `cd` into the dir
+- in that dir, clone this repo: `git@gitlab.howtocomputer.link:jared/destructuring-1.git`
+- connect vscode to that new dir created by cloning
+- create a new branch
+- read through the `destructuring.js` file, following the steps
+- when you're done, push up a MR and Slack me the URL so I can check your work and have you fix anything
