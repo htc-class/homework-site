@@ -163,6 +163,7 @@ const sorted = pets.sort(sortByAge);
 - [Tabitha's challenge](https://gitlab.howtocomputer.link/Tabitha/tabithas-thingy)
 - [Kiah's challenge](https://gitlab.howtocomputer.link/Kiah/yoohoo)
 - [Win's challenge](https://gitlab.howtocomputer.link/Winfield/js-homework-3)
+- [Harriet's challenge](https://gitlab.howtocomputer.link/Ritty/harriet-js-3-encryption-function)
 
 ---
 
