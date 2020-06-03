@@ -173,8 +173,8 @@ const sorted = pets.sort(sortByAge);
 - 1 day (per week) review all flashcards
 - 1 day (per week) touch typing practice
 - 1 days doing student testing practice from week 34
-- 1 day destructuring/template literal homework (coming soon)
-- 1 day array.sort homework (coming soon)
+- 1 day destructuring/template literal homework
+- 1 day array.sort homework
 
 ---
 
@@ -196,7 +196,7 @@ const sorted = pets.sort(sortByAge);
 
 <Checkable id="review-flash-3">review all flashcards</Checkable>
 <Checkable id="typing-2">touch typing practice</Checkable>
-<Checkable id="sort">short array.sort assignment (coming soon)</Checkable>
+<Checkable id="sort">short array.sort assignment</Checkable>
 
 ---
 
@@ -221,3 +221,18 @@ const sorted = pets.sort(sortByAge);
 - create a new branch
 - read through the `destructuring.js` file, following the steps
 - when you're done, push up a MR and Slack me the URL so I can check your work and have you fix anything
+
+---
+
+## Array.sort Assignment
+
+---
+
+- very carefully and slowly review the **Array.sort()** section of "New Stuff" above ^^.
+- ssh into your home dir, then `cd` into the `~/node/week35/` dir
+- in that dir, clone this repo: `git@gitlab.howtocomputer.link:htc/array-sort.git`
+- connect vscode to that new dir created by cloning
+- create a new branch
+- run the tests using `jest sort.spec.js` or `jest sort.spec.js --watch`
+- **hint:** 🔮 if you want to work on **just one test at a time, in _isolation_**, change the `test()` or `it()` function to be `test.only()` or `it.only()` and jest will temporarily skip all the other tests and _only run that one_. This helps with debugging, console.logging, etc, so you can focus on one thing at a time.
+- when you've got all the tests passing, push up a MR and Slack me the URL so I can check your work and have you fix anything
