@@ -156,7 +156,11 @@ fs.readFile("./goats.txt", (err, buffer) => {
 <Checkable id="cccs">Watch CCCS</Checkable>
 <Checkable id="async">Node Async Homework</Checkable>
 
-_more coming later..._
+### Homework (week 3)
+
+<Checkable id="review-flash-3">review all flashcards</Checkable>
+<Checkable id="typing-3">touch typing practice</Checkable>
+<Checkable id="async">Regex homework</Checkable>
 
 ---
 
@@ -216,3 +220,13 @@ $ tsnode nodeback.ts ellwood
 - **Extra Credit: ✨** Instead of _overwriting_ the `errors.txt` file with a message about a file not existing, figure out how to **append** a new line to the `errors.txt` file, so that it keeps a running log of _all of the errors_ that you could view later. You'll need to add yet another level of nesting to your callback of pyramid of doom to accomplish this. Commit your work when done.
 - **Kiah Credit: ✨** Modify the script so that it can take any number of filenames passed as cli/shell arguments, like `tsnode nodeback.ts ellwood webb gratton`. The logging of file contents and writing of lines to the error file should work the same, just supporting a variable number of arguments from the user.
 - push up a MR, slack me the URL so I can leave you comments.
+
+---
+
+## Regex Homework
+
+---
+
+- separate out all of your `regex` flashcards
+- work through them one by one, carefully reviewing them and going over the concepts and usages in your brain
+- work through all of the lessons of [https://regexone.com/](https://regexone.com/)
