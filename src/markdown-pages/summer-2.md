@@ -86,13 +86,39 @@ const win: Person = {
   hasBeard: false,
 };
 
-// like with all other types, you don't NEED to name the type
+// as with all other types, you don't NEED to name the type
 function getPet(): { type: string; name: string } {
   return {
     type: "turtle",
     name: "Stalin",
   };
 }
+```
+
+- Typescript is **structurally typed** -- which means that _"if it looks like a duck, walks like a ducks, talks like a duck...**it's a duck**"_. That means, for instance, that this works:
+
+```ts
+class Duck {
+  name: string;
+  beakLength: number;
+
+  constructor(name: string, beakLength: number) {
+    this.name = name;
+    this.beakLength = beakLength;
+  }
+}
+
+// 😎 LOOK! **classes** are also TYPES
+function getDuckName(duck: Duck): string {
+  return duck.name;
+}
+
+// this works because we're passing it an instance
+getDuckName(new Duck("Daffy", 11));
+
+// 😎 WORKS! It's not an instance of the `Duck` class
+// but it has the same STRUCTURAL TYPE, so TS is OK 👍
+getDuckName({ name: "Ducky", beakLength: 4 });
 ```
 
 ## Javascript ES Modules
@@ -114,3 +140,42 @@ export function sayGoat() {
   console.log("goat");
 }
 ```
+
+## Useful Links:
+
+- [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [TouchType.co](http://touchtype.co)
+- [How To Type](https://www.how-to-type.com)
+- [CCCS #35](https://htc-viewer.netlify.app/?id=-4E2-0sxVUM)
+- [GitLab](https://gitlab.howtocomputer.link)
+
+---
+
+## Homework Plan (next class in 3 weeks)
+
+- 1 day (per week) review all flashcards
+- 1 day (per week) touch typing practice
+- 1 day Typescript Homework
+- more coming soon...
+
+---
+
+### Homework (week 1)
+
+<Checkable id="review-flash-1">review all flashcards</Checkable>
+<Checkable id="typing-1">touch typing practice</Checkable>
+<Checkable id="cccs">Watch CCCS</Checkable>
+<Checkable id="ts-1">Typescript Homework</Checkable>
+
+---
+
+## Typescript Assignment
+
+- very carefuly and slowly review the **Typescript** portion of "New Stuff" above ^^.
+- go to [https://gitlab.howtocomputer.link/htc/ts-intro-2](https://gitlab.howtocomputer.link/htc/ts-intro-2), **fork it**, then clone it into `~/node/summer-2` through `ssh`, then connect to the dir through vscode.
+- create a new branch
+- follow all of the instructions in the _comments_.
+- to test your work, from the integrated terminal, type `tsnode types.ts` -- the Typescript will bark at you and spew error messages if you did anything wrong, or forgot anything.
+- once you finished everything and `tsnode types.ts` shows **no errors**, submit a MR so I can see your code and leave any comments for corrections.
+
+---
