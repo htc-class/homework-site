@@ -156,6 +156,7 @@ export function sayGoat() {
 - 1 day (per week) review all flashcards
 - 1 day (per week) touch typing practice
 - 1 day Typescript Homework
+- 1 day Bash Variable review Assignment
 - more coming soon...
 
 ---
@@ -166,6 +167,12 @@ export function sayGoat() {
 <Checkable id="typing-1">touch typing practice</Checkable>
 <Checkable id="cccs">Watch CCCS</Checkable>
 <Checkable id="ts-1">Typescript Homework</Checkable>
+
+### Homework (week 2)
+
+<Checkable id="review-flash-2">review all flashcards</Checkable>
+<Checkable id="typing-2">touch typing practice</Checkable>
+<Checkable id="bash-var">bash variable assignment</Checkable>
 
 ---
 
@@ -179,3 +186,8 @@ export function sayGoat() {
 - once you finished everything and `tsnode types.ts` shows **no errors**, submit a MR so I can see your code and leave any comments for corrections.
 
 ---
+
+## Bash Variable Review Assignment
+
+- do (again) steps 2-12 of the CLI #1 assignment from **week 8** -- the [pdf is here](https://homework.howtocomputer.link/pdf/week-08-homework.pdf)
+- then, do the _Extra Credit_ from CLI #2 of that same week (which also deals with bash variables). Slack us with instructions on how to do your madlib.
