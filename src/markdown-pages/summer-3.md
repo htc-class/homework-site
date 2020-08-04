@@ -97,6 +97,114 @@ export function makeJared(): Person {
 import { makeJared, Person } from "./person";
 ```
 
+## Promises 🍔
+
+- **Promises** are a programming language concept or abstraction that allows easier handling of **asynchronous tasks**.
+- to **make your own promise** you create a new _instance_ of the `Promise` class, and pass it an **executor** function:
+
+```js
+const promise = new Promise(myExecutorFunction);
+```
+
+- inside the Promise's constructor, your executor function is invoked, and is passed **two arguments -- a `resolve` function, and a `reject` function**:
+
+```js
+const promise = new Promise((resolve, reject) => {
+  // do something async here, then, based on the outcome
+  // call either `resolve` (success), or `reject` (failure)
+});
+```
+
+- once you've got a promise, you can start **then-ing**:
+
+```js
+promise.then(val => {
+  // do something with the value resolved from promise
+  // `val` is what the `resolve()` function was called with
+});
+```
+
+- there are **two ways** to handle error conditions with promises. The **first** (and less common) way is to pass a **second function** to the `.then()` method, like so:
+
+```js
+promise.then((val) => {
+  console.log('it worked, got val:`, val);
+}, (err) => {
+  console.error('something went wrong!');
+});
+```
+
+- but a much more common (and ergonomic) way of handling errors is to **chain a `.catch()`**:
+
+```js
+promise
+  .then(val => {
+    console.log('it worked, got val:`, val);
+  }).catch(err => {
+    console.error('something went wrong!');
+  });
+```
+
+- anything returned from a function passed to `.then()` will be converted into a promise (unless it already is a promise), which means you can **chain then's together**:
+
+```js
+promise
+  .then(val => {
+    return val.toUpperCase();
+  })
+  .then(val => {
+    return `${val} #goatbanjorodeo`;
+  })
+  .then(val => {
+    return [val, val];
+  });
+```
+
+- a `.catch()` will **catch any errors** from any promise **before it in the chain**.
+
+```js
+promise
+  .then(val => {
+    if (Math.random() > 0.5) {
+      throw new Error("Horrible problem!");
+    }
+    return val.toUpperCase();
+  })
+  .then(val => {
+    return `${val} #goatbanjorodeo`;
+  })
+  .then(val => {
+    return [val, val];
+  })
+  .catch(err => {
+    // this will catch any error from anywhere in the chain
+  });
+```
+
+- the `window.fetch()` api is a **browser API** for making _HTTP requests from javascript_. It returns a `Promise<Response>`, and many of the methods of the `Response` object it returns, also return promises (like the useful `.json()` method):
+
+```js
+fetch("https://api.coolservice.com")
+  .then(response => {
+    // response.json() returns a promise,
+    // so we KEEP CHAINING ⛓
+    return response.json();
+  })
+  .then(json => {
+    console.log(json);
+  });
+```
+
+- the npm package `node-fetch` allows you to make http requests from node using the exact same api as the browser's `window.fetch()`:
+
+```js
+import fetch from 'node-fetch';
+
+fetch("https://api.coolservice.com)
+ .then(res => res.json())
+ .then(json => console.log(json));
+```
+
 ## Useful Links:
 
 - [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
@@ -161,3 +269,19 @@ import { makeJared, Person } from "./person";
 - now, change the `mm.ts` file so that the `mm()` function is a **default export**. You'll have to modify your `mm.spec.ts` file as well, to import _both a default and a named import_.
 - make another commit.
 - push up a Merge Request to Gitlab, and post it in Slack.
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
