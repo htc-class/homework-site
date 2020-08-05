@@ -221,6 +221,8 @@ fetch("https://api.coolservice.com)
 - 1 day (per week) touch typing practice
 - 1 day setting up SSH access to new HTC VM
 - 1 day Import/Export/RegExp homework
+- 1 day Node Promise Homework
+- 1 day Web Fetch/Promise Homework
 - more coming soon...
 
 ---
@@ -237,6 +239,13 @@ fetch("https://api.coolservice.com)
 <Checkable id="review-flash-2">review all flashcards</Checkable>
 <Checkable id="typing-2">touch typing practice</Checkable>
 <Checkable id="es-modules">import/export/regex es-modules Homework</Checkable>
+<Checkable id="node-promise">Node Promise Homework</Checkable>
+
+### Homework (week 3)
+
+<Checkable id="review-flash-3">review all flashcards</Checkable>
+<Checkable id="typing-3">touch typing practice</Checkable>
+<Checkable id="web-promise">Web Fetch/Promise Homework (coming soon)</Checkable>
 
 ---
 
@@ -248,6 +257,8 @@ fetch("https://api.coolservice.com)
 - make a nice alias by changing the `Host` to something short like `htc`, which requires that you also set the `HostName` to `howtocomputer.link`
 - test your SSH connection to the new VM, you should see the cool HTC ascii-art that I showed you in class
 - once you are able to SSH in, Slack me that you got in successfully, once I hear back from all of you, I'll nuke the old VM 🔫
+
+---
 
 ## Import/Export/RegExp Homework
 
@@ -270,18 +281,36 @@ fetch("https://api.coolservice.com)
 - make another commit.
 - push up a Merge Request to Gitlab, and post it in Slack.
 
+---
+
+## Node Promises Homework 🍔
+
+---
+
+- make sure you've watched _both_ videos I recorded about Promises: [video 1](http://jared.howtocomputer.link/promises_1.mp4), and [video 2](http://jared.howtocomputer.link/promises_2.mp4)
+- very carefuly and slowly review the **Promises** portion of "New Stuff" above ^^.
+- go to [https://gitlab.howtocomputer.link/htc/promises](https://gitlab.howtocomputer.link/htc/promises), **fork it**, then clone it into `~/node/summer-3` through `ssh`, then connect to the dir through vscode.
+- create a new branch
+- Note: this whole homework is essentially the same as the `nodeback` homework from earlier this summer, but this time with **Promises 🍔**.
+- Note: for this whole homework, you need to use the **promise-ified** versions of the `fs.*` module functions. No directly using `fs.readFile` or `fs.readFileSync`, etc.
+- write some code in `file.ts` such that you can pass it the _lowercase last name_ of one of the four quakers who have files in the `./quakers` file. When you do, it should `console.log` the contents of the file.
+- test your script by using `tsnode` (since this is a typescript file), it _should work like this_:
+
+```bash
+$ tsnode file.ts ellwood
+> To begin, therefore, with mine own beginning.
+> I was born in the year of our Lord 1639,
+> ETC...
 ```
 
-```
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
+- be sure your script works by just passing `ellwood` and `webb` etc, NOT `quakers/ellwood.adoc`.
+- use template literals for any string concatenation (no more `+` for strings, forever!)
+- if you have any typescript errors `vscode` should tell you, and then `tsnode` will bark at you, so fix all of those. 👍
+- commit your work.
+- next, **handle the error case,** where you pass the name of a file that _does not exist_. Start by just console.logging an error message and returning early.
+- commit your work.
+- next, instead of logging the error case, make it so that your script _writes the error message (including the non-existent filename) to a file called `./errors.txt`_. You'll need to _promisify_ another one of the `fs` functions, like I did for you with `readFilePromise`. The error file should read something like `No file for "goatbanjorodeo" found` if I try `tsnode file.ts goatbanjorodeo`.
+- commit your work when you've got it working.
+- **Extra Credit: ✨** Instead of _overwriting_ the `errors.txt` file with a message about a file not existing, figure out how to **append** a new line to the `errors.txt` file, so that it keeps a running log of _all of the errors_ that you could view later. Commit your work when done.
+- **Kiah Credit: ✨** Modify the script so that it can take any number of filenames passed as cli/shell arguments, like `tsnode file.ts ellwood webb gratton`. The logging of file contents and writing of lines to the error file should work the same, just supporting a variable number of arguments from the user.
+- push up a MR, slack me the URL so I can leave you comments.
