@@ -223,7 +223,6 @@ fetch("https://api.coolservice.com)
 - 1 day Import/Export/RegExp homework
 - 1 day Node Promise Homework
 - 1 day Web Fetch/Promise Homework
-- more coming soon...
 
 ---
 
@@ -245,7 +244,7 @@ fetch("https://api.coolservice.com)
 
 <Checkable id="review-flash-3">review all flashcards</Checkable>
 <Checkable id="typing-3">touch typing practice</Checkable>
-<Checkable id="web-promise">Web Fetch/Promise Homework (coming soon)</Checkable>
+<Checkable id="web-promise">Web Fetch/Promise Homework</Checkable>
 
 ---
 
@@ -314,3 +313,34 @@ $ tsnode file.ts ellwood
 - **Extra Credit: ✨** Instead of _overwriting_ the `errors.txt` file with a message about a file not existing, figure out how to **append** a new line to the `errors.txt` file, so that it keeps a running log of _all of the errors_ that you could view later. Commit your work when done.
 - **Kiah Credit: ✨** Modify the script so that it can take any number of filenames passed as cli/shell arguments, like `tsnode file.ts ellwood webb gratton`. The logging of file contents and writing of lines to the error file should work the same, just supporting a variable number of arguments from the user.
 - push up a MR, slack me the URL so I can leave you comments.
+
+---
+
+## Web Promises Homework 🍔
+
+---
+
+- make sure you've watched _both_ videos I recorded about Promises: [video 1](http://jared.howtocomputer.link/promises_1.mp4), and [video 2](http://jared.howtocomputer.link/promises_2.mp4)
+- very carefuly and slowly review the **Promises** portion of "New Stuff" above ^^.
+- read all these steps before starting out
+- for this homework you're going to build a web page by loading data from an external API that you access using the `fetch()` api supplied by the browser.
+- make the website in a new folder (which should also be a git repository) in your `~/www` dir
+- you can choose from using one (or more, if you're ambitious) of these API endpoints:
+  - `https://api.howtocomputer.link/friends-library/friends` -- a list (array) of all of the Quaker authors available on Friends Library.
+  - `https://api.howtocomputer.link/friends-library/documents` -- a list (array) of all the _books_ available on Friends Library, includes a usable cover-image for each edition too (note, the `/friends` url above contains references to these books)
+  - `https://api.howtocomputer.link/friends-library/documents/<document-id>` -- a single record for a single book (an object) for one of the books on Friends Library
+  - `https://api.howtocomputer.link/friends-library/downloads` -- a list (array) of the 500 most recent downloads from the Friends Library site (including location data)
+  - `https://api.friendslibrary.com/app-audios` -- a list (array) of all of the audio books available on Friends library, including links to MP3s, and "album artwork" image (this is actually a real API endpoing that I'm using for the native apps I'm developing currently, but you guys can use it too!)
+- the basic idea is that you will use `fetch()` to request one of these endpoints, then turn the response into a JSON object (see example in "New Stuff" above), and then once you have JSON (which will be an ARRAY of things), you will probably `.forEach()` over the array and use your DOM-scripting skills to insert dynamically generated HTML for each item in the list.
+- here are some example ideas:
+  - Create a nicely-styled list of all the Quaker authors, including a description of each. Maybe format the women authors in pink, and have the men authors be blue. Link each author to their page on the Friends Library site. Or maybe filter out all of the men-friends and make a page showcasing all of the female authors. Or use the `residence` field to make a page showing off only the Quakers who lived in Ireland.
+  - Create a list of all books available on the Friends Library website. Show images for each edition available for each book, and link each book to it's page on the Friends Library site.
+  - Create a dashboard displaying information about the 500 most recent downloads. Consider grouping them into countries, or counting them and giving statistics. The download resources don't have human-readable information about what BOOK was downloaded, but they DO have the document ID and edition type -- you could use these facts to make additional requests to get more information about the items downloaded.
+- you might want to start by just creating an HTML page with a link to a javascript file, and in that javascript file, start playing around with fetching one of these endpoints, and turning the response into JSON. Once you have the JSON, try `console.log()`-ing it out. Or maybe just log the _first_ one. Then you can start brainstorming some interesting ways to present these resources in a website, in some sort of a list of repeating HTML elements.
+- you'll probably want to end up making a javascript function that takes in ONE of the resources, and builds up the HTML you want from it. Then you can MAP over the resources, calling this function, and then inserting it into the DOM.
+- if you are feeling rusty on your DOM-scripting, review the new stuff from [week 18](/week-18).
+- don't go CRAZY, but try to make your page look sort of nice, using CSS. Try to use Flexbox, and some of your other CSS skills.
+- make sure to make a lot of git commits.
+- push your code to a new repository on GitLab so it's safe.
+- **Kiah Credit: ✨** make sure your web-page uses at least TWO of the endpoints listed above, cross-referencing them. This will involve more usages of Fetch, and more promises. Example: list recent downloads, but for each download, look up information like the name of the document using another endpoint, and merge that data together to make something more interesting and useful. Or, show a list of Quaker authors, but for each of them also give detailed information about each book they wrote, only availabe from a different API endpoint.
+- slack us the URL of your web-page when you're done!
