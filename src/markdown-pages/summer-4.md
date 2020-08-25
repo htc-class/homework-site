@@ -6,6 +6,40 @@ path: "/summer-4"
 
 _New stuff we learned this week:_ 🤔
 
+## While Loop
+
+- the `while` loop is a very simple loop that continues to execute as long as the condition is true:
+
+```js
+let x = 0;
+while (x < 5) {
+  console.log(x);
+  x++;
+}
+```
+
+- a normal `for` loop just sort of pulls up the initialization and increment steps of a `while` loop into one line, so it's usually preferred. But sometimes there are things that can only be expressed with a while loop, so it's pretty handy.
+- one interesting case for using a `while` loop is to create an infinite loop (this needs to be done carefully, with some mechanism for breaking out of the loop):
+
+```js
+while (true) {
+  // wheee!!! infinite loop
+}
+```
+
+- the `break` keyword allows you to **break** out of a loop (works for `while` loops and `for` loops):
+
+```js
+let x = 0;
+while (true) {
+  console.log(x);
+  x++;
+  if (x > 100) {
+    break; // BREAK out of `while` loop
+  }
+}
+```
+
 ## Case Statement
 
 - the `case` keyword in javascript (and most `c`-like languages) allows you to make a **multi-way logical decision**. It's basically a more readable form of a long `if / else if` chain, for when the number of options gets bigger than 3 or so:
@@ -225,6 +259,9 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 
 - 1 day (per week) review all flashcards
 - 1 day (per week) touch typing practice
+- 1 day Case statement homework
+- 1 day Generators homework
+- ...more to come
 
 ---
 
@@ -233,3 +270,43 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 <Checkable id="review-flash-1">review all flashcards</Checkable>
 <Checkable id="typing-1">touch typing practice</Checkable>
 <Checkable id="cccs">Watch CCCS</Checkable>
+<Checkable id="case">Case statement homework</Checkable>
+<Checkable id="generators">Generators homework</Checkable>
+
+---
+
+## Generators Homework
+
+---
+
+- slowly and carefully review the **"Generators"** section of "New Stuff" ^
+- go to [this url](https://gitlab.howtocomputer.link/htc/generators) and create a FORK of the repo
+- connect to the HTC machine with vscode and clone the repo into a folder called `~/node/summer-4/`
+- create a **new branch** to work on
+- Type a command to install the dependencies.
+- check the `package.json` to see the two scripts I made for you, these will come in handy.
+- open up the `src/generators.spec.ts` file and the `src/generators.ts` files
+- one by one, changing each `xit()` to a `it()`, make all the tests pass. You'll need to create functions in `generators.ts` and export/import them as needed.
+- make sure to have good, strict Typescript types for _arguments_ AND _function returns_.
+- commit your work.
+- push up a Merge Request to Gitlab, and post it in Slack.
+
+---
+
+## Case Statement Homework
+
+---
+
+- slowly and carefully review the **"Case Statement"** section of "New Stuff" ^
+- go to [this url](https://gitlab.howtocomputer.link/htc/case) and create a FORK of the repo
+- connect to the HTC machine with vscode and clone the repo into a folder called `~/node/summer-4/`
+- create a **new branch** to work on
+- Type a command to install the dependencies.
+- check the `package.json` to see the two scripts I made for you, these will come in handy.
+- open up the `src/case.spec.ts` file and the `src/case.ts` files
+- one by one, changing each `xit()` to a `it()`, make all the tests pass. You'll need to create functions in `case.ts` and export/import them as needed.
+- make sure to have good, strict Typescript types for _arguments_ AND _function returns_.
+- commit your work.
+- push up a Merge Request to Gitlab, and post it in Slack.
+
+---

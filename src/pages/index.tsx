@@ -14,6 +14,9 @@ const IndexPage = () => (
     </h1>
     <ul className="text-xl leading-loose">
       <li>
+        <Link to="./summer-4">Summer 4 Homework</Link>
+      </li>
+      <li>
         <Link to="./summer-3">Summer 3 Homework</Link>
       </li>
       <li>
