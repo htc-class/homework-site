@@ -287,7 +287,7 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 - check the `package.json` to see the two scripts I made for you, these will come in handy.
 - open up the `src/generators.spec.ts` file and the `src/generators.ts` files
 - one by one, changing each `xit()` to a `it()`, make all the tests pass. You'll need to create functions in `generators.ts` and export/import them as needed.
-- make sure to have good, strict Typescript types for _arguments_ AND _function returns_.
+- make sure to have good, strict Typescript types for _arguments_ (but you can _skip adding return types for the generators, that's too complex for now_).
 - commit your work.
 - push up a Merge Request to Gitlab, and post it in Slack.
 
