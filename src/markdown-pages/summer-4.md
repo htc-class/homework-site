@@ -240,10 +240,144 @@ const foo = new Symbol("foo");
 - symbols are **automagically unique**, so two symbols constructed with the same string _are still different_:
 
 ```js
-new Symbol("foo") === new Symbol("bar"); // FALSE
+new Symbol("foo") === new Symbol("foo"); // FALSE
 ```
 
 - there are some built-in Symbols added by javascript itself, like `Symbol.iterator` and `Symbol.replace`. These allow both the language itself, and your code, to implement new language features, like in the `class Life` example above.
+
+## Async / Await
+
+- one advanced feature of generators is that you can **pass arguments BACK into the function**. Consider this snippet of code:
+
+```js
+function* myGenerator() {
+  yield "goat";
+  let last = yield "banjo";
+  yield last;
+}
+
+const iterator = myGenerator();
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next("rodeo"));
+```
+
+- step **very carefully** through the execution with me:
+  - on line 8, the first time we call `iterator.next()` the function yields out `"goat"`, so we log: `{value: 'goat', done: false}`
+  - on line 9, the first time we call `iterator.next()` the function yields out `"banjo"`, so we log: `{value: 'banjo', done: false}`
+  - but then **on line 10** we **pass a value BACK into the generator**. This value (the string `"rodeo"`) gets **substituted for the last `yield` expression**, making it as if line 3 read: `let last = "rodeo";`
+  - so, while executing line 10 `last` is set to `"rodeo"` and the final call to `iterator.next()` logs out `{value: 'rodeo', done: false}`;
+  - NOTE: this _does work,_ my example in class failed because I was off-by-one -- I was passing the value to the wrong invocation of `iterator.next()`. Sorry about that! 😬
+- once javascript had **generators** with their magical powers of _being RESUMABLE functions_ and the power to **pass values back in at a later time**, someone had the bright idea to use them to **make async code LOOK synchronous**. What follows is an **oversimplified** version of how this might work:
+
+```js
+function* syncLookingJsonFetcher() {
+  // look at this line very carefully.
+  // `fetch()` returns a PROMISE,
+  // so we are YIELD-ing a promise to the outside world
+  // but then we are setting the `response` variable
+  // to whatever the outside world passes back
+  // in the second time they call `.next()`
+  const response = yield fetch("http://api.mysite.io");
+
+  // now imagine `response` is the actual HTTP response
+  // (how we do that comes below)
+  // we can now do the same trick to get the JSON,
+  // we YIELD out another PROMISE
+  const json = yield response.json();
+
+  // now we have our dream, we could use `json`
+  // and all the code above LOOKS synchronous
+}
+
+// NOTICE we're OUT of the generator function here
+// this is the "OUTSIDE WORLD"
+
+// our sweet function needs help from the outside world
+// this is ugly, but it will sort of work:
+const iterator = syncLookingJsonFetcher();
+
+// start by getting hold of the promise yielded on line 8
+const fetchPromise = iterator.next().value;
+
+fetchPromise
+  .then(response => {
+    // when that promise resolves,
+    // PASS it back INTO the generator
+    iterator.next(response);
+
+    // now we need to call `.next()` to get
+    // the `.json()` promise out from line 14
+    const jsonPromise = iterator.next().value;
+
+    // return the promise so we can CHAIN
+    return jsonPromise;
+  })
+  .then(json => {
+    // now pass the resolved JSON back INTO the generator
+    // and it becomes the value of `json` on line 14
+    iterator.next(json);
+  });
+```
+
+- carefully read that whole snippet of code through, line by line. I think it's the hairiest chunk of javascript I'll ever give you. Read it a couple times, see if you can get to the point where you have a decent idea of what's actually happening.
+- now that you've seen that awful code, you can be thankful that Javascript **added a bunch of syntatic sugar** into the language to make doing that super easy, and they basically wrote the whole "outside world" section for you. The end result is **async / await**:
+
+```js
+// here's that same horrible code from above
+// rewritten with async / await
+
+// NOTICE the `async` keyword before `function`
+// this is like the `*` in a generator function
+// it's a clue to Javascript that this is a special
+// generator-like function under the hood
+async function doApiThings() {
+  // here notice that instead of `yield` we `await`:
+  const response = await fetch("http://api.mysite.io");
+
+  // then we can await on the second promise too:
+  const json = await response.json();
+
+  // now we can do whatever we want with the json!
+  insertStuffInDom(json);
+}
+
+// of course you do need to call your async function :)
+doApiThings();
+```
+
+- here's that again _without all the comments_:
+
+```js
+async function doApiThings() {
+  const response = await fetch("http://api.mysite.io");
+  const json = await response.json();
+  insertStuffInDom(json);
+}
+
+doApiThings();
+```
+
+- finally, we don't have a `.catch()` or an _error_ argument (like in nodeback-style), so we use `try / catch` to **handle errors with async / await**:
+
+```js
+async function doApiThings() {
+  try {
+    const response = await fetch("http://api.mysite.io");
+    const json = await response.json();
+    insertStuffInDom(json);
+  } catch (error) {
+    // do error handling things here
+    alert("Oh noes!");
+  }
+}
+
+doApiThings();
+```
+
+- note: the `await` keyword can ONLY be used (currently) inside an `async` function. You may get an error if you try to use `await` outside of an `async` function. In 6-18 months this won't be true anymore (javascript is adding what's called "Top-level await"), but support is limited now.
+
+---
 
 ## Useful Links:
 
@@ -261,7 +395,7 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 - 1 day (per week) touch typing practice
 - 1 day Case statement homework
 - 1 day Generators homework
-- ...more to come
+- 1 day Async/Await homework
 
 ---
 
@@ -272,6 +406,12 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 <Checkable id="cccs">Watch CCCS</Checkable>
 <Checkable id="case">Case statement homework</Checkable>
 <Checkable id="generators">Generators homework</Checkable>
+
+### Homework (week 2)
+
+<Checkable id="review-flash-2">review all flashcards</Checkable>
+<Checkable id="typing-2">touch typing practice</Checkable>
+<Checkable id="async-await">Async/Await homework</Checkable>
 
 ---
 
@@ -310,3 +450,15 @@ new Symbol("foo") === new Symbol("bar"); // FALSE
 - push up a Merge Request to Gitlab, and post it in Slack.
 
 ---
+
+## Async/Await Homework
+
+- slowly, and repetitively, and very carefully read the "Async/Await" portion of "New Stuff" above. Try to get a working understanding of **HOW async/await** works by building on top of generators.
+- then, clear your mind of all of the complicated generator theory stuff, and review the last two code snippets in the "New Stuff" -- those really simple code snippets are very similar to all you will need to do this homework.
+- just to be clear: for this homework you will NOT create ANY generator functions, you will ONLY use `async` functions.
+- connect in vscode to your `~/www/summer-3` web/promises git repo.
+- keep all of the functionality the same, but rewrite it with NO promises, rather, using `async / await`. That means don't change anything about the HTML or CSS, you should be able to re-use all that code. The only thing you're going to be changing is that instead of using promises directly and calling `.then()` on them, you're going to do your async fetching and unpacking of JSON using `async / await`.
+- hint: you'll need some sort of main `async` function, inside it you can `await` on calls to `fetch()` and `await` on turning http responses into `json` just like the examples in the New Stuff above.
+- make sure to handle errors using `try / catch`.
+- even if your browser supports "top-level await", I want you to wrap all of your usages of `await` inside an `async` function.
+- commit your work, and slack me the GitLab url when you are done
