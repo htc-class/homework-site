@@ -396,6 +396,8 @@ doApiThings();
 - 1 day Case statement homework
 - 1 day Generators homework
 - 1 day Async/Await homework
+- 2 days vim review homework
+- 1 day arrow functions review homework
 
 ---
 
@@ -412,6 +414,14 @@ doApiThings();
 <Checkable id="review-flash-2">review all flashcards</Checkable>
 <Checkable id="typing-2">touch typing practice</Checkable>
 <Checkable id="async-await">Async/Await homework</Checkable>
+<Checkable id="vim1">Vim Review homework #1</Checkable>
+
+### Homework (week 3)
+
+<Checkable id="review-flash-3">review all flashcards</Checkable>
+<Checkable id="typing-3">touch typing practice</Checkable>
+<Checkable id="vim2">Vim Review homework #2</Checkable>
+<Checkable id="arrow">Arrow Functions Review Homework</Checkable>
 
 ---
 
@@ -462,3 +472,29 @@ doApiThings();
 - make sure to handle errors using `try / catch`.
 - even if your browser supports "top-level await", I want you to wrap all of your usages of `await` inside an `async` function.
 - commit your work, and slack me the GitLab url when you are done
+
+## Vim Homework (Review) #1
+
+- pull out your flashcards, and separate out all of the `vim` ones
+- go through each flashcard and for every command that you don't use _all the time_ take around 90 seconds to practice it with your fingers (not just review it mentally).
+- after your flashcard review, ssh into the htc machine and do all of `vimtutor`, with the following changes:
+  - skip lesson 6.5 to the end (that's 6.5 and all of lesson 7)
+  - do the task each step wants you to do, but you don't have to do it the way they tell you, if you know a better way, use the faster, better way
+- slowly and carefully review the `vim` section of [the week 28 homework](https://homework.howtocomputer.link/week-28)
+- ssh into to the HTC machine (don't use VSCODE for this), and clone this repo into `~/summer-4`: `git@gitlab.howtocomputer.link:htc/vimtutor.git`
+- then cd into the `vimtutor` dir that was created by `git clone` and open the `visual-block-1.txt` file with `vim`.
+- work through all of the steps of the lesson
+
+## Vim Homework (Review) #2
+
+- make sure that at least 1 full day has passed since you did Vim Homework #1 -- your learning won't be near as effective without spacing out the review
+- ssh into the HTC machine again (no VSCODE) and cd into `~/summer-4/vimtutor` then do `vim visual-block-2.txt` and complete all of the steps.
+- the steps are the same as the other visual-block lesson, but there are fewer hints given to you.
+
+## Arrow Functions (Review) Homework
+
+- slowly and carefully review the **Javascript** portion from [week 30](https://homework.howtocomputer.link/week-30).
+- make a fork of [this repo](https://gitlab.howtocomputer.link/htc/arrow-fns) and then clone down **_your fork_** using VSCODE, into a `~/summer-4` dir.
+- make a new branch
+- edit the `arrow-fns.js` file, adding all of the "answers" where indicated
+- push up your branch and make a MR, slack me the MR url, I might leave some comments for you to change things
