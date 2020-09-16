@@ -254,3 +254,32 @@ ReactDOM.render(<App />, mountNode);
   - add a stylesheet (like I did in class, by editing the `index.html` file), then use either classes (remember: `className`) or ids to identify components so you can style them. Add some basic styling via the CSS file.
 - when you're done, quit the parcel dev server by sending a signal to the process, then run a different npm script to **build** your site so everyone can see it (without needing to forward ports). To do that run the command `npm run build`. It should output your app all built into the `~/www/react-intro` dir, making it available at `http://<yourname>.howtocomputer.link/react-intro`
 - submit a MR so I can review your code and make any suggestions for improvements, and also slack the URL of your built website.
+
+---
+
+## React Homework #2
+
+---
+
+- make sure you've completed React Homework #1 first, it has more detailed step-by-step instructions. This homework doesn't hold your hand so much, so refer to the "New Stuff" or the instructions for React #1 if you get stuck.
+- read all of these directions through once before starting to work.
+- view [this example site](http://jared.howtocomputer.link/react-animals). You're going to be building a copy of this webpage in React. No peeking at the HTML or CSS!
+- fork [this repo](https://gitlab.howtocomputer.link/htc/react-animals), then clone it down into the HTC machine, and connect to it with vscode.
+- make a new branch
+- this repo has an `npm start` and a `npm run build` command, just like the other one. To start working on it, you run `npm start` and make sure to forward the correct ports.
+- you'll start with only a blank `./src/index.tsx` page, you'll need to create all the react components and mount your app using `ReactDOM.render()`, plus add CSS to get things to look right. Your work must meet these requirements:
+  - You need to make at least 3 separate React components, each in their own file: one `<App />` main component, one `<Animal />` component (used 4 times, it should accept props), and one `<Button />` component for the "Like" and "Dislike" buttons.
+  - the `<Button />` component should accept it's text ("Like"/"Dislike") as `children` not a normal prop.
+  - hint: don't use the html `button` tag for the Buttons, they are hard to style -- just use a `span` or `a` tag, it will be easier.
+  - each of your components should have correct Typescript typings, using `React.FC`.
+  - the colors and facts don't have to match mine, but it should basically look the same
+  - you must use **flexbox** and **media queries** to make the boxes go from a single column to multiple at `768px`, like the example does.
+  - the like and dislike buttons shouldn't do anything or go anywhere
+- the images are not included in your repo, instead reference them directly by using these full urls:
+  - `http://jared.howtocomputer.link/animals/goat.jpg`
+  - `http://jared.howtocomputer.link/animals/whale.jpg`
+  - `http://jared.howtocomputer.link/animals/snail.jpg`
+  - `http://jared.howtocomputer.link/animals/frog.jpg`
+  - you can also use `cat.jpg` and `aardwolf.jpg` images from the same dir, if you want
+- when you're done, run `npm run build` and it will output a built version of the site into `~/www/react-animals` that anyone can view.
+- Slack your web url and a gitlab MR url in the #homework channel when you're done.
