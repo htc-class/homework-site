@@ -200,7 +200,7 @@ const App: React.FC = () => {
 ---
 
 - slowly and carefully read the **Destructuring in Function Arguments** section of "New Stuff" ^
-- fork this repo: git@gitlab.howtocomputer.link:htc/destructure-fns.git
+- fork [this repo](https://gitlab.howtocomputer.link/htc/destructure-fns)
 - connect to the HTC machine, clone your fork, and create a new branch
 - refactor all of the functions in `destructure-fns.ts` to use **destructuring WITHIN the function signature**
 - commit your work, and submit a MR, slack me the URL
@@ -212,7 +212,7 @@ const App: React.FC = () => {
 ---
 
 - slowly and carefully read the **React** section of "New stuff" above ^^^.
-- fork this repo: git@gitlab.howtocomputer.link:htc/react-intro.git
+- fork [this repo](https://gitlab.howtocomputer.link/htc/react-intro)
 - connect to the HTC machine, clone your fork, and create a new branch
 - install the npm dependencies (I won't always say this from now on, you'll need to just remember 👍 )
 - NOTE: **no copy/pasting for this whole homework** I want you to _type this out yourself_ (to learn it better)
