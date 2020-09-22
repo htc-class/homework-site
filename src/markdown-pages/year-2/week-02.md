@@ -298,7 +298,7 @@ const App: React.FC = () => {
 <Checkable id="xp-3">Execute Program #3</Checkable>
 <Checkable id="xp-4">Execute Program #4</Checkable>
 <Checkable id="react-cars">React #1: Cars</Checkable>
-<Checkable id="react-flashcards">React #2: Flashcards (coming soon...)</Checkable>
+<Checkable id="react-flashcards">React #2: State (coming soon...)</Checkable>
 
 ---
 
@@ -341,3 +341,27 @@ const App: React.FC = () => {
   - make sure your `SeePrice` component changes color on hover, like mine
   - spin up the dev server with `npm start` while you're working, and when you're done, run `npm run build`, just like last week.
 - **Kiah Credit: ✨** add some **state** to this app: make a button that says "Give me a discount". After the user clicks it, all the prices should be cut in half.
+- commit your work
+- run `npm run build` which will build your app to `http://<yourname>.howtocomputer.link/react-cars`
+- push up a MR, and slack #homework with the MR url and your website URL.
+
+---
+
+## React Homework #2: React State
+
+---
+
+- slowly and carefully review all the "New Stuff" above.
+- make a fork of [this repo](https://gitlab.howtocomputer.link/htc/react-state)
+- `ssh` into your home dir, cd into the `~/y2-w2` dir and clone **your fork** of the repo
+- checkout a new branch **Harriet, that means you too!**
+- connect to that directory with Vscode
+- play around for a second with [my example website](http://jared.howtocomputer.link/react-state/). Click all the buttons.
+- in vscode, install your dependencies and spin up the dev server
+- you should see that you already have most of my example app, except the buttons don't do anything.
+- your job is to use `useState` and click handlers to make the buttons on your site work like the example webpage.
+- **Extra Credit: ✨** - change the behavior of the app so that the number is **never allowed to go below zero**.
+- **Kiah Credit: ✨** - make it so that every time the number is divisible by `5` the number changes color
+- commit your work
+- run `npm run build` which will build your app to `http://<yourname>.howtocomputer.link/react-state`
+- push up a MR, and slack #homework with the MR url and your website URL.
