@@ -3,5 +3,7 @@
     "node_modules": true,
     "public": true,
     ".cache": true
-  }
+  },
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.configPath": "./.prettierrc"
 }
