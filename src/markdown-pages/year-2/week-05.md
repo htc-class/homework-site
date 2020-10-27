@@ -4,7 +4,7 @@ path: "/year-2/week-05"
 
 # Year #2, Week #5 💻 ️🛺
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
 ## Acronyms, Acronyms, Acronyms!
 
