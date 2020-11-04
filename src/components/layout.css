@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 :root {
   font-size: 16px;
 }
@@ -402,3 +405,5 @@ body code.language-text {
   margin-top: -1.52rem;
   margin-bottom: 2.45rem;
 }
+
+@tailwind utilities;
