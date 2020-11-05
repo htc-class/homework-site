@@ -1,24 +1,38 @@
 import React from "react";
 import { Link } from "gatsby";
+import Markdown from "markdown-it";
+import "./Week.css";
 
 interface Props {
   path: string;
-  year: number;
-  week: number;
+  title: string;
   includes: string[];
 }
 
-const Week: React.FC<Props> = ({ year, week, path, includes }) => {
+let md: any = null;
+
+const Week: React.FC<Props> = ({ title, path, includes: items }) => {
+  if (!md) {
+    md = Markdown();
+  }
   return (
     <Link to={path} className="Week">
-      <h2>
-        Year {year}, Week {week}
-      </h2>
-      <ul className="text-gray-700">
-        {includes.map((item) => (
-          <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
-        ))}
-      </ul>
+      <h2>{title}</h2>
+      <div className="Week__Items text-gray-700">
+        {items.length > 0 ? (
+          items.map((item) => (
+            <div
+              key={item}
+              className="Week__Items__Item"
+              dangerouslySetInnerHTML={{ __html: md.render(item) }}
+            />
+          ))
+        ) : (
+          <p className="mb-0 text-xs">
+            <em>description coming soon...</em>
+          </p>
+        )}
+      </div>
     </Link>
   );
 };

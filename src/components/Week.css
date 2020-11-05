@@ -1,0 +1,42 @@
+.Week {
+  display: block;
+  background: #f3f3f37d;
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: background-color 300ms;
+}
+
+.Week:hover {
+  background: #e6edf39f;
+}
+
+.Week h2 {
+  margin-top: -5px;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.Week + .Week {
+  margin-top: 20px;
+}
+
+.Week__Items {
+  margin-left: 1em;
+}
+
+.Week__Items__Item > p {
+  font-size: 13px;
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+
+.Week__Items__Item > p > code {
+  font-size: 11px;
+}
+
+.Week__Items__Item > p::before {
+  content: "•";
+  line-height: 80%;
+  font-size: 1.3em;
+  padding-right: 5px;
+}
