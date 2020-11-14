@@ -66,7 +66,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 2, Week #2"
-        path="/year-2/week-03"
+        path="/year-2/week-02"
         includes={[
           "React: **mapping over arrays in JSX**",
           "React: **event handlers** `onClick` and friends",
@@ -86,10 +86,49 @@ const IndexPage = () => (
           "typescript **generic types** `Array<string>` `Promise<Response>`",
         ]}
       />
-      <Week title="Summer 1, Week #4" path="/summer-4" includes={[]} />
-      <Week title="Summer 1, Week #3" path="/summer-3" includes={[]} />
-      <Week title="Summer 1, Week #2" path="/summer-2" includes={[]} />
-      <Week title="Summer 1, Week #1" path="/summer-1" includes={[]} />
+      <Week
+        title="Summer 1, Week #4"
+        path="/summer-4"
+        includes={[
+          "js **while loops** `while (x < 5) {...}`",
+          "js `case` statement",
+          "js `break` keyword - _break out of a `for`/`while` loop, or `case`_",
+          "js **symbols** - `new Symbol('foo');`",
+          "js **generators** - `function* myGenerator() { yield 1; }`",
+          "js **iterables** and `Symbol.iterator`",
+          "js **async/await** - `async function load() { await fetch('/'); }`",
+        ]}
+      />
+      <Week
+        title="Summer 1, Week #3"
+        path="/summer-3"
+        includes={[
+          "js **es modules _named_ imports** `import { foo } from './foo';`",
+          "js **es modules _default_ imports_** `import foo from './foo';`",
+          "js **Promises** `let promise = new Promise(executorFn);`",
+          "js **chaining promises** `promise.then().then().catch()`",
+          "js **fetch** - `window.fetch()` (browser) and `node-fetch` (node)",
+        ]}
+      />
+      <Week
+        title="Summer 1, Week #2"
+        path="/summer-2"
+        includes={[
+          "typescript **void** and **undefined** types",
+          "typescript **true** and **false** and **string literal** types",
+          "typescript **tuples** and **object** types",
+          "typescript **structural typing** (vs _nominal typing_)",
+          "js **ES Modules** `export function foo() {}`",
+        ]}
+      />
+      <Week
+        title="Summer 1, Week #1"
+        path="/summer-1"
+        includes={[
+          "introduction to **Typescript**",
+          "node's **async philosophy**, _nodeback_ or _errback_ style",
+        ]}
+      />
       {Array.from({ length: 24 }, () => 0).map((_, idx) => (
         <Week
           key={`idx-${idx}`}
