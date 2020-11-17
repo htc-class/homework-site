@@ -98,7 +98,7 @@ document.addEventListener("keydown", onKeydown);
 ```tsx
 const MyComponent: React.FC = () => {
   useEffect(() => {
-    document.addEventListener(`keydown`, e => {
+    document.addEventListener(`keydown`, (e) => {
       if (e.keyCode === `a`) {
         alert(`You typed an "a"!`);
       }
@@ -116,7 +116,7 @@ const MyComponent: React.FC = () => {
 const MyComponent: React.FC = () => {
   const [typedA, setTypedA] = useState(false);
   useEffect(() => {
-    document.addEventListener(`keydown`, e => {
+    document.addEventListener(`keydown`, (e) => {
       if (e.keyCode === `a`) {
         setTypedA(true); // <-- we use it here, so...
       }
@@ -150,7 +150,7 @@ const MyComponent: React.FC = () => {
   useEffect(() => {
     // here we capture our function in a variable
     // so that we can REMOVE it later
-    const listener = e => {
+    const listener = (e) => {
       if (e.keyCode === `a`) {
         setTypedA(true);
       }
@@ -170,6 +170,8 @@ const MyComponent: React.FC = () => {
 ```
 
 ---
+
+## Useful Links:
 
 - [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
 - [TouchType.co](http://touchtype.co)

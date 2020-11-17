@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div className="foo">
       <Week
+        title="Year 2, Week #8"
+        path="/year-2/week-08"
+        includes={["git: **upstream** and **origin** conventional remotes"]}
+      />
+      <Week
         title="Year 2, Week #7"
         path="/year-2/week-07"
         includes={[
