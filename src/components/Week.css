@@ -12,8 +12,15 @@
 
 .Week h2 {
   margin-top: -5px;
+  margin-top: 20px;
+}
+
   font-size: 1.4em;
   margin-bottom: 8px;
+}
+
+.Week + .Week {
+  margin-top: 20px;
 }
 
 .Week + .Week {
