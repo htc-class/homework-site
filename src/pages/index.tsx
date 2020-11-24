@@ -12,7 +12,16 @@ const IndexPage = () => (
         💻
       </span>
     </h1>
-    <div className="foo">
+    <div>
+      <Week
+        title="Year 2, Week #9"
+        path="/year-2/week-09"
+        includes={[
+          "css: webfonts, web-safe fonts, `@font-face`, `.woff` format",
+          "css: **transitions** with `transition-property`, `transition-duration`, etc.",
+          "js: npm **classnames** package",
+        ]}
+      />
       <Week
         title="Year 2, Week #8"
         path="/year-2/week-08"
