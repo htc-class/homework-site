@@ -20,6 +20,7 @@ const IndexPage = () => (
           "css: webfonts, web-safe fonts, `@font-face`, `.woff` format",
           "css: **transitions** with `transition-property`, `transition-duration`, etc.",
           "js: npm **classnames** package",
+          "typescript: **type narrowing**",
         ]}
       />
       <Week
