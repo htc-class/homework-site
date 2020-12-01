@@ -155,24 +155,42 @@ const IndexPage = () => (
           "node's **async philosophy**, _nodeback_ or _errback_ style",
         ]}
       />
-      {Array.from({ length: 24 }, () => 0).map((_, idx) => (
+      <Week
+        title="Year 1, Week #35"
+        path="/week-35"
+        includes={[
+          "js: **template literals**",
+          "js: **destructuring** - `let { name } = person; let [, title] = book;`",
+          "js: **sorting arrays** - `[3, 20, 5].sort((a, b) => a - b);`",
+        ]}
+      />
+      {Array.from({ length: FIRST_UNDONE - LAST_PDF_WEEK }, () => 0).map(
+        (_, idx) => (
+          <Week
+            key={`idx-${idx}`}
+            title={`Year 1, Week #${FIRST_UNDONE - idx}`}
+            path={`/week-${FIRST_UNDONE - idx}`}
+            includes={[]}
+          />
+        )
+      )}
+      {Array.from({ length: NUM_PDFS }, () => 0).map((_, idx) => (
         <Week
           key={`idx-${idx}`}
-          title={`Year 1, Week #${35 - idx}`}
-          path={`/week-${35 - idx}`}
-          includes={[]}
-        />
-      ))}
-      {Array.from({ length: 8 }, () => 0).map((_, idx) => (
-        <Week
-          key={`idx-${idx}`}
-          title={`Year 1, Week #${11 - idx}`}
-          path={`/pdf/week-${String(11 - idx).padStart(2, `0`)}-homework.pdf`}
+          title={`Year 1, Week #${LAST_PDF_WEEK - idx}`}
+          path={`/pdf/week-${String(LAST_PDF_WEEK - idx).padStart(
+            2,
+            `0`
+          )}-homework.pdf`}
           includes={[]}
         />
       ))}
     </div>
   </Layout>
 );
+
+const FIRST_UNDONE = 34;
+const NUM_PDFS = 8;
+const LAST_PDF_WEEK = 11;
 
 export default IndexPage;
