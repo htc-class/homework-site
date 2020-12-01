@@ -14,6 +14,17 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #10"
+        path="/year-2/week-10"
+        includes={[
+          "unix: `ps` command - process status `ps aux | grep 4040`",
+          "unix: `kill` command - kill a process `kill -9 <pid>`",
+          "js: **rest parameters** - `function foo(...strs: string[]) {}`",
+          "typescript: **index signatures** - `{ [key: string]: string; }`",
+          "react: **form input elements** managed with `useState()`",
+        ]}
+      />
+      <Week
         title="Year 2, Week #9"
         path="/year-2/week-09"
         includes={[
