@@ -164,6 +164,50 @@ const IndexPage = () => (
           "js: **sorting arrays** - `[3, 20, 5].sort((a, b) => a - b);`",
         ]}
       />
+      <Week
+        title="Year 1, Week #34"
+        path="/week-34"
+        includes={[
+          "**npm** - `npm init`, `npm install`, _package.json_, _package-lock.json_",
+          "npm **scripts** - `npm run start`, `npm run dev`, etc",
+          "js: **classes** and **`this`**: `class Person { constructor() {} }`",
+          "js: class **inheritance** with the `extend` keyword: `class Foo extends Bar {}`",
+          "js: **unit testing** with **jest** - `expect(...)`, `it(...)`, `test(...)`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #33"
+        path="/week-33"
+        includes={[
+          "_semantic_ html tags: `<header>`, `<nav>`, `<footer>`",
+          "more _semantic_ html tags: `<section>`, `<main>`, `<article>`, `<aside>`",
+          "**web servers**: _request_, _response_, _client_, _server_",
+          "node: `http` core module for writing web servers _(the hard way)_",
+          "node: `express` npm module for writing web servers _(easier)_",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #32"
+        path="/week-32"
+        includes={[
+          "shell/bash **reverse history search** - `<Ctrl+r>`",
+          "shell/bash **history substitution** - `^<find>^<replace>`, e.g. `^vim^cat`",
+          "introduction to **VSCODE**",
+          "vscode _keyboard shortcuts_",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #31"
+        path="/week-31"
+        includes={[
+          "**ssh** and **ssh keys** overview",
+          "the `~/.ssh` folder",
+          "default ssh keys: `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`",
+          "ssh **authorized_keys**, **known_hosts**, and **config** file",
+          "hosted git websites: _GitHub_ and _GitLab_",
+          "Pull requests (**PR**) / Merge requests (**MR**)",
+        ]}
+      />
       {Array.from({ length: FIRST_UNDONE - LAST_PDF_WEEK }, () => 0).map(
         (_, idx) => (
           <Week
@@ -189,7 +233,7 @@ const IndexPage = () => (
   </Layout>
 );
 
-const FIRST_UNDONE = 34;
+const FIRST_UNDONE = 30;
 const NUM_PDFS = 8;
 const LAST_PDF_WEEK = 11;
 
