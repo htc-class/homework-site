@@ -208,6 +208,72 @@ const IndexPage = () => (
           "Pull requests (**PR**) / Merge requests (**MR**)",
         ]}
       />
+      <Week
+        title="Year 1, Week #30"
+        path="/week-30"
+        includes={[
+          "**JSON** format",
+          "git: _checkout branch from remote repo_: `git checkout -b foo origin/foo`",
+          "git: ignoring files with **.gitignore**",
+          "git: `git stash` command",
+          "git: `git rebase <other-branch>` - _non-interactive rebase_",
+          "git: `git rebase -i <sha>` - _interactive rebase_",
+          "js: **anonymous functions**",
+          "js: **arrow functions** `const add = (x, y) => x + y;`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #29"
+        path="/week-29"
+        includes={[
+          "vim: _incrementing_ and _decrementing_ numbers with `<Ctrl-x>`, `<Ctrl-a>`",
+          "js: `var`, `let`, and `const`",
+          "git: all about git **remotes**",
+          "git: `git clone <remote>`, `git fetch <remote>`, `git pull <remote>`",
+          "git: `git remote add <nickname> <url>`",
+          "git: `git remote rename <old-name> <new-name>`",
+          "git: `git push <remote> <branch> [--force]`",
+          "css: `margin` and `padding` **shorthand** `margin: 5px 0 3px 1px;`",
+          "css: _combining selectors_ with `,`: `.foo, span { color: red; }`",
+          "css: `rgb()`, `rgba()`, and `opacity: <num>;`",
+          "css: **psuedo-elements** `::before` and `::after`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #28"
+        path="/week-28"
+        includes={[
+          "vim: **visual block mode**",
+          "vim: `o` and `gv`",
+          "git: `get checkout -- <file>`",
+          "git: `get reset HEAD <file>`",
+          "git: `get reset [--hard] <sha>`",
+          "node: require() resolution - _bare strings_, core modules, and npm modules",
+          "node: core `fs` module for _filesystem work_",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #27"
+        path="/week-27"
+        includes={[
+          "git: understanding **`HEAD`**",
+          "git: `git merge <other-branch>`",
+          "git: **fast-forward** merges, and **merge commits**",
+          "git: resolving _git conflicts_",
+          "git: `git log` options - `--all`, `--oneline`, `--graph`",
+          "git: shorcuts - `git commit -am`, `git checkout -b <new-branch>",
+          "css: **`:hover`** pseudo-class for styling hovered elements",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #26"
+        path="/week-26"
+        includes={[
+          "introduction to **git**",
+          "git: basic commands: `git init`, `git status`, `git add`, `git commit`",
+          "git: basic commands: `git diff`, `git branch`, `git checkout`, `git log`",
+        ]}
+      />
       {Array.from({ length: FIRST_UNDONE - LAST_PDF_WEEK }, () => 0).map(
         (_, idx) => (
           <Week
@@ -233,7 +299,7 @@ const IndexPage = () => (
   </Layout>
 );
 
-const FIRST_UNDONE = 30;
+const FIRST_UNDONE = 25;
 const NUM_PDFS = 8;
 const LAST_PDF_WEEK = 11;
 
