@@ -274,32 +274,279 @@ const IndexPage = () => (
           "git: basic commands: `git diff`, `git branch`, `git checkout`, `git log`",
         ]}
       />
-      {Array.from({ length: FIRST_UNDONE - LAST_PDF_WEEK }, () => 0).map(
-        (_, idx) => (
-          <Week
-            key={`idx-${idx}`}
-            title={`Year 1, Week #${FIRST_UNDONE - idx}`}
-            path={`/week-${FIRST_UNDONE - idx}`}
-            includes={[]}
-          />
-        )
-      )}
-      {Array.from({ length: NUM_PDFS }, () => 0).map((_, idx) => (
-        <Week
-          key={`idx-${idx}`}
-          title={`Year 1, Week #${LAST_PDF_WEEK - idx}`}
-          path={`/pdf/week-${String(LAST_PDF_WEEK - idx).padStart(
-            2,
-            `0`
-          )}-homework.pdf`}
-          includes={[]}
-        />
-      ))}
+      <Week
+        title="Year 1, Week #25"
+        path="/week-25"
+        includes={[
+          "js: **Array.reduce()**",
+          "js: _primitive_ vs. _non-primitive_ types",
+          'js: function arguments - "pass by **reference**" and "pass by **value**"',
+          "js: old-style **code sharing** in the browser with `window.NAMESPACE`",
+          "node: **commonjs** code sharing with `require()` and `module.exports`",
+          "node: `__dirname` and `__filename` & other vars passed to node files",
+          "node: require() resolution strategy",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #24"
+        path="/week-24"
+        includes={[
+          "vim: `<Ctrl-o>` and `<Ctrl-i>` to go back/forth between **jumps**",
+          "js: **Array.concat()** method for joining two or more arrays",
+          "html: **forms** and **form elements**",
+          "html: form tags: `<form>`, `<input />`, `<textarea />`, `<select>`",
+          "html: form input types: _checkbox_, _number_, _radio_",
+          "html: form _placeholders_, form element **`name`** attribute",
+          "submitting forms to _web servers_ with http method `GET` and `POST`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #23"
+        path="/week-23"
+        includes={[
+          "js: function **expressions:** `let sayHi = () => console.log('hi');`",
+          "js: function **declarations:** `function sayHi() { console.log('hi'); }`",
+          "js: objects - _methods_ vs _properties_",
+          "js: **string methods**: `str.toLowerCase()`, `str.includes()`, `str.split()`",
+          "js: more **string methods**: `str.startsWith()`, `str.endsWith()`,",
+          "js: **array methods**: `arr.push()`, `arr.pop()`, `arr.join()`, `arr.includes()`",
+          "Js: more **array methods**: `arr.map()`, `arr.filter()`, `arr.forEach()`, `arr.slice()`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #22"
+        path="/week-22"
+        includes={[
+          "css: css **specificity**",
+          "css: _child combinator_ - `.foo > p { color: red; }`",
+          "css: **media queries** - `@media(min-width: 768px) {...}`",
+          "js: array length property `[1,3,5].length // <- 3`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #21"
+        path="/week-21"
+        includes={[
+          "css: deep dive on **flexbox**",
+          "css: [flexbox property review/practice](/flexbox/properties/)",
+          "flexbox: flex-direction, justify-content, align-items, align-self",
+          "flexbox: flex-grow, flex-basis, order, flex-wrap, align-content",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #20"
+        path="/week-20"
+        includes={[
+          "unix/bash: `$PATH` variable - list of directories to find executable programs",
+          "unix/bash: **shebang** `#!/usr/local/bin/node`",
+          "js: regular expresssions in javascript - `str.match()` and `str.replace()`",
+          "js (browsers): _prompt_ function for clunkily getting user-input",
+          "css: `vw` and `vh` - viewport width and viewport height units",
+          "css: **background images**",
+          "css: bg image properties: `background-image`, `background-repeat`, `background-position`",
+          "css: bg image properties (cont): `background-size`, `background-attachment`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #19"
+        path="/week-19"
+        includes={[
+          "js: OR and AND _logical operators_: `||`, `&&`",
+          'js: concept of **closure** - functions that remember their "birth" scope',
+          "js: c-style _for loop_ `for (let i = 0, i < x; i++) {...}`",
+          "js dom-scripting: listening for **events** with `<element>.addEventListener()`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #18"
+        path="/week-18"
+        includes={[
+          "vim: **marks** (local and global) - `m<letter>` and `<backtick><letter>`",
+          "js: _control flow_ with `if` / `else if` / `else`",
+          "js: _comparing values_ with `===`, `<`, `>`, `<=`, >=`",
+          "web js: _dom scripting basics_",
+          "web js: creating elements with `document.createElement(<tag-name>)`",
+          "web js: inserting nodes with `node.appendChile(<element>)`",
+          "web js: setting node attribues with `node.setAttribute(<attr>, <val>)`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #17"
+        path="/week-17"
+        includes={["_no new stuff this week, only review_"]}
+      />
+      <Week
+        title="Year 1, Week #16"
+        path="/week-16"
+        includes={[
+          "vim: handy stuff - `ea`, `bi`, `cc`, `gk`, `gj`",
+          "bash: `cd **-**` - go back to _last directory_",
+          "bash: `chmod` command for setting _permissions_ (aka access control list)",
+          "js: `setTimeout(<fn>, <delay-ms>)` run a function after a delay",
+          "web js: `<script>` tags",
+          "web js: **document object model (DOM)** intro",
+          "web js: get nodes from DOM with `document.querySeletor(<selector>)`",
+          "web js: handle simple click events by attaching functions to `element.onclick`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #15"
+        path="/week-15"
+        includes={[
+          "js: functions are _first class_ values in js",
+          "js: _pure_ functions vs _side-effects_",
+          "js: **scope**",
+          "css: **position** property - `static`, `relative`, `absolute`",
+          "css: absolutely posititioning elements with `top/left/right/bottom`",
+          "css: stacking elements with `z-index`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #14"
+        path="/week-14"
+        includes={[
+          "vim: splitting the vim window with `split <filename>` and `vsplit`",
+          "css: display **inline-block**",
+          "css: `float` and `clear`",
+          'css: external stylesheets - `<link href="./main.css" rel="stylesheet">`',
+          "unix: processes - `pid` (process id) and `ppid` (parent process id)",
+          "js: intro to **arrays** and _bracket notation_",
+          "js: intro to **objects** and _dot notation_",
+          "js: introduction to **functions**",
+          "node: **process** global variable `process.env`, `process.stdout`, etc",
+          "node: accessing command-line (shell) arguments with `process.argv`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #13"
+        path="/week-13"
+        includes={[
+          "vim: `C` and `D` for operating _to the end of the current line_",
+          "regex: `\\s` to match _whitespace_, `\\S` to match _non-whitespace_",
+          "regex: `\\D` to match _non digits_",
+          "regex: `\\W` to match _non wordlike characters_",
+          'html: **id** and **class** attributes `<p id="foo" class="bar">`',
+          "css: introduction to **CSS**, including _rule-sets_, _declarations_, and `<style>` tags",
+          "js: introduction to **javascript**",
+          "js: basic primitive types and variables",
+          "js: executing node files with `node <filename>`",
+          "js: REPLs (Read Evaluate Print Loop) - in browser and node",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #12"
+        path="/week-12"
+        includes={[
+          "vim: moving **up to** and **onto** characters with `t<char>` and `f<char>`",
+          "vim: searching for and moving to found patterns with `/<search>`",
+          "vim: move by _paragraph_ with `{` and `}`",
+          "vim: repeat last edit with `.`",
+          "regex: `\\w` to match _word-like characters_",
+          "regex: `\\b` to match _a word boundary_",
+          "regex: `?` after quantifier (`*` or `+`) to make it lazy: `/[abc]*?/`",
+          "html: `<div>` (generic block-level), `<span>` (generic inline), and `<table>` elements",
+          'html: **styling elements** with the _style attribute_ `<p style="color: red">`',
+        ]}
+      />
+      <Week
+        title="Year 1, Week #11"
+        path="/pdf/week-11-homework.pdf"
+        includes={[
+          "web servers: basics of _requests_, _response_, `nginx`, and _web root_",
+          "urls: _uniform resource locators_, _scheme_ (`http` or `https`)",
+          "urls: _registerable domains_ (goats.com), _top-level domains_ (.com), and _subdomains_",
+          "vim: `d` delete, `c` change, `y` yank (copy), `v` visual mode (select)",
+          "vim: **text objects** - `w` word, `p` paragraph, `t` html tag",
+          "vim: **motions** `i` inner, `a` around",
+          "vim: combining operators `caw`, `dit`, `vip`, etc.",
+          "regex: `\\d` to match _a digit_",
+          "regex: matching a specific _number_ of something with `{x}` or `{x,y}` - `{3}`, `{3,5}`",
+          "html: _list tags_ `<ul>` unordered list, `<ol>` ordered list, `<li>` list item",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #10"
+        path="/pdf/week-10-homework.pdf"
+        includes={[
+          "regex: **character class**, e.g. `[aeioy]` matches any vowel",
+          "regex: character class _ranges_ like `[A-Z]` and `[0-9]`",
+          'html: introduction to the **HTML** markup "language"',
+          "html: tags and attributes",
+          "html: basic tags - `<p>`, `<h1>`-`<h6>`",
+          "html: boilerplate for a well-formed html document",
+          "html: document-structure tags: `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #9"
+        path="/pdf/week-9-homework.pdf"
+        includes={[
+          "regex: _alternation_ with `|` char - `/(goat|llama)pack/`",
+          "regex: **backreferences** - replacing groups _captured_ with parenthases",
+          "regex: _flags_ - `g` (global - match more than one), `i` (case insensitive)",
+          "the concept of **types** in computer programming - booleans, strings, numbers, etc.",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #8"
+        path="/pdf/week-8-homework.pdf"
+        includes={[
+          "bash: preferences and customization of your shell with `~/.bashrc`",
+          "bash: **vi** mode for editing text while typing in shell",
+          "bash: **variables** `NAME=Jared`, `echo Hello $JARED`",
+          "bash: get last command exit code with `$?`",
+          "bash: writing _bash scripts_",
+          "sed: simple **stream editor** for operating line-by-line on text in unix-y environments",
+          "regex: introduction to **regex**",
+          "regex: basic _meta-characters_ - `.`, `^`, `$`, `*`, `_`, `?`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #7"
+        path="/pdf/week-7-homework.pdf"
+        includes={[
+          "bash: `cp` command for _copying files_",
+          "bash: `sudo` for running a command as _super user_",
+          "http protocol basics - _request_, _response_, _status codes_, _headers_",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #6"
+        path="/pdf/week-6-homework.pdf"
+        includes={[
+          "bash: _variadic_ commands take _any number of arguments_ `mkdir foo bar baz`",
+          "bash: _concatenating_ (joining) files with `cat` command",
+          "bash: read fixed number of lines from file _beginning_ with `head`, (`head -n 50 <file>`)",
+          "bash: read fixed number of lines from file _end_ with `tail`, (`tail -n 50 <file>`)",
+          "bash: follow stuff added to files with `tail --follow <file>` or `tail -f <file>`",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #5"
+        path="/pdf/week-5-homework.pdf"
+        includes={[
+          "bash: **shell expansions** with `*`, `?`, and `[...]`",
+          "network protocols _TCP_ and _UDP_",
+        ]}
+      />
+      <Week
+        title="Year 1, Week #4"
+        path="/pdf/week-4-homework.pdf"
+        includes={[
+          "bash: `~` shortcut for the _home directory_ (or just `cd`)",
+          "bash: _tab completion_ for faster shelling",
+          "bash: history (concept and command)",
+          "bash: `echo` command - send stuff to standard out",
+          "bash: **redirecting** stdandard out to files with `>` and `>>`",
+          "bash: **pipes** `|` - send standard out of a program to standard in of another",
+          "bash: sending **signals** to running processes `<Ctrl-D>` and `<Ctrl-C>`",
+        ]}
+      />
     </div>
   </Layout>
 );
 
-const FIRST_UNDONE = 25;
+const FIRST_UNDONE = 11;
 const NUM_PDFS = 8;
 const LAST_PDF_WEEK = 11;
 
