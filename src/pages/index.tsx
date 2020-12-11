@@ -479,7 +479,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #9"
-        path="/pdf/week-9-homework.pdf"
+        path="/pdf/week-09-homework.pdf"
         includes={[
           "regex: _alternation_ with `|` char - `/(goat|llama)pack/`",
           "regex: **backreferences** - replacing groups _captured_ with parenthases",
@@ -489,7 +489,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #8"
-        path="/pdf/week-8-homework.pdf"
+        path="/pdf/week-08-homework.pdf"
         includes={[
           "bash: preferences and customization of your shell with `~/.bashrc`",
           "bash: **vi** mode for editing text while typing in shell",
@@ -503,7 +503,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #7"
-        path="/pdf/week-7-homework.pdf"
+        path="/pdf/week-07-homework.pdf"
         includes={[
           "bash: `cp` command for _copying files_",
           "bash: `sudo` for running a command as _super user_",
@@ -512,7 +512,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #6"
-        path="/pdf/week-6-homework.pdf"
+        path="/pdf/week-06-homework.pdf"
         includes={[
           "bash: _variadic_ commands take _any number of arguments_ `mkdir foo bar baz`",
           "bash: _concatenating_ (joining) files with `cat` command",
@@ -523,7 +523,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #5"
-        path="/pdf/week-5-homework.pdf"
+        path="/pdf/week-05-homework.pdf"
         includes={[
           "bash: **shell expansions** with `*`, `?`, and `[...]`",
           "network protocols _TCP_ and _UDP_",
@@ -531,7 +531,7 @@ const IndexPage = () => (
       />
       <Week
         title="Year 1, Week #4"
-        path="/pdf/week-4-homework.pdf"
+        path="/pdf/week-04-homework.pdf"
         includes={[
           "bash: `~` shortcut for the _home directory_ (or just `cd`)",
           "bash: _tab completion_ for faster shelling",
