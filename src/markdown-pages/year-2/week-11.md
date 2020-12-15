@@ -4,7 +4,7 @@ path: "/year-2/week-11"
 
 # Year #2, Week #11 💻 🚠
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
 ## CSS: Position (adding `fixed` and `sticky`)
 
@@ -228,6 +228,17 @@ greetMember(jared);
 
 ---
 
+## Useful Links:
+
+- [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#colors_table)
+- [TouchType.co](http://touchtype.co)
+- [How To Type](https://www.how-to-type.com)
+- [GitLab](https://gitlab.howtocomputer.link)
+- [Execute Program](https://www.executeprogram.com)
+- [Linting & Pre-commit Hook](http://jared.howtocomputer.link/lint.mp4)
+
+---
+
 ## Homework Plan
 
 - 1 days review all flashcards (in your app)
@@ -263,6 +274,7 @@ greetMember(jared);
 
 ---
 
+- Merge your MR(s) from last week
 - Slowly and carefully review all of the "New Stuff" above ^^^.
 - Make 2 new flascards in the `TypeScript` category
   - _type widening_
@@ -312,3 +324,106 @@ greetMember(jared);
   values for `position` explaining the differences. Use all the controls that
   you got working, and let them try them as well.
 - Slack me the name of the family member that you taught when you're done.
+
+---
+
+## Akron Snowmen Homework
+
+---
+
+- watch
+  [this RAD VIDEO I made for you](http://jared.howtocomputer.link/lint.mp4).
+- get your parent to unblock [this url](https://snowmen-example.netlify.app/) if
+  necessary.
+- connect with vscode into your _Akron Snowmen_ repo on the HTC server, and pull
+  the latest changes from upstream.
+- create and check out a **new branch**.
+- carefully read all the instructions below **first**.
+- referring to the example site (link in step 1 above), build the component
+  assigned to you below.
+- your component should go in `src/components`
+- your component should have a _storybook story_ file
+- don't worry about integrating it into the Next app, you're only working in
+  storybook this week. That means you'll be using `npm run storybook` and
+  `npm run build-storybook` only, **not** `npm start` or `npm run build`.
+- start by shrinking the example app down to about 450 pixels. Get your
+  component looking right at that screen size _first_.
+- if you need to use media queries (some or most of you will), use **only these
+  breakpoints:**
+  - `640px`
+  - `768px`
+  - `1024px`
+  - `1280px`
+- I put all (I think) of the shades of colors that I used into the `globals.css`
+  file as CSS Variables, use those, whenever possible.
+- if your component requires an **image**, use
+  `http://jared.howtocomputer.link/img/pillars.jpg` for now. We will switch out
+  images later.
+- don't peek at the code or CSS from the example site at all. 👍
+- the Font used everywhere is "Arial"
+- for most of the fonts that look grey, they are actually just white with their
+  opacity turned down to about 50% i think.
+- when you're done build your storybook site, and submit a MR, Slack both URLs.
+- as other student's finish, I want you to leave **at least 2 comments** on each
+  students MR. One should be something you like, and one should be something you
+  think should be changed (worded kindly, of course).
+- when the other students finish commenting on your MR, make some (or all) of
+  the changes they request, if they seem good to you.
+- component assignments are _below:_
+
+---
+
+### Components
+
+- **Harriet**: _Main nav links_
+  - start with them the way they look at a small screen
+  - use a _psuedo element_ for the pink/purple stripe
+  - change the layout, width, etc at larger screens, to match the site
+  - use a `linear-gradient` with purple -> pink to match the cool effect on the
+    example.
+  - get the spacing right, but use padding instead of setting the _height_.
+- **Willow**: _Button_ (the white rounded doo-job used all over the site)
+  - you can destroy the current `Button` component and take it over.
+  - the border will probably require that you use `rgba()` to get the
+    color/transparency right.
+  - resist the urge to set the height of the button, use padding around the text
+    to force the right height instead.
+  - check out the hover state from the example carefully -- to recreate that
+    you'll need rgba and a css _transition_.
+  - note how the button has (at least) two different widths, at different screen
+    sizes. try to think of a way to accommodate this.
+- **Tabitha**: _Form component_ (near the bottom of the page)
+  - don't worry about the address stuff on the side or bottom, just focus on the
+    form itself.
+  - _do_ add the "Get in touch" headline and text above.
+  - start at small screen size where all the inputs are full width
+  - at a media query (one of the ones listed above) make _name_ and _email_
+    share a line
+  - replicate the `:focus` state
+  - don't worry about the form submitting, or going anywhere
+  - leave the "Send Message" button unstyled for now, we'll eventually pull in
+    Willows `Button` component.
+- **Win**: _Image + Text Component_ (will be used 3 times for the area
+  underneath the Hero)
+  - just used the pillars.jpg I mentioned above.
+  - you'll want to use a CSS background image, _not_ an html `<img />` for this
+  - start with the layout for mobile first
+  - it should accept a prop to display as different colors
+  - it should take a prop for the Title, and the text innerds
+  - don't worry about the button for now, we'll pull in willow's button soon,
+    but get everything else looking right.
+  - at the media queries necessary, change the layout orientation.
+- **Kiah**: _Pink "features" table_
+  - the grid in the Pink area. Not the whole block, _just_ the grid-like thing.
+  - don't worry about the icons for now, but do make white circles that match.
+    We'll add the icons later inside the circles.
+  - start at mobile break point and get it working
+  - flex it into two columns at the appropriate breakpoint
+  - use css nth-child or other pseudo-selectors to get the lines between and
+    outside working correctly.
+  - it should have a _sub-component_ that takes a `title` prop, so that you're
+    not duplicating the same markup 6 times. This sub-component should be in
+    another file.
+  - note how the outside of the area has slight rounded corners. Be sure to
+    preserve this at all screen sizes, which will affect how you use other
+    borders.
