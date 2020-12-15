@@ -14,6 +14,16 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #11"
+        path="/year-2/week-11"
+        includes={[
+          "css **position** - `static`, `relative`, `absolute`, `fixed`, `sticky`",
+          "css **psuedo-classes** - `:link`, `:visited`, `:active`, `:focus`",
+          "css **psuedo-classes** - `:first-child`, `:last-child`, `:nth-child()`",
+          "typescript **type-widening** and `as const`",
+        ]}
+      />
+      <Week
         title="Year 2, Week #10"
         path="/year-2/week-10"
         includes={[

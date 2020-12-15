@@ -34,6 +34,18 @@ _New stuff we learned this week:_
   `position: relative;` **until it touches the top of the browser** at which
   time it **STICKS** there, even as you keep scrolling. It will also _un-stick_
   if you scroll back up, going back to it's regular spot.
+- _Note:_ with `position: sticky;` you need to specify **at least one of**
+  `top/left/bottom/right` for the element to actually stick when it hits the top
+  of the window. This is required so that the browser knows _where_ it should
+  stick it at that point. If you omit this, the element will behave just like a
+  `position: relative;` element:
+
+```css
+.sticky-div {
+  position: sticky;
+  top: 0; /* <-- REQUIRED for `sticky` to work */
+}
+```
 
 ## CSS: Psuedo-classes
 
@@ -76,7 +88,7 @@ a:hover {
 }
 
 a:visted {
-  /* :visited will only match if the user has been to the URL */
+  /* :visited only matches if user has BEEN to the URL */
   color: purple;
 }
 ```
@@ -138,4 +150,165 @@ p:nth-child(even) {
 }
 ```
 
-- psuedo-classes can be combined with any other
+## TypeScript: Type Widening
+
+- Typescript is really good at _inferring_ types:
+
+```ts
+// TS infers `x: number`, which is usually what you want!
+let x = 42;
+```
+
+- but to _infer_ TypeScript has to make a choice about what type to infer. For
+  `x = 42` it could infer: `x: 42` or `x: number`. Because you usually want
+  `x: number` -- that's what TS does. It **widens** the type for you. This is
+  the case with all the primitive types -- TS will infer the basic primitive
+  type instead of the _type literal_:
+
+```ts
+/* TS infers `boolean`, not `true` */
+let foo = true;
+
+/* TS infers `string`, not `"Bob"` */
+let name = "Bob";
+
+/* TS infers Array<string>, not ["Tabitha", "Charlie"] */
+let kids = ["Tabitha", "Charlie"];
+```
+
+- but sometimes this _type widening_ can bite you! Consider this snippet:
+
+```ts
+type HtcMember = {
+  role: "teacher" | "student";
+  name: string;
+};
+
+function greetMember(member: HtcMember): void {
+  console.log(`Hi ${member.role} ${member.name}!`);
+}
+
+let jared = {
+  role: "teacher",
+  name: "Jared",
+};
+
+// 🚨 TS ERROR, due to `jared`'s INFERRED (widened) type
+greetMember(jared);
+```
+
+- in that snippet, TS **widened** `jared.role`'s type to `string`, which doesn't
+  match the `HtcMember` type definition. No bueno!
+- one solution is to use `as const` to force TS to choose the **most specific
+  (non-widened) type**, like so:
+
+```ts
+let jared = {
+  role: "teacher" as const, // <-- 👋
+  name: "Jared",
+};
+
+// ✅ works now because of `as const` above
+greetMember(jared);
+```
+
+- another solution is to explicitly tell TS that your object is of the
+  `HtcMember` type:
+
+```ts
+//       vvvvvvvvvvv <--- 👋
+let jared: HtcMember = {
+  role: "teacher",
+  name: "Jared",
+};
+
+// ✅ works now because of `: HtcMember` above
+greetMember(jared);
+```
+
+---
+
+## Homework Plan
+
+- 1 days review all flashcards (in your app)
+- 1 day Flashcard App assignment
+- 1 day CSS Position assignment
+- 1 day Akron Snowmen assignment (coming soon)
+- 1 days touch typing practice
+- **4** days [_Execute Program_](https://www.executeprogram.com) homework
+
+---
+
+<Checkable id="review-flash-1">review all (app) flashcards</Checkable>
+
+<Checkable id="typing">touch typing practice #1</Checkable>
+
+<Checkable id="add-flash">Flashcards App Assignment</Checkable>
+
+<Checkable id="css-position">CSS Position Assignment</Checkable>
+
+<Checkable id="snowmen">Akron Snowmen Assignment</Checkable>
+
+<Checkable id="xp-1">Execute Program #1</Checkable>
+
+<Checkable id="xp-2">Execute Program #2</Checkable>
+
+<Checkable id="xp-3">Execute Program #3</Checkable>
+
+<Checkable id="xp-4">Execute Program #4</Checkable>
+
+---
+
+## Flashcard App Assignment
+
+---
+
+- Slowly and carefully review all of the "New Stuff" above ^^^.
+- Make 2 new flascards in the `TypeScript` category
+  - _type widening_
+  - `as const`
+- Make 11 new flashcards, in the `CSS` category:
+  - _psuedo-class_
+  - _psuedo-element_
+  - `position: fixed`
+  - `position: sticky`
+  - `:link`
+  - `:visited`
+  - `:active`
+  - `:focus`
+  - `:first-child`
+  - `:last-child`
+  - `:nth-child()`
+
+---
+
+## CSS Position Assignment
+
+---
+
+- Slowly and carefully review the CSS section of "New Stuff" above ^^^.
+- read _all of the directions here_ before getting started
+- fork [this repo](https://gitlab.howtocomputer.link/htc/css-position), clone,
+  and connect with vscode.
+- **create a new branch**
+- spin up your dev server with `npm start`
+- your task is to create a web app to teach and explain and experiment with
+  css's `position` attribute. I have already done a big chunk of the work,
+  making a skeleton of the markup, styling, and adding non-working dummy
+  controls.
+- you must make all of the purple lines with form inputs work and actually
+  control the demo HTML/CSS below. Right now none of these do anything, you'll
+  need to fix that.
+- the web page is broken into 5 sections - one for `static`, `relative`,
+  `absolute`, `fixed`, and `sticky`. **YOU MUST** extract these 5 sections each
+  into their **own component**. This will make managing all of the necessary
+  state _much easier_ than if you tried to do it all within the `App.tsx` file
+  only.
+- once you think you're done, build with `npm run build`, then open a MR, and
+  slack me the URLs.
+- after I review your work, and you make any changes I suggest, you need to pick
+  a member of your family (over the age of 12) to **teach about css position**.
+  Sit them down with your completed web app, and show them all the different
+  values for `position` explaining the differences. Use all the controls that
+  you got working, and let them try them as well.
+- Slack me the name of the family member that you taught when you're done.
