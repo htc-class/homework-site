@@ -14,6 +14,16 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #12"
+        path="/year-2/week-12"
+        includes={[
+          "css: **object-fit** and **object-position**",
+          "html: **srcset** and **sizes** for responsive images",
+          "js: `===` and value vs reference equality",
+          "react: gotchas with using arrays and objects in state",
+        ]}
+      />
+      <Week
         title="Year 2, Week #11"
         path="/year-2/week-11"
         includes={[
