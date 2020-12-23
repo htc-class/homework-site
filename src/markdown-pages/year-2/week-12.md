@@ -325,4 +325,27 @@ const App: React.FC => () => {
 
 ### Tic Tac Toe Challenge 💪
 
-_Starter kit and instructions coming tomorrow (Wednesday, 12/23)_
+---
+
+- go to [this url](https://gitlab.howtocomputer.link/htc/tic-tac-toe), fork,
+  then clone to vscode
+- run `npm install` to get dependencies
+- create a new branch
+- create a working tic-tac-toe game ✅
+- hints/helps:
+  - fire up the dev server with `npm start` and start working
+  - take baby steps, and commit often
+  - maybe start by just visually making a tic-tac-toe board, with a signal of
+    whose turn it is (X or O), and if someone has won the game.
+  - take a few minutes to think carefully about what pieces of state you will
+    need
+  - it's probably wise to extract a `<Square />` component for each of the nine
+    squares
+  - I put an empty jest test script in the `src/__tests__` dir for you, so if
+    you have something complicated you want to write a function for, consider
+    writing tests, and doing test-first development (making a failing test, then
+    getting it to pass)
+  - remember **keep the MINIMUM state possible** -- _don't track with state what
+    you can DERIVE FROM STATE_.
+  - you might end up wanting a piece of non-primitive state to hold the state of
+    the squares -- if you do, remember to _spread_.
