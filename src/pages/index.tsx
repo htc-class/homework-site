@@ -14,6 +14,15 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #13"
+        path="/year-2/week-13"
+        includes={[
+          "all about **browser cookies**",
+          "js: creating, reading, deleting cookies with `document.cookie`",
+          "html/css: using _Font Awesome_ icon font to creat icons",
+        ]}
+      />
+      <Week
         title="Year 2, Week #12"
         path="/year-2/week-12"
         includes={[
