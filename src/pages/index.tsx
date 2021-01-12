@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #14"
+        path="/year-2/week-14"
+        includes={[
+          "js: localStorage and sessionStorage",
+          "**recursion**, recursive strategy for solving problems, base case, etc.",
+        ]}
+      />
+      <Week
         title="Year 2, Week #13"
         path="/year-2/week-13"
         includes={[
