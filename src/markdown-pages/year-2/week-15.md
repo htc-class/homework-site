@@ -434,7 +434,7 @@ p {
 - slowly and carefully review **BOTH** typescript sections from the "New Stuff"
   above ^^^.
 - _create a FORK_ of
-  [this repo](/https://gitlab.howtocomputer.link/htc/ts-generics), then clone
+  [this repo](https://gitlab.howtocomputer.link/htc/ts-generics), then clone
   down your fork with vscode.
 - create a new branch
 - open the `types.ts` file, and slowly work through each problem, reading the
@@ -450,7 +450,7 @@ p {
 
 - if you haven't done the typescript assignment, do that first
 - _create a FORK_ of
-  [this repo](/https://gitlab.howtocomputer.link/htc/parse-request), then clone
+  [this repo](https://gitlab.howtocomputer.link/htc/parse-request), then clone
   down your fork with vscode.
 - create a new branch
 - install the dependencies
