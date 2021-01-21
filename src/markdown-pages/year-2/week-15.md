@@ -390,7 +390,7 @@ p {
 ## Homework Plan (two weeks)
 
 - 2 days review all flashcards (in your app)
-- 1 day Flashcard app refactor assignment _(coming soon)_
+- 1 day Flashcard app refactor assignment
 - 1 day Typescript Assignment
 - 1 day Request/Response homework
 - 1 day Akron Snowmen assignment
@@ -408,6 +408,8 @@ p {
 <Checkable id="req-res">Request/Response Assignment</Checkable>
 
 <Checkable id="snowmen">Akron Snowmen Assignment</Checkable>
+
+<Checkable id="flash-refactor">Flashcard Refactor Assignment</Checkable>
 
 <Checkable id="xp-1">Execute Program #1</Checkable>
 
@@ -537,3 +539,86 @@ p {
     appearing on the right.
   - make any needed adjustments to the HTML/CSS of the footer to get it looking
     exactly correct in it's new spot in the overall layout.
+
+---
+
+## Flashcard App Refactor Assignment
+
+---
+
+- we're going to be starting to make some big changes to the Flashcard app soon,
+  so to prepare the way, I want you each to do a little cleanup and refactoring
+  of your codebase. The cleaner and simpler and smaller your codebase is, the
+  easier it is to change.
+- before you start, you'll need to merge in your most recent branch (probably
+  called `icons`) through GitLab.
+- once you've merged in GitLab, connect with vscode, swich to master, pull from
+  origin, delete your old branch, and start a new one called `refactor`.
+- for each of you, I pulled down your code and looked through it all, and made a
+  short video pointing out what I'd like you to change.
+- to help you, I've made a short list of the items I pointed out in your video
+  so you can refer to the list, instead of having to re-watch the video over and
+  over.
+- once you've got your refactoring tasks done, submit an MR, build, and slack
+  both URLs.
+
+---
+
+### Flashcard App Refactor Sub-Assignments
+
+---
+
+- **Tabitha**:
+  - your video
+    [is here](http://jared.howtocompouter.link/flashcards_tabitha.mp4)
+  - fix stories/ dir story files typescript errors
+  - simplify `Button.tsx` style logic by using class & .css file
+  - `Button.tsx` - remove unused backgroundColor prop
+  - `Card.tsx` - use the `h1WhenFront/Back` classes to set color
+  - `Chrome.tsx`, line 51 and 61 -- nested `if` statements
+- **Willow**:
+  - your video [is here](http://jared.howtocompouter.link/flashcards_willow.mp4)
+  - _(note: i had the wrong branch checked out in my video, so the code won't be
+    100% the same, but all the ideas should be clear)_
+  - fix typescript errors in `src/stories` dir
+  - get rid of inline style logic in `Button.tsx`
+  - `Chrome.tsx` (clean up double `if` (line 45, 55))
+- **Win**:
+  - your video [is here](http://jared.howtocompouter.link/flashcards_win.mp4)
+  - stories dir fix import paths, get storybook working
+  - `Button.tsx` - move `disabledStyles` into .css file, thru setting a class
+    instead
+  - `Card.tsx` - I would move all styling logic into class/css approach
+  - `DeckChooser.tsx` - remove fragment
+- **Harriet**:
+  - your video
+    [is here](http://jared.howtocompouter.link/flashcards_harriet.mp4)
+  - delete your `App.tsx` file if you're not using it...
+  - error from wrong props in `src/index.tsx`
+  - get rid of unused useEffect import on `Kard.tsx`
+  - fix card-jumping left/right based on not rendering first button (opacity 0
+    instead?)
+  - in `Khrome.tsx`
+    - simplify nested if statements
+    - change `backgroundColor` prop to category component (should be `active` or
+      `selected` -- some boolean prop)
+- **Kiah**:
+  - your video [is here](http://jared.howtocompouter.link/flashcards_kiah.mp4)
+  - fix build error from missing `src/palette.js` file
+  - delete the my-react dir
+  - fix your Storybook (Chrome.tsx is erroring) so it runs and all stories
+    render correctly
+  - in `App.tsx`:
+    - oneC, twoC, threeC...-- refer to video
+    - `mode` color mode should not be passed down, set a **class** for
+      light/dark mode so you can remove a ton of inline styling logic scattered
+      throughout
+  - in `Chrome.tsx`:
+    - remove `styleIt` (unused fn)
+    - all the dark-mode light-mode stuff should be triggered by a single class,
+      and be tucked away in css.
+  - deckbar.js -- seems to be unused, can it be deleted?
+  - dropdown.js -- incorporate this as a TypeScript react component
+  - palette.js -- incorporate this as a TypeScript react component
+  - DeckLink.tsx - refactor complicated `stylit` function to class + external
+    css
