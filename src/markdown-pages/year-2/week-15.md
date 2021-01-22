@@ -569,30 +569,28 @@ p {
 ---
 
 - **Tabitha**:
-  - your video
-    [is here](http://jared.howtocompouter.link/flashcards_tabitha.mp4)
+  - your video [is here](http://jared.howtocomputer.link/flashcards_tabitha.mp4)
   - fix stories/ dir story files typescript errors
   - simplify `Button.tsx` style logic by using class & .css file
   - `Button.tsx` - remove unused backgroundColor prop
   - `Card.tsx` - use the `h1WhenFront/Back` classes to set color
   - `Chrome.tsx`, line 51 and 61 -- nested `if` statements
 - **Willow**:
-  - your video [is here](http://jared.howtocompouter.link/flashcards_willow.mp4)
+  - your video [is here](http://jared.howtocomputer.link/flashcards_willow.mp4)
   - _(note: i had the wrong branch checked out in my video, so the code won't be
     100% the same, but all the ideas should be clear)_
   - fix typescript errors in `src/stories` dir
   - get rid of inline style logic in `Button.tsx`
   - `Chrome.tsx` (clean up double `if` (line 45, 55))
 - **Win**:
-  - your video [is here](http://jared.howtocompouter.link/flashcards_win.mp4)
+  - your video [is here](http://jared.howtocomputer.link/flashcards_win.mp4)
   - stories dir fix import paths, get storybook working
   - `Button.tsx` - move `disabledStyles` into .css file, thru setting a class
     instead
   - `Card.tsx` - I would move all styling logic into class/css approach
   - `DeckChooser.tsx` - remove fragment
 - **Harriet**:
-  - your video
-    [is here](http://jared.howtocompouter.link/flashcards_harriet.mp4)
+  - your video [is here](http://jared.howtocomputer.link/flashcards_harriet.mp4)
   - delete your `App.tsx` file if you're not using it...
   - error from wrong props in `src/index.tsx`
   - get rid of unused useEffect import on `Kard.tsx`
@@ -603,7 +601,7 @@ p {
     - change `backgroundColor` prop to category component (should be `active` or
       `selected` -- some boolean prop)
 - **Kiah**:
-  - your video [is here](http://jared.howtocompouter.link/flashcards_kiah.mp4)
+  - your video [is here](http://jared.howtocomputer.link/flashcards_kiah.mp4)
   - fix build error from missing `src/palette.js` file
   - delete the my-react dir
   - fix your Storybook (Chrome.tsx is erroring) so it runs and all stories
