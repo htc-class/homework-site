@@ -14,13 +14,24 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #16"
+        path="/year-2/week-16"
+        includes={[
+          "html: anchor element extras - linking to page sections, emails, phone numbers",
+          "css: `scroll-behavior: smooth` for smooth scrolling to page locations",
+          "js: **CORS** - Cross Origin Resource Sharing, `OPTIONS`, preflight, `Access-Control-<*>` headers",
+          "npm: npm _lifecycle scripts_ `pre<scriptname>`, `post<scriptname>`",
+          "node: using _environment variables_ with `process.env`",
+        ]}
+      />
+      <Week
         title="Year 2, Week #15"
         path="/year-2/week-15"
         includes={[
           "js: Error objects, throwing errors, `try/catch` blocks",
           "ts: composite types (types made of other types)",
           "ts: **generics** - generic types, generic functions, etc.",
-          "css: **`calc()` function",
+          "css: **`calc()`** function",
           "css: box-sizing property",
         ]}
       />
