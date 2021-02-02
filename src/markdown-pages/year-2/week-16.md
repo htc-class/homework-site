@@ -369,7 +369,7 @@ server.listen(PORT, () => {
   and mental energy. Let's add som NPM scripts to make our life easier. Start by
   adding one to compile the server typescript. Add a script `"compile-api"` to
   your `package.json`, the script should be
-  `"tsc ./server/index.ts --outDir ./dist/server/index.js"`. NOTE: this is the
+  `"tsc ./server/index.ts --outDir ./dist/server"`. NOTE: this is the
   same as the compile command we've been running manually, we're just packaging
   it up in an NPM script so we can run it by typing `npm run compile-api`
   instead.
