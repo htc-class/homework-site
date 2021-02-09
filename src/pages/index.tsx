@@ -14,6 +14,17 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #17"
+        path="/year-2/week-17"
+        includes={[
+          "js: **static** properties and methods",
+          "js: **`instanceof`** keyword",
+          "js: `.toString()` method for controlling object > string conversion",
+          "js: **getters** and **setters**",
+          "ts: access modifiers - _public_, _protected_, _private_",
+        ]}
+      />
+      <Week
         title="Year 2, Week #16"
         path="/year-2/week-16"
         includes={[
