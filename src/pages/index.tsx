@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #18"
+        path="/year-2/week-18"
+        includes={[
+          "js: customizing window.fetch() requests: methods, headers, and body",
+          "**REST** apis, rest-ful resources and endpoints for APIs",
+        ]}
+      />
+      <Week
         title="Year 2, Week #17"
         path="/year-2/week-17"
         includes={[
