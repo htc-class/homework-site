@@ -224,8 +224,10 @@ fetch(`/cats`, {
 - find the component in which you're making the `fetch()` request to get your
   card data from the API. Extract the hardcoded `http://localhost:<port>` string
   into a variable, and set it to one of two things.
-  - if `process.env.NODE_ENV` is `"DEVELOPMENT"` then use the same
-    localhost:PORT url you were using.
+  - if `process.env.NODE_ENV` is **NOT** `"PRODUCTION"` then use the same
+    localhost:PORT url you were using. (Look carefully, at this step, it will be
+    easier if you test that it is NOT production, than if you test that it IS
+    "DEVELOPMENT")
   - otherwise, use `http://api-<user>.howtocomputer.link` where `<user>` is your
     bash username.
 - test your work by restarting your dev server (make sure your API server is
