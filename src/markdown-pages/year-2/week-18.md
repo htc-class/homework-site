@@ -242,7 +242,7 @@ fetch(`/cats`, {
 {
   "scripts": {
     // [...]
-    "preserve-api": "npm run compile-api && pm2 delete \"flashcards-$USER\" &> /dev/null; true",
+    "preserve-api": "npm run compile-api && pm2 delete \"flashcards-$USER\"; true",
     "serve-api": "NODE_PORT=$PROD_API_PORT pm2 start ./dist/server/index.js --name \"flashcards-$USER\""
     // [...]
   }
