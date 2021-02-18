@@ -263,9 +263,9 @@ fetch(`/cats`, {
   successfully, even if the previous command exited with an error)
 - last, we're going to modify the `start` and `build` scripts to set
   `process.env.NODE_ENV` correctly for each one. For the `"start"` script,
-  change the script so that the very beginning starts with
-  `NODE_ENV=DEVELOPMENT `, and for the `"build"` script, change it to start with
-  `NODE_ENV=PRODUCTION `.
+  change the script so that **right after the semicolon** (`;`) you add
+  `NODE_ENV=DEVELOPMENT`, and for the `"build"` script, change it to **start**
+  with `NODE_ENV=PRODUCTION `.
 - let's test that the production build works by running two commands:
   `npm run build` and `npm run serve-api`. After both commands run, you should
   be able to go to your flashcard site's URL and it should correctly load your
@@ -411,11 +411,13 @@ const json = await getRequestJson(req);
   node `fs` module_. Up near the top of your file (outside your listener
   function), use the `fs` module (particularly `rs.readFileSync` and
   `JSON.parse()` to get your card data back into a usable javascript object, and
-  into a named variable). For instance, if you used to have your card data
-  imported as `cards` or `CardData`, then you would create a variable called
-  `cards` or `CardData` which would be the result of JSON-parsing the contents
-  of your `cards.json` file. Make sure you're using that variable for the
-  `GET /cards` request. Stop here and test your web-app, it should still work.
+  into a named variable). _**Important NOTE: for the path to your cards.json
+  file, use this: `${__dirname}/../../server/cards.json`)**_ For instance, if
+  you used to have your card data imported as `cards` or `CardData`, then you
+  would create a variable called `cards` or `CardData` which would be the result
+  of JSON-parsing the contents of your `cards.json` file. Make sure you're using
+  that variable for the `GET /cards` request. Stop here and test your web-app,
+  it should still work.
 - **Third and finally** - in the block of code where you are handling the "add
   card" incoming POST-ed JSON, after you get the parsed JSON from the request,
   **push the new card onto the end of the cards array, and then WRITE the data
