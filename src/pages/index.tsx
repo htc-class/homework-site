@@ -14,6 +14,15 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #19"
+        path="/year-2/week-19"
+        includes={[
+          "js: supplying _default values_ when _destructuring_",
+          "react: supplying _default values_ for _props_",
+          "js: all about **dates** and **times** with the `Date` object",
+        ]}
+      />
+      <Week
         title="Year 2, Week #18"
         path="/year-2/week-18"
         includes={[
