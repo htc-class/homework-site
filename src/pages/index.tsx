@@ -17,6 +17,7 @@ const IndexPage = () => (
         title="Year 2, Week #19"
         path="/year-2/week-19"
         includes={[
+          "js: nullish coalescing operator `??`",
           "js: supplying _default values_ when _destructuring_",
           "react: supplying _default values_ for _props_",
           "js: all about **dates** and **times** with the `Date` object",

@@ -100,7 +100,7 @@ let birthday = new Date(628021800000); // passing epoch timestamp
   API called `Temporal` which in a few years will likely completely replace the
   usage of the `Date` object.
 
-### Javascript: Destructuring w/ Defaults
+## Javascript: Destructuring w/ Defaults
 
 - we [already know](/week-35) that we can destructure arrays and objects in
   javascript:
@@ -151,7 +151,63 @@ const [x = 0, y = 0] = myCoord;
 console.log(x, y); // > 10, 0
 ```
 
-### React: Default Props
+## Javascript: Nullish Coalescing Operator `??`
+
+- In [year 2, week 3](/year-2/week-03) we covered the `||` "logical OR
+  operator", which returns the _left hand side_ if the _left hand side **is
+  TRUTHY**_, otherwise the _right hand side_:
+
+```ts
+// ✅ these are intuitive
+"foo" || "bar"; // "foo"
+33333 || false; // 33333
+false || 555; // 555
+
+// 🚨 but these not so much...
+"" || "hello"; // "hello" 🧐
+0 || 25; // 0 🧐
+```
+
+- if you examine the last two examples, you can see how this can cause bugs,
+  because you have to remember special cases of boolean coercion, like **"empty
+  string is FALSY"** and **"number 0 is FALSY"**.
+- using the `||` operator in the function below causes a bug, can you spot it?
+
+```ts
+function orderCoffee(cups?: number) {
+  console.log(`You ordered ${cups || 1} cup/s of coffee`);
+}
+```
+
+- the "bug" in the above function is that if you try to order `0` cups of
+  coffee, you get `1` cup:
+
+```ts
+orderCoffee(0);
+// > "You ordered 1 cup/s of coffee" 🚨
+```
+
+- it's for cases like this, (often _when you're trying to supply a DEFAULT
+  value_), that javascript introduced an operator common in other languages
+  called the **nullish coalescing operator:** `??`.
+- the idea behind `??` is that it works just like `||` **EXCEPT** it returns the
+  _left hand side_ **only if it is `null` or `undefined`**:
+
+```ts
+"foo" ?? "bar"; // "foo"
+true ?? null; // true
+0 ?? 1; // 0 ✅
+"" ?? "hello"; // "" ✅
+```
+
+- the last two examples show how you can fix the bug in the `orderCoffee`
+  function above.
+- it's called "null**ish**" because javascript is weird in that it has _two_
+  null-like values: `null` and `undefined`, and "nullish" sounds better than
+  "undefinedish". Other languages with only one `null` value call it "null
+  coalescing" or "nil coalescing".
+
+## React: Default Props
 
 - When we write regular functions in javascript, it's sometimes useful to supply
   **default values** to arguments, to make a more ergonomic, convenient API for
