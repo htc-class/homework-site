@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #20"
+        path="/year-2/week-20"
+        includes={["react: conditionally rendering components"]}
+      />
+      <Week
         title="Year 2, Week #19"
         path="/year-2/week-19"
         includes={[
