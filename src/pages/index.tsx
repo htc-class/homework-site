@@ -14,6 +14,16 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #21"
+        path="/year-2/week-21"
+        includes={[
+          "html: basic responsive images",
+          "js: `Object.entries()`",
+          "css: linear gradients",
+          "css: multiple background images",
+        ]}
+      />
+      <Week
         title="Year 2, Week #20"
         path="/year-2/week-20"
         includes={["react: conditionally rendering components"]}
