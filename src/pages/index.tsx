@@ -14,6 +14,17 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #22"
+        path="/year-2/week-22"
+        includes={[
+          "git: ignoring already-added files, `git rm [--force]`",
+          "javascript: optional chaining operator `foo?.bar?.baz`",
+          "node: Express node webserver library",
+          "npm: regular vs _development_ dependencies `devDependencies`",
+          "npm/typescript: third-party types with `@types/*` Definitely Typed",
+        ]}
+      />
+      <Week
         title="Year 2, Week #21"
         path="/year-2/week-21"
         includes={[
