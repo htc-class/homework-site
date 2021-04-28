@@ -2,7 +2,7 @@
 path: "/year-2/week-22"
 ---
 
-# Year #2, Week #21 💻 🚅
+# Year #2, Week #22 💻 🚅
 
 _New stuff we learned this week:_ 🤔
 

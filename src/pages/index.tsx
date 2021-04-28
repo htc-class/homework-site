@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #23"
+        path="/year-2/week-23"
+        includes={["TODO"]}
+      />
+      <Week
         title="Year 2, Week #22"
         path="/year-2/week-22"
         includes={[
