@@ -141,7 +141,57 @@ UPDATE users SET id = 3, age = 18 WHERE first_name = "Bo";
 
 ---
 
-## MySQL Homework
+## Homework Plan
+
+- 1 day Flashcard Add/Review Assignment
+- 1 day MySQL Practice Homework
+- 1 day Flashcard App MySQL assignment
+- 1 day Personal Project assignment
+- 1 day touch typing practice
+- **4** days [_Execute Program_](https://www.executeprogram.com) homework
+
+---
+
+<Checkable id="review-flash-1">Flashcard Add/Review Assignment</Checkable>
+
+<Checkable id="typing">touch typing practice</Checkable>
+
+<Checkable id="sql-practice">MySQL Homework</Checkable>
+
+<Checkable id="sql-import">Flashcard App SQL Assignment</Checkable>
+
+<Checkable id="next-personal">Personal Project Assignment</Checkable>
+
+<Checkable id="xp-1">Execute Program #1</Checkable>
+
+<Checkable id="xp-2">Execute Program #2</Checkable>
+
+<Checkable id="xp-3">Execute Program #3</Checkable>
+
+<Checkable id="xp-4">Execute Program #4</Checkable>
+
+---
+
+## Flashcard Add/Review Assignment
+
+---
+
+- NOTE: Do this before the Flashcard SQL Assignment, so they get imported with
+  the rest of your cards.
+- Add XX new cards, in a new category called "SQL"
+  - select ("use") a database
+  - create database statement
+  - insert row statement syntax
+  - add a column statement syntax
+  - delete a table statement
+  - select all rows statement
+  - select certain columns statement
+  - WHERE statements
+  - UPDATE statement (with WHERE clause)
+
+---
+
+## MySQL Practice Homework
 
 ---
 

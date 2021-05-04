@@ -16,7 +16,7 @@ const IndexPage = () => (
       <Week
         title="Year 2, Week #23"
         path="/year-2/week-23"
-        includes={["TODO"]}
+        includes={["sql: introducing databases and SQL"]}
       />
       <Week
         title="Year 2, Week #22"
