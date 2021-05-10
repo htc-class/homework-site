@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 2, Week #24"
+        path="/year-2/week-24"
+        includes={["Environment variables and `.env` files"]}
+      />
+      <Week
         title="Year 2, Week #23"
         path="/year-2/week-23"
         includes={["sql: introducing databases and SQL"]}
