@@ -37,7 +37,7 @@ $ DEBUG=true clang -o hello hello.c
 ```
 
 - a very common practice has emerged in many programming languages of adding a
-  `.env` file to your project root, and then **NOT committing** it to source
+  `.env` **file** to your project root, and then **NOT committing** it to source
   control, in fact, explicitly ignoring it with `.gitignore`. That way, you can
   put secrets like database passwords, API keys, etc, and they can be used by
   the app, but won't be available on places like Github and Gitlab. The format
@@ -52,16 +52,11 @@ rad_pets_api_secret=ca3d983137d747c7a8757787c401b733
 debug=false
 ```
 
-- the idea then is that you have a different .env file in the different spots
+- the idea then is that you have a different `.env` file in the different spots
   where your app runs -- on your local machine you would have test/sandbox/debug
   settings. On a staging server you might talk to a replica of your production
   database, and for your production build, you would have all of your live,
   production settings.
-- Finally, _modify the code_ so that when you're working in dev mode, it uses
-  the `<you>_flashcards_dev` database, and when you build it, it uses the
-  `<you>_flashcards_prod` database. (Hint: we are already setting an environment
-  variable to signify dev vs. prod mode, use the same env var to set this up
-  too.)
 
 ---
 
@@ -110,16 +105,6 @@ debug=false
 - Use the library to replace all the usage of your old `.json` file with SQL
   statements through the library I wrote. To start out, just _hardcode_ your
   database credentials, but we'll fix that in the next assignment.
-- Next, we're going to get rid of the hardcoded username and password for your
-  database access, using a library called `dotenv`. The library is on Github, so
-  you don't have access to it, but I copied the readme and
-  [put it here](https://gitlab.howtocomputer.link/htc/readme/-/blob/master/dotenv.md).
-  Take a few minutes to read through the documentation, and see if you can
-  figure out how to use it. Hint 1: Pay special attention to what it says about
-  git,and (Hint 2:) also about configuring the _path_ to your `.env` file. Your
-  `.env` file should be in your _project root_, but you might have to pass a
-  custom path since you're going to be calling the configure function from the
-  `./server` dir.
 
 ---
 
@@ -127,7 +112,13 @@ debug=false
 
 ---
 
-- For this assignment we want to remove the hardcoded database access
+- Before you get into the meat of this assignment, type a command to show all of
+  your environment variables, and browse through them for a minute.
+- cat out (or open with vim) your `~/.bashrc` file, to see how some of them are
+  being set. Your web dev **ports** are _not_ in that file, but there's a clue
+  in there where you could find them? Can you figure out where those variables
+  (like `PROD_API_PORT`, etc.) are defined from looking at your bashrc?
+- Now, for this assignment we want to remove the hardcoded database access
   information from your app (db name, user, password), and replace it with
   values read from _environment variables_.
 - To make this happen, you're going to make a very simple clone of the `dotenv`
@@ -169,6 +160,15 @@ const db = new SimpleSQL({
 
 // [...] etc...
 ```
+
+- Finally, _modify the code_ so that when you're working in dev mode, it uses
+  the `<you>_flashcards_dev` database, and when you build it, it uses the
+  `<you>_flashcards_prod` database. (Hint: we are already setting an environment
+  variable to signify dev vs. prod mode, use the same env var to set this up
+  too.)
+- When you've got it all working, build for production, and then, at your
+  production URL, add a new card for `printenv` in the `bash` category.
+- Commit your work, submit a MR, and slack all the links.
 
 ---
 

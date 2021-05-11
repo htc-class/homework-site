@@ -10,7 +10,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "push": "git push origin master && git push github master"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.19",
