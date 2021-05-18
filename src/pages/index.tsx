@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Summer 2, Week #1"
+        path="/year-2/summer-1"
+        includes={[
+          "vim: macros",
+          "overview of the **go** programming language",
+        ]}
+      />
+      <Week
         title="Year 2, Week #24"
         path="/year-2/week-24"
         includes={["Environment variables and `.env` files"]}
