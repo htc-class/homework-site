@@ -294,7 +294,7 @@ age, ok := ages["santa claus"]
   to start seeing under the hood, so you know how this stuff works. You're going
   to watch this video, but you won't have to do any of the work I did, for this
   video, I just want you to watch. The link is
-  [here](http://jared.howtocomputer.link/monkey/01-monkey.mov). Be sure to
+  [here](http://jared.howtocomputer.link/monkey/01-setup.mp4). Be sure to
   _fullscreen_ the video so you can see my code clearly, and please let me know
   if the fonts are too small, I'll adjust future videos if so.
 - That's all for this assignment.
