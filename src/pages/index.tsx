@@ -14,6 +14,16 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Summer 2, Week #2"
+        path="/year-2/summer-2"
+        includes={[
+          "programming languages: **operators** (unary, binary, ternary; prefix, postfix, infix)",
+          "ts: non-null assertion operator `!`",
+          "ts: interfaces vs types",
+          "ts: **implementing** interfaces",
+        ]}
+      />
+      <Week
         title="Summer 2, Week #1"
         path="/year-2/summer-1"
         includes={[
