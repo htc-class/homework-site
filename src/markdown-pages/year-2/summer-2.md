@@ -226,11 +226,11 @@ class Gun implements HasTrigger, Named {
 
 ---
 
-<Checkable id="monkey-1">Monkey Assignment #1 🐒</Checkable>
+<Checkable id="monkey-1">Monkey Assignment #4 🐒</Checkable>
 
-<Checkable id="monkey-2">Monkey Assignment #2 🐒</Checkable>
+<Checkable id="monkey-2">Monkey Assignment #5 🐒</Checkable>
 
-<Checkable id="monkey-3">Monkey Assignment #3 🐒</Checkable>
+<Checkable id="monkey-3">Monkey Assignment #6 🐒</Checkable>
 
 <Checkable id="flash-new">New Flashcards Assignment</Checkable>
 
@@ -260,7 +260,7 @@ class Gun implements HasTrigger, Named {
 
 ---
 
-## Monkey #3 (Extending Token Set) 🐒
+## Monkey #4 (Extending Token Set) 🐒
 
 ---
 
@@ -276,7 +276,7 @@ class Gun implements HasTrigger, Named {
 
 ---
 
-## Monkey #4 (REPL) 🐒
+## Monkey #5 (REPL) 🐒
 
 ---
 
@@ -294,7 +294,7 @@ class Gun implements HasTrigger, Named {
 
 ---
 
-## (Optional) Monkey #5 (Parsing Let Statements) 🐒
+## (Optional) Monkey #6 (Parsing Let Statements) 🐒
 
 ---
 
