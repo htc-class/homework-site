@@ -14,6 +14,15 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Summer 2, Week #4"
+        path="/year-2/summer-4"
+        includes={[
+          `Favicons`,
+          `TS: **abstract** classes`,
+          `C: compilers, preprocessor directives, macros, int, and float`,
+        ]}
+      />
+      <Week
         title="Summer 2, Week #3"
         path="/year-2/summer-3"
         includes={[
