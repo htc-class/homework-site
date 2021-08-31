@@ -1,3 +1,11 @@
+---
+path: "/year-3/week-01"
+---
+
+# Year #3, Week #1 💻 (EMOJI HERE)
+
+## New Stuff (finish)
+
 - a **preprocessor directive** in C is _any line beginning with_ `#`.
   Preprocessor directives are replaced _before compilation_.
 - an include statement is something like `#include <stdio.h>` or
