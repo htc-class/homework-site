@@ -219,11 +219,11 @@ $ cc -o hello hello.c
 
 <Checkable id="xp-3">Execute Program #3</Checkable>
 
---
+---
 
 ## King C Chapter 2 Programming Projects
 
---
+---
 
 - First, make sure you've slowly and carefully read all of the New Stuff above
   ^^^.
@@ -254,6 +254,8 @@ $ cc -o hello hello.c
   file **without** using make. How do you get rid of the error you see? They
   briefly showed how to do it before introducing `make` in the CS50 video.
 - commit your work, and push up a MR on GitLab, then slack me the URL.
+
+---
 
 ## Personal Project Homework
 
