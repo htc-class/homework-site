@@ -14,12 +14,23 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #1"
+        path="/year-3/week-01"
+        includes={[
+          `C: Preprocessor directives: \`#include\` and \`#define\``,
+          "C: Basic types: `int`, `float`, `char`, and the `sizeof` operator",
+          "C: variables, initialization/assignment, mutability, and `const`",
+          "C: `printf` basics",
+          "a very brief into to `make`"
+        ]}
+      />
+      <Week
         title="Summer 2, Week #4"
         path="/year-2/summer-4"
         includes={[
           `Favicons`,
           `TS: **abstract** classes`,
-          `C: compilers, preprocessor directives, macros, int, and float`,
+          `C: compilers, hello world`,
         ]}
       />
       <Week
