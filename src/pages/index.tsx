@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #2"
+        path="/year-3/week-02"
+        includes={["Javascript: `Set` and `Map`", "Typescript Enums"]}
+      />
+      <Week
         title="Year 3, Week #1"
         path="/year-3/week-01"
         includes={[
@@ -21,7 +26,7 @@ const IndexPage = () => (
           "C: Basic types: `int`, `float`, `char`, and the `sizeof` operator",
           "C: variables, initialization/assignment, mutability, and `const`",
           "C: `printf` basics",
-          "a very brief into to `make`"
+          "a very brief into to `make`",
         ]}
       />
       <Week
