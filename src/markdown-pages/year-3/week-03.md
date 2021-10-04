@@ -84,7 +84,7 @@ ALTER TABLE order_items ADD FOREIGN KEY (order_id) REFERENCES orders(id);
 
 ## Homework Plan
 
-- Monkey Assignment #11
+- 1 day Monkey Assignment #11
 - 1 day review all flashcards in your app.
 - 1 day touch typing practice
 - 1 day King C reading assignment (chapter 4)
@@ -120,7 +120,7 @@ ALTER TABLE order_items ADD FOREIGN KEY (order_id) REFERENCES orders(id);
   assignment.
 - Merge your `king-c` repo branch from last week, and **CREATE A NEW BRANCH**.
 - Complete the following programming projects (not _exercizes_) from chapter 3:
-  `1, 2, 3, 5, 6`. Make a new file for every one. from git once and for all.
+  `1, 2, 3, 5, 6`. Make a new file for every one.
 - commit your work, and push up a MR on GitLab, then slack me the URL.
 
 ---

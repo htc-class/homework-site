@@ -14,6 +14,15 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #3"
+        path="/year-3/week-03"
+        includes={[
+          "SQL: `mysqldump`, a tool for exporting/dumping databases",
+          "SQL: `ADD COLUMN`, `DEFAULT`, `NOT NULL`",
+          "SQL: foreign key relationships",
+        ]}
+      />
+      <Week
         title="Year 3, Week #2"
         path="/year-3/week-02"
         includes={["Javascript: `Set` and `Map`", "Typescript Enums"]}
