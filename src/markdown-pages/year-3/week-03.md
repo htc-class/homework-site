@@ -207,8 +207,24 @@ CREATE DATABASE yourname_flashcards_dev;
   clause for this to work right. Hint 2: If you want to test your WHERE clause,
   write a SELECT statement using the same WHERE clause, it doesn't change your
   data.
-- Once you've got all of the `category_id` values set correctly, type a SQL
-  statement to **add an explicit foreign key releationship** between the
+- Once you've got all of the `category_id` values set correctly, you'll need to
+  do a few steps before you can add the foreign key relationship.
+- First, you'll need to change the _column type_ of the `id` column of your
+  `cards` table to _not_ be `TEXT`. It really should never have been TEXT, but
+  it worked while we were learning. Change it to `VARCHAR(36)` as well. The
+  reason for this is that mysql foreign key releationships need columns with
+  **fixed sizes** so that the database engine can optimize things.
+- Next, you need the `id` column of your your `cards` table to be a **primary
+  key**. Type a SQL statement to alter that column. If you don't know that from
+  Execute Program, you can find it in the
+  [docs here.](https://mariadb.com/kb/en/getting-started-with-indexes/#primary-key)
+  The reason for this change is that a "foreign key" constraint has to reference
+  something that is a "key" (or at least has an index). We'll talk more about
+  those concepts later. The "id" field of a table is almost always your
+  **primary key** -- which sort of means that it is the unique identifier for
+  each row.
+- Now you're ready to make add the foreign key constraint. Type a SQL statement
+  to **add an explicit foreign key releationship** between the
   `cards.category_id` and the `categories.id` columns. If you did everything
   right, it should run without an error. If any of your ids were incorrect,
   Maria will refuse to perform the operation.
