@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #4"
+        path="/year-3/week-04"
+        includes={[
+          "SQL: `JOIN` basics",
+          "C: Pointer basics, functions that take pointers",
+        ]}
+      />
+      <Week
         title="Year 3, Week #3"
         path="/year-3/week-03"
         includes={[
