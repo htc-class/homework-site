@@ -138,21 +138,37 @@ sum_and_product(x, y, &sum, &product);
 
 ---
 
-<Checkable id="read-king">Carefully read chapter #4 of King C</Checkable>
+<Checkable id="read-king">Carefully read chapter #5 of King C</Checkable>
 
-<Checkable id="king-3">Selected Projects from King C, Ch. 4</Checkable>
+<Checkable id="king-3">Selected Projects from King C, Ch. 5</Checkable>
 
-<Checkable id="monkey-11">Monkey Assignment #11 🐒</Checkable>
+<Checkable id="monkey-12">Monkey Assignment #12 🐒</Checkable>
+
+<Checkable id="mysql-join">MySQL/Flashcards JOIN Assignment</Checkable>
+
+<Checkable id="cs50-vid">Watch CS50 Video Segment</Checkable>
+
+<Checkable id="cs50-credit">CS50 Credit Assignment</Checkable>
 
 <Checkable id="flash-review-1">Review Flashcards #1</Checkable>
 
+<Checkable id="flash-review-2">Review Flashcards #2</Checkable>
+
 <Checkable id="typing">touch typing practice #1</Checkable>
+
+<Checkable id="typing-2">touch typing practice #2</Checkable>
 
 <Checkable id="xp-1">Execute Program #1</Checkable>
 
 <Checkable id="xp-2">Execute Program #2</Checkable>
 
 <Checkable id="xp-3">Execute Program #3</Checkable>
+
+<Checkable id="xp-4">Execute Program #4</Checkable>
+
+<Checkable id="xp-5">Execute Program #5</Checkable>
+
+<Checkable id="xp-6">Execute Program #6</Checkable>
 
 ---
 
