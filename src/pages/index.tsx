@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #5"
+        path="/year-3/week-05"
+        includes={["C: Debugging with VSCode"]}
+      />
+      <Week
         title="Year 3, Week #4"
         path="/year-3/week-04"
         includes={[
@@ -737,9 +742,5 @@ const IndexPage = () => (
     </div>
   </Layout>
 );
-
-const FIRST_UNDONE = 11;
-const NUM_PDFS = 8;
-const LAST_PDF_WEEK = 11;
 
 export default IndexPage;
