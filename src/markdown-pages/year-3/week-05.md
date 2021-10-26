@@ -77,8 +77,8 @@ _New stuff we learned this week:_ 🤔
 - 1 day touch typing practice
 - 1 day King C reading assignment (chapter 6)
 - 1 day King C exercizes
-- watch [Lecture 2](https://htc-viewer.netlify.app/?id=8PrOp9t0PyQ) of CS50, up
-  until `35:30`
+- watch [Lecture 2](https://htc-viewer.netlify.app/?id=8PrOp9t0PyQ) of CS50,
+  from `35:30` to `1:06:00`.
 - **3** days [_Execute Program_](https://www.executeprogram.com) homework
 
 ---
@@ -109,7 +109,10 @@ _New stuff we learned this week:_ 🤔
 
 - First, make sure you've slowly and carefully read all of chapter 5 of King C.
   assignment.
-- TODO, any preparatory comments?
+- Second, while working on these exercizes, at least once, you must set up and
+  use the **C debugger in vscode,** as shown in class -- you'll also need to
+  post a screenshot in your MR or in slack showing that you got it working (with
+  it paused at a breakpoint, and local variables visible).
 - Merge your `king-c` repo branch from last week, and **CREATE A NEW BRANCH**.
 - Complete the following programming projects (not _exercizes_) from chapter 3,
   making a new file for every one:
@@ -128,6 +131,8 @@ _New stuff we learned this week:_ 🤔
 - commit your work, and push up a MR on GitLab
 - before you slack me the URL, review your own diffs, clean up anything you
   notice, then slack me the URL.
+- either in Slack, or in your MR, post a screenshot of a debugging session with
+  a C program paused, and local variables displayed.
 
 ---
 
