@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #6"
+        path="/year-3/week-06"
+        includes={[`Diagramming monkey recursive Pratt parsing`]}
+      />
+      <Week
         title="Year 3, Week #5"
         path="/year-3/week-05"
         includes={["C: Debugging with VSCode"]}

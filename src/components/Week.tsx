@@ -29,7 +29,7 @@ const Week: React.FC<Props> = ({ title, path, includes: items }) => {
           ))
         ) : (
           <p className="mb-0 text-xs">
-            <em>description coming soon...</em>
+            <em>No description...</em>
           </p>
         )}
       </div>
