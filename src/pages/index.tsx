@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #7"
+        path="/year-3/week-07"
+        includes={[`VSCode Rest Client Extension`]}
+      />
+      <Week
         title="Year 3, Week #6"
         path="/year-3/week-06"
         includes={[`Diagramming monkey recursive Pratt parsing`]}
