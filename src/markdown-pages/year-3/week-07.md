@@ -138,8 +138,10 @@ Content-Type: application/json
     [this page](https://homework.howtocomputer.link/year-2/week-24). Pull that
     function over into this repo, and use it to load your environment variables.
   - **DO NOT** commit your `.env` file. It should be gitignored.
-  - add a `api.http` file for the **VSCode Rest Client** extension. Make sure it
-    has a request to your `GET /cards` endpoint.
+  - add a `api.http` file for the **VSCode Rest Client** extension (make sure
+    the extension is installed first, which should be doable if you refresh your
+    Gertrude rule). Make sure the `api.http` file has a request to your
+    `GET /cards` endpoint.
   - make the code as clean and clear as possible, remember, I'm going to be very
     picky in reviewing the merge request.
 - take a screenshot of the output of the response from your VSCode rest client
@@ -194,6 +196,8 @@ Content-Type: application/json
   [**Tailwindcss**](https://tailwindcss.com/). Try to get a feel for the
   different utilities, customization options, etc. You might find you learn some
   cool css along the way as well!
+- Also, play around a bit on the
+  [tailwind playground](https://play.tailwindcss.com).
 - Pick one utility class or concept that seems creative, new, or especially
   cool. Take a screenshot and post it on Slack with a brief explanation of how
   it works.
