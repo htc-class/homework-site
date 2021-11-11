@@ -163,7 +163,7 @@ Content-Type: application/json
   - `1`
   - `2`
   - `3`
-  - `5`
+  - `6`
   - `7` **Extra Credit✨**
 - commit your work, and push up a MR on GitLab
 - before you slack me the URL, review your own diffs, clean up anything you
