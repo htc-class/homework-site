@@ -6,7 +6,44 @@ path: "/year-3/week-08"
 
 _New stuff we learned this week:_
 
-## TODO...
+## C Strings
+
+- strings in C are essentially **arrays of `char`s** with a `null` byte at the
+  end, like this:
+
+```c
+char hello[] = {'H', 'e', 'l', 'l', 'o', '\0'};
+```
+
+- You can also express a string using a string literal. The below is the same as
+  above:
+
+```c
+char* hello = "Hello";
+```
+
+- `<string.h>` has the function `strlen()` which takes a `char *` and will
+  return the _length of a string_ **without** the null byte.
+- `<stdlib.h>` has a function `atoi` which takes a string like `"72"` and
+  returns an integer `72`.
+
+## C: Argv/Argc
+
+- Until now, we've been writing our `main` function using the signature:
+
+```c
+int main(void) {
+}
+```
+
+- But C programs can also receive command line arguments, with the following
+  signature, where `int argc` is the **count** of the arguments, and
+  `char *argv[]` is an **array of strings**:
+
+```c
+int main(int argc, char *argv[]) {
+}
+```
 
 ---
 
@@ -120,7 +157,7 @@ _New stuff we learned this week:_
 - Create a new branch.
 - Double-check that you did the first two steps.
 - Triple-check that you did the first three steps.
-- Start at section **2.8 - Funcion Literals**. Work through that section, and
+- Start at section **2.8 - Function Literals**. Work through that section, and
   commit your work when you finish.
 - As always, make sure to try to do as much as you can without the videos, but
   always also watch the videos and update your code to (mostly) match.

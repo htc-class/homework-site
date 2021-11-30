@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #8"
+        path="/year-3/week-08"
+        includes={[
+          `C: "strings"`,
+          "C: Command line arguments (`argv` and `argc`)",
+        ]}
+      />
+      <Week
         title="Year 3, Week #7"
         path="/year-3/week-07"
         includes={[`VSCode Rest Client Extension`]}
