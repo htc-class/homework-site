@@ -90,6 +90,9 @@ int main(int argc, char *argv[]) {
 
 ---
 
+- Slowly and carefully read the "New Stuff" above -- I put one thing in there
+  that we **did not cover in class** that will be useful for this assignment.
+- Make sure you've watched the CS50 video before starting.
 - Make sure your branch from last CS50 Assignment (Mario, Credit) is merged
   (after addressing any feedback outstanding).
 - Create a new branch named `caeser`
