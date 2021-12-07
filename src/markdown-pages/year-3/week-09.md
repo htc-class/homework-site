@@ -29,6 +29,7 @@ _New stuff we learned this week:_
 - 1 day review all flashcards in your app.
 - 1 day touch typing practice
 - 1 day CS50 "Substitution" assignment
+- 1 day read King-C ch. 9 👑
 - 1 day King-C projects 👑
 - 1 day Flashcards Redux assignment
 - **3** days [_Execute Program_](https://www.executeprogram.com) homework
@@ -38,6 +39,8 @@ _New stuff we learned this week:_
 <Checkable id="monkey-15">Monkey Assignment #16 🐒</Checkable>
 
 <Checkable id="substitution">CS50 Substitution</Checkable>
+
+<Checkable id="king-c-read">King C: Read chapter 9 👑</Checkable>
 
 <Checkable id="king-c">King C: Chapter 9 Programming Projects 👑</Checkable>
 
@@ -95,6 +98,24 @@ _New stuff we learned this week:_
   always also watch the videos and update your code to (mostly) match.
 - [Video link](http://jared.howtocomputer.link/monkey/25--2.8-function-literals.mp4)
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
+
+---
+
+## King C Chapter 9 Projects 👑
+
+---
+
+- First, make sure you've slowly and carefully read all of chapter 9 of King C.
+  assignment.
+- Merge your `king-c` repo branch from last week, and **CREATE A NEW BRANCH**.
+- Complete the following programming projects from chapter 8, making a **new
+  file** for every one:
+  - `1`
+  - `6`
+  - `8`
+- commit your work, and push up a MR on GitLab
+- before you slack me the URL, review your own diffs, clean up anything you
+  notice, then slack me the URL.
 
 ---
 
