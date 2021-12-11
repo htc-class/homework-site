@@ -110,9 +110,22 @@ _New stuff we learned this week:_
 - Merge your `king-c` repo branch from last week, and **CREATE A NEW BRANCH**.
 - Complete the following programming projects from chapter 8, making a **new
   file** for every one:
-  - `1`
-  - `6`
-  - `8`
+
+- `Project # 1`
+
+  - Assume the user must enter **5** numbers.
+  - You might find the macro `INT_MIN` from `limits.h` useful, it's the smallest
+    number possible for an `int`.
+  - a session should look like this:
+
+  ```txt
+  Enter 5 numbers: 55 32 1 -34 7
+  Ordered: -34 1 7 32 55
+  ```
+
+- `Project #6`
+- `Project #8`
+
 - commit your work, and push up a MR on GitLab
 - before you slack me the URL, review your own diffs, clean up anything you
   notice, then slack me the URL.
