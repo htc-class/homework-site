@@ -124,6 +124,14 @@ _New stuff we learned this week:_
   ```
 
 - `Project #6`
+
+  - a session with the program should look like:
+
+  ```txt
+  Enter a value for X: 3
+  Polynomial: 762
+  ```
+
 - `Project #8`
 
 - commit your work, and push up a MR on GitLab
