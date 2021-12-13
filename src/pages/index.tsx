@@ -14,6 +14,11 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #10"
+        path="/year-3/week-10"
+        includes={[`Dependency Injection & Test Mocks`]}
+      />
+      <Week
         title="Year 3, Week #9"
         path="/year-3/week-09"
         includes={[`Redux`]}
