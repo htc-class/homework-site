@@ -102,7 +102,6 @@ _New stuff we learned this week:_
   file** for every one:
 - `Project #1`
 - `Project #2`
-- `Project #3` **Extra Credit: ✨**
 - `Project #4`
 - `Project #6` Who doesn't love a good _reverse polish notation_ calculator! 🤓
 - `Project #7` **Extra Credit: ✨**
