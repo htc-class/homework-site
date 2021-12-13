@@ -162,6 +162,11 @@ _New stuff we learned this week:_
 - Did you make a new branch? Do you love making cookies?
 - Take a minute and add the vscode extension called "Inline SQL" by
   `jtladieras`. It allows you to get syntax highlighting for sql like so:
+
+```ts
+const QUERY = /*sql*/ `SELECT * FROM users`;
+```
+
 - Now, we'll start by creating a **database abstraction** that we can mock in
   tests. Create a file called `src/db.ts`.
 - If you haven't already, lets also create a file dedicated to _types_ for our
@@ -175,11 +180,6 @@ export interface Database {}
 - next, in the same file, let's make a type called `Response` which is a _tuple_
   of an HTTP status code and some json (you can use `any` for the json, for now
   at least). Bonus points if you remember how to _name_ your tuple members.
-
-```ts
-const QUERY = /*sql*/ `SELECT * FROM users`;
-```
-
 - next, let's make a new file in `src/` called `route-responders.ts`. The
   purpose of this file is to export a bunch of functions, one for each route.
   These are the **pure** functions we're extracting out of our messy,
