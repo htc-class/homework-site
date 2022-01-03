@@ -78,8 +78,8 @@ _New stuff we learned this week:_ 🤔
   this section.
 - As always, make sure to try to do as much as you can without the videos, but
   always also watch the videos and update your code to (mostly) match.
-- [Video link #1](http://jared.howtocomputer.link/monkey/20--2.8-extending-the-parser.mp4),
-  [Video link #2](http://jared.howtocomputer.link/monkey/21--2.8-boolean-literals.mp4)
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/20--2.8-extending-the-parser.mp4),
+  [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/21--2.8-boolean-literals.mp4)
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
 
 ---

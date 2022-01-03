@@ -148,8 +148,8 @@ _New stuff we learned this week:_ 🤔
 - As always, try to do as much as you can on your own, leaning on the videos
   when you get stuck. But also, make sure to watch the videos and update your
   code accordingly.
-- [Video link #1](http://jared.howtocomputer.link/monkey/18--2.6-parsing-infix-operators-1.mp4),
-  [Video link #2](http://jared.howtocomputer.link/monkey/19--2.6-parsing-infix-operators-2.mp4)
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/18--2.6-parsing-infix-operators-1.mp4),
+  [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/19--2.6-parsing-infix-operators-2.mp4)
 - After you finish, I want you to **slowly and carefully read the next
   section**, labeled _2.7 - How Pratt Parsing works_. Try to go slow enough to
   understand as much as possible of what he is explaining, study the diagrams,

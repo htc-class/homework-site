@@ -269,7 +269,7 @@ class Gun implements HasTrigger, Named {
 - Work your way through the entire **Section 1.4 - Extending Our Token Set and
   Lexer** (starts at page 27 of the printed book, or page 21 of PDF).
 - Video link is
-  [here](http://jared.howtocomputer.link/monkey/05--1.4-extending-our-token-set-and-lexer.mp4).
+  [here](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/05--1.4-extending-our-token-set-and-lexer.mp4).
 - Use the video only when you need it, but **watch the entire thing
   eventually**.
 - Submit a MR, slack the MR url.
@@ -287,7 +287,7 @@ class Gun implements HasTrigger, Named {
   PDF).
 - Watch the video linked below, then type in the code I coded to get your REPL
   working.
-- [Video link here](http://jared.howtocomputer.link/monkey/06--1.5-start-of-a-repl.mp4).
+- [Video link here](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/06--1.5-start-of-a-repl.mp4).
 - Customize your REPL just a little bit, either in the prompt text, colors, or
   something else.
 - Submit a MR, slack the MR url.
@@ -308,9 +308,9 @@ class Gun implements HasTrigger, Named {
 - STOP before the end of Section 2.4, (page 53.6 of printed book, 41.7 of PDF),
   before he adds error messages to the parser.
 - Video links:
-  [part 1](http://jared.howtocomputer.link/monkey/07--2.4-parse-let-statements-1.mp4),&nbsp;
-  [part 2](http://jared.howtocomputer.link/monkey/08--2.4-parse-let-statements-2.mp4),&nbsp;
-  [part 3](http://jared.howtocomputer.link/monkey/09--2.4-parse-let-statements-3.mp4)
+  [part 1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/07--2.4-parse-let-statements-1.mp4),&nbsp;
+  [part 2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/08--2.4-parse-let-statements-2.mp4),&nbsp;
+  [part 3](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/09--2.4-parse-let-statements-3.mp4)
 - Submit a MR, slack the MR url.
 
 ---

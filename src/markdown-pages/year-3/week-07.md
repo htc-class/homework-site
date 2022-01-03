@@ -111,9 +111,9 @@ Content-Type: application/json
   video covers this section.
 - As always, make sure to try to do as much as you can without the videos, but
   always also watch the videos and update your code to (mostly) match.
-- [Video link #1](http://jared.howtocomputer.link/monkey/22--2.8-grouped-expressions.mp4),
-- [Video link #2](http://jared.howtocomputer.link/monkey/23--2.8-if-else-pt-1.mp4),
-  [Video link #3](http://jared.howtocomputer.link/monkey/24--2.8-if-else-pt-2.mp4)
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/22--2.8-grouped-expressions.mp4),
+- [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/23--2.8-if-else-pt-1.mp4),
+  [Video link #3](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/24--2.8-if-else-pt-2.mp4)
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
 
 ---
@@ -164,7 +164,9 @@ Content-Type: application/json
   - `2`
   - `3`
   - `6`
-  - `7` **Extra Credit✨** _Hint:_ It might be easier to make a 5x5 two-dimensional array, like `int grid[5][5];`, and also, it will be easier to use `scanf` here rather than `getchar`.
+  - `7` **Extra Credit✨** _Hint:_ It might be easier to make a 5x5
+    two-dimensional array, like `int grid[5][5];`, and also, it will be easier
+    to use `scanf` here rather than `getchar`.
 - commit your work, and push up a MR on GitLab
 - before you slack me the URL, review your own diffs, clean up anything you
   notice, then slack me the URL.
@@ -177,10 +179,17 @@ Content-Type: application/json
 
 - Complete the following programming projects from chapter 8, making a **new
   file** for every one:
-  - `9` _Hint:_ You can pass arrays to functions, and they are passed by **reference**, so you don't have to worry about pointers at all, you can just do functions with signatures like: `void takes_array(int my_array[33][33]);`. I would highly recommend sketching this out in psuedocode, and imagining which functions would make the problem easy if they existed. Pretend you have them and sketch out the code, then go implement each function.
+  - `9` _Hint:_ You can pass arrays to functions, and they are passed by
+    **reference**, so you don't have to worry about pointers at all, you can
+    just do functions with signatures like:
+    `void takes_array(int my_array[33][33]);`. I would highly recommend
+    sketching this out in psuedocode, and imagining which functions would make
+    the problem easy if they existed. Pretend you have them and sketch out the
+    code, then go implement each function.
   - `12`
   - `15`
-  - `16` _Hint:_ if you have this char: `char ch = 'a';` then `ch - 'a'` is equal to `0`, and `'b' - 'a'` is equal to `1`, etc.
+  - `16` _Hint:_ if you have this char: `char ch = 'a';` then `ch - 'a'` is
+    equal to `0`, and `'b' - 'a'` is equal to `1`, etc.
   - `17` **Kiah Credit✨**
 - commit your work, and push up a MR on GitLab
 - before you slack me the URL, review your own diffs, clean up anything you

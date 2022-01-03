@@ -132,7 +132,7 @@ int main(void) {
   errors. (Hint: if you want to manually make a jest test fail _throw your own
   Error_)
 - Stop at the beginning of section **2.5**.
-- [Video link](http://jared.howtocomputer.link/monkey/10--2.4-parser-errors.mp4)
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/10--2.4-parser-errors.mp4)
 - Submit a MR, slack the MR url.
 
 ---
@@ -147,8 +147,8 @@ int main(void) {
   can spot a good opportunity to refactor some of the `ast.ts` classes using
   base classes, inheritance, and maybe the `abstract` keyword.
 - Stop at the beginning of section **2.6**.
-- [Video link #1](http://jared.howtocomputer.link/monkey/11--2.5-parse-return-statements-1.mp4)
-- [Video link #2](http://jared.howtocomputer.link/monkey/12--2.5-parse-return-statements-2.mp4)
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/11--2.5-parse-return-statements-1.mp4)
+- [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/12--2.5-parse-return-statements-2.mp4)
 - Submit a MR, slack the MR url.
 
 ---

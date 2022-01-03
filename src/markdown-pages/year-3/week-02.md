@@ -174,8 +174,8 @@ enum Direction {
 - As always, try to do as much as you can on your own, leaning on the videos
   when you get stuck. But also, make sure to watch the videos and update your
   code accordingly.
-- [Video link #1](http://jared.howtocomputer.link/monkey/14--2.6-parsing-identifiers-1.mp4)
-- [Video link #2](http://jared.howtocomputer.link/monkey/15--2.6-parsing-identifiers-2.mp4)
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/14--2.6-parsing-identifiers-1.mp4)
+- [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/15--2.6-parsing-identifiers-2.mp4)
 - Submit a MR, slack the MR url
 
 ---

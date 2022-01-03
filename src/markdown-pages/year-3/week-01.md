@@ -295,5 +295,5 @@ $ cc -o hello hello.c
   start coding. Work through _just that one section_ of coding work, ending when
   it changes to the next section, which is called **Implementing the Pratt
   Parser**.
-- [Video link](http://jared.howtocomputer.link/monkey/13--2.6-preparing-the-ast.mp4)
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/13--2.6-preparing-the-ast.mp4)
 - Submit a MR, slack the MR url

@@ -14,6 +14,15 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #11"
+        path="/year-3/week-11"
+        includes={[
+          `Introduction to Netlify`,
+          "`typedef` in C",
+          "`struct`s in C",
+        ]}
+      />
+      <Week
         title="Year 3, Week #10"
         path="/year-3/week-10"
         includes={[`Dependency Injection & Test Mocks`]}

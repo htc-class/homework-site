@@ -108,9 +108,9 @@ int main(void) {
 - STOP before the end of Section 2.4, (page 53.6 of printed book, 41.7 of PDF),
   before he adds error messages to the parser.
 - Video links:
-  [part 1](http://jared.howtocomputer.link/monkey/07--2.4-parse-let-statements-1.mp4),&nbsp;
-  [part 2](http://jared.howtocomputer.link/monkey/08--2.4-parse-let-statements-2.mp4),&nbsp;
-  [part 3](http://jared.howtocomputer.link/monkey/09--2.4-parse-let-statements-3.mp4)
+  [part 1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/07--2.4-parse-let-statements-1.mp4),&nbsp;
+  [part 2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/08--2.4-parse-let-statements-2.mp4),&nbsp;
+  [part 3](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/09--2.4-parse-let-statements-3.mp4)
 - Submit a MR, slack the MR url.
 
 ---

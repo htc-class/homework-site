@@ -137,7 +137,7 @@ ALTER TABLE order_items ADD FOREIGN KEY (order_id) REFERENCES orders(id);
 - As always, try to do as much as you can on your own, leaning on the videos
   when you get stuck. But also, make sure to watch the videos and update your
   code accordingly.
-- [Video link](http://jared.howtocomputer.link/monkey/16--2.6-parsing-integer-literals.mp4)
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/16--2.6-parsing-integer-literals.mp4)
 - Submit a MR, slack the MR url
 
 ---

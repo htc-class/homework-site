@@ -284,19 +284,19 @@ age, ok := ages["santa claus"]
   says goes a little over your head.
 - Your parents are buying you a copy of the Monkey book, if you haven't gotten
   it yet, and want to start, you can use
-  [this pdf version](http://jared.howtocomputer.link/monkey/monkey.pdf) for now.
-  Please download a copy of this PDF, since I'm going to delete it very soon, so
-  it's not publicly available, since it is the author's copyrighted book -- I'm
-  only temporarily putting it up there while you guys wait for your purchased
-  copies to arrive.
+  [this pdf version](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/monkey.pdf)
+  for now. Please download a copy of this PDF, since I'm going to delete it very
+  soon, so it's not publicly available, since it is the author's copyrighted
+  book -- I'm only temporarily putting it up there while you guys wait for your
+  purchased copies to arrive.
 - next, I made a 15 minute video of me _setting up our monkey repo_. This is
   something I normally do on my own and don't show you, but you guys are ready
   to start seeing under the hood, so you know how this stuff works. You're going
   to watch this video, but you won't have to do any of the work I did, for this
   video, I just want you to watch. The link is
-  [here](http://jared.howtocomputer.link/monkey/01-setup.mp4). Be sure to
-  _fullscreen_ the video so you can see my code clearly, and please let me know
-  if the fonts are too small, I'll adjust future videos if so.
+  [here](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/01-setup.mp4).
+  Be sure to _fullscreen_ the video so you can see my code clearly, and please
+  let me know if the fonts are too small, I'll adjust future videos if so.
 - That's all for this assignment.
 
 ---
@@ -329,8 +329,8 @@ age, ok := ages["santa claus"]
   discouraged if you find it too hard and give up though, but it might be fun to
   try.
 - Next, watch two videos of me working up through page 16.4.
-  [First video](http://jared.howtocomputer.link/monkey/02-begin-lexing.mp4),
-  [Second video.](http://jared.howtocomputer.link/monkey/03-begin-lexing-2.mp4)
+  [First video](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/02-begin-lexing.mp4),
+  [Second video.](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/03-begin-lexing-2.mp4)
 - After watching the videos, pull open your Monkey repo in vscode, **create a
   new branch**, and type in all the code I added in the homework. I don't care
   if you first try to do it from memory and then check against my video, or if
@@ -366,7 +366,7 @@ age, ok := ages["santa claus"]
   and can't get forward, stroke your beard for a little while and try
   console.logging and thinking deeply about the problem before you give up. But
   if you can't get past a spot, then start watching
-  [the next video](http://jared.howtocomputer.link/monkey/04-extending-the-lexer.mp4).
+  [the next video](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/04-extending-the-lexer.mp4).
   Watch it just long enough to get yourself _unstuck_, then keep coding on your
   own.
 - Keep repeating the last step until you finish the section -- that is, try to

@@ -96,7 +96,7 @@ _New stuff we learned this week:_
   commit your work when you finish.
 - As always, make sure to try to do as much as you can without the videos, but
   always also watch the videos and update your code to (mostly) match.
-- [Video link](http://jared.howtocomputer.link/monkey/25--2.8-function-literals.mp4)
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/25--2.8-function-literals.mp4)
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
 
 ---
