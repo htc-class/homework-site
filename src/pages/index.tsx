@@ -14,6 +14,14 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #12"
+        path="/year-3/week-12"
+        includes={[
+          "`pm2` info for daemonizing applications",
+          "helping `jest` play nice with `import.meta.env`",
+        ]}
+      />
+      <Week
         title="Year 3, Week #11"
         path="/year-3/week-11"
         includes={[
