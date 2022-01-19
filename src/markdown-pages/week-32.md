@@ -308,7 +308,7 @@ typing practice</Checkable>
 
 - after clicking change branches, change the TARGET PROJECT to your own fork:
 
-![change target proj](https://homework.howtocomputer.link/images/change-garget-project.png)
+![change target proj](https://homework.howtocomputer.link/images/change-target-project.png)
 
 - Then submit the PR, and Slack me the MR url.
 - I will leave you some feedback on your MR, and have you improve some of your
