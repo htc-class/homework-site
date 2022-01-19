@@ -4,9 +4,25 @@ path: "/year-3/week-13"
 
 # Year #3, Week #13 💻 🏒
 
-_New stuff we learned this week:_
+_New stuff we learned this week:_ 🤔
 
-TODO
+## Pointer Arithmetic in C
+
+- The magic formula: `array[i] == p + i` (where `p` is a pointer to `a[0]`)
+- All arguments are **passed by VALUE** in C, including arrays, because they
+  **DECAY INTO POINTERS**.
+- There are 3 forms of pointer math allowed in C:
+  - Adding an `int` to a _pointer_, which produces another _pointer_
+  - Subtracting an `int` from a _pointer_, which produces another _pointer_
+  - Subtracing _two pointers_, which produces an `int` representing the number
+    of items of the type pointed to by the pointer between the two pointers.
+- When you add and subtract integers to/from pointers, the pointers are
+  automagically **scaled** according to the `sizeof` the type pointed to. This
+  is the same as what happens with integers used for array access, you probably
+  just never thought of it before.
+- If you have any questions, simply refer to this diagram:
+
+<img src="/images/pointer-arithmetic.png" style="margin-bottom: 2em;" />
 
 ## Homework Plan (2 weeks)
 
