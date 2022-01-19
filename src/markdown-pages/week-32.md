@@ -304,11 +304,11 @@ typing practice</Checkable>
 - in the terminal, click the URL to create a new MR
 - on the MR screen click the `Change branches` link:
 
-![change branches](http://screenshots.pro.photo/jared/2020-05-06_09-45-19.png)
+![change branches](https://homework.howtocomputer.link/images/change-branches.png)
 
 - after clicking change branches, change the TARGET PROJECT to your own fork:
 
-![change target proj](http://screenshots.pro.photo/jared/2020-05-06_09-45-50.png)
+![change target proj](https://homework.howtocomputer.link/images/change-garget-project.png)
 
 - Then submit the PR, and Slack me the MR url.
 - I will leave you some feedback on your MR, and have you improve some of your

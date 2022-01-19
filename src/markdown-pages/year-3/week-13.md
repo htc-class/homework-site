@@ -15,7 +15,7 @@ _New stuff we learned this week:_ 🤔
   - Adding an `int` to a _pointer_, which produces another _pointer_
   - Subtracting an `int` from a _pointer_, which produces another _pointer_
   - Subtracing _two pointers_, which produces an `int` representing the number
-    of items of the type pointed to by the pointer between the two pointers.
+    of items between the two pointers
 - When you add and subtract integers to/from pointers, the pointers are
   automagically **scaled** according to the `sizeof` the type pointed to. This
   is the same as what happens with integers used for array access, you probably
