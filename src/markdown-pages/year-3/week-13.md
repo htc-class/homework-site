@@ -27,6 +27,7 @@ _New stuff we learned this week:_ 🤔
 ## Homework Plan (2 weeks)
 
 - 1 day Monkey Assignment #20 🐒
+- 1 day Monkey Assignment #21 🐒
 - 2 day review all flashcards in your (new Netlify) app.
 - 2 day touch typing practice
 - 1 day read King-C ch. 12 👑
@@ -42,6 +43,8 @@ _New stuff we learned this week:_ 🤔
 <Checkable id="login-signup">Flashcards WebApp Assignment</Checkable>
 
 <Checkable id="monkey-20">Monkey Assignment #20 🐒</Checkable>
+
+<Checkable id="monkey-21">Monkey Assignment #21 🐒</Checkable>
 
 <Checkable id="king-c-read">King C: Read chapter 12 👑</Checkable>
 
