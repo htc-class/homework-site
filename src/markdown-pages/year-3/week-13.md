@@ -31,12 +31,15 @@ _New stuff we learned this week:_ 🤔
 - 2 day touch typing practice
 - 1 day read King-C ch. 12 👑
 - 1 day King-C ch. 12 projects 👑
+- 1 day Flashcards Webapp assignment (Login/Signup)
 - 1 day watch CS50
   [CS50 Lecture #3 segment](https://htc-viewer.netlify.app/?id=fykrlqbV9wM),
   from `1:01:56` to **end.**
 - **6** days [_Execute Program_](https://www.executeprogram.com) homework
 
 ---
+
+<Checkable id="login-signup">Flashcards WebApp Assignment</Checkable>
 
 <Checkable id="monkey-20">Monkey Assignment #20 🐒</Checkable>
 
