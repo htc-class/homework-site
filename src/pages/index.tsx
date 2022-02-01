@@ -14,6 +14,16 @@ const IndexPage = () => (
     </h1>
     <div>
       <Week
+        title="Year 3, Week #14"
+        path="/year-3/week-14"
+        includes={[
+          "**Semver**",
+          "hashing passwords with `bcrypt`",
+          "SQL: `IF NOT EXISTS`",
+          "SQL: `TIMESTAMP` type and `CURRENT_TIMESTAMP`",
+        ]}
+      />
+      <Week
         title="Year 3, Week #13"
         path="/year-3/week-13"
         includes={["**pointer arithmetic** in C"]}
