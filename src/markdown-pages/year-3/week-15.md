@@ -2,12 +2,41 @@
 path: "/year-3/week-15"
 ---
 
+# Year #3, Week #14 💻 🏏
+
+## Homework Plan
+
+- 1 day Monkey Assignment #23 🐒
+- 1 day review all flashcards in your (new Netlify) app.
+- 1 day touch typing practice
+- 2 days Flashcards API assignment (Login/Signup)
+- **3** days [_Execute Program_](https://www.executeprogram.com) homework
+
+---
+
+<Checkable id="login-signup">Flashcards API (Login/Signup)</Checkable>
+
+<Checkable id="monkey-23">Monkey Assignment #23 🐒</Checkable>
+
+<Checkable id="flash-review">Review Flashcards</Checkable>
+
+<Checkable id="typing-1">touch typing practice</Checkable>
+
+<Checkable id="xp-1">Execute Program #1</Checkable>
+
+<Checkable id="xp-2">Execute Program #2</Checkable>
+
+<Checkable id="xp-3">Execute Program #3</Checkable>
+
+---
+
 ## Flashcards API Homework (Login/Signup)
 
 ---
 
-- Read the "node password hashing" section of "New Stuff" above ^^^.
-- Do the Migrations API homework first, address any feedback, and merge.
+- 🔎 Read through the whole assignment first before beginning.
+- Read the "node password hashing" section of "New Stuff" from
+  [last week](/year-3/week-14).
 - Make a new branch.
 - In your main `src/index.ts` file, add a line under where you add the CORS
   middleware that says: `app.use(express.json())` -- this will allow express to
@@ -57,7 +86,7 @@ Content-Type: application/json
 
   - The work should not be done right inside the function in index.ts -- rather,
     the `req.body` should be passed as an _input_ to a new _route responder_
-    which returns a status and some json, so it is tesable.
+    which returns a status and some json, so it is testable.
   - The route responder should be fully tested, including all of the error
     states, like invalid json, user already exists, database borks unexpectedly,
     etc.
@@ -99,7 +128,8 @@ Content-Type: application/json
     [video 2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/flashcards/10--login-signup-pt2.mp4).
 
 - when you've got all that working, review your code, clean things up, and
-  commit.
+  commit. _(**NOTE:** this is a logical stopping point, to break this up into 2
+  days)_
 - Next, create another route following basically the same steps, but this time
   for json POST-ed to `/login`. Differences/requirements (read all ahead of
   time):
