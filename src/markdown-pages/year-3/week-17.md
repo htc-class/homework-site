@@ -4,6 +4,22 @@ path: "/year-3/week-17"
 
 # Year #3, Week #17 💻 🥅
 
+## Some Helpful SQL Syntax:
+
+```sql
+-- Add a column to an existing table
+ALTER TABLE cats ADD COLUMN num_hairballs INTEGER
+
+-- Delete a column from an existing table
+ALTER TABLE cats DROP COLUMN num_hairballs
+
+-- Change a columns name and type info
+ALTER TABLE cats CHANGE COLUMN old_name new_name TEXT DEFAULT NULL
+
+-- Select some records where a nullable column is not null
+SELECT name, num_hairballs FROM cats WHERE name IS NOT NULL
+```
+
 ## Homework Plan
 
 - 1 day Monkey Assignment #25 🐒
@@ -106,6 +122,10 @@ path: "/year-3/week-17"
 - If for some reason things didn't work, investigate, troubleshoot, and fix by
   committing corrections to a new branch, and slack me to review anything.
 - **PART 2: Updating Old Tables**
+- Before you work on part 2 and 3, make note that at the top of this page, I
+  added some SQL statements that will be very similar to the types you need to
+  write for this assignment. Refer to those (or to the online docs you have
+  available) when crafting your queries.
 - Now, switch back to where you normally work (locally, or still on the Pi), and
   _create a new branch called_ `user-cards`.
 - The first thing we want to do is update _both_ of our old "cards" and
