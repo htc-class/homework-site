@@ -11,9 +11,10 @@ path: "/year-3/week-18"
 - 1 day read King C chapter 15 👑
 - 1 day King C programming exercizes 👑
 - 1 day touch typing practice
+- 1 or 2 days Flashcards assignment
 - 1 day watch CS50
   [CS50 Lecture #4 segment](https://htc-viewer.netlify.app/?id=cF6YkH-8vFk),
-  from `24:03` to `58:44`
+  from `58:44` to _end_.
 - **3** days [_Execute Program_](https://www.executeprogram.com) homework
 
 ---
@@ -91,3 +92,82 @@ path: "/year-3/week-18"
 - commit your work, create a MR
 - before you slack me the URL, review your own diffs, clean up anything you
   notice, then slack me the URL.
+
+## Flashcards
+
+- Make sure you've addressed all feedback and merged any open MRs for both the
+  webapp and api side of your project.
+- create new branches for _both_ your API and webapp, you'll be touching both in
+  this assignment.
+- Read this whole assignment through before starting.
+- **Part 1:**
+- when we did your last set of migrations in your api, we didn't update any of
+  your API _code_, so there's at least one error in your API right now you'll
+  need to fix, because your `GET /cards` function is probably still trying to
+  read a column out of the database like `created` or `date` or `time` that no
+  longer exists. Find this and fix it. Make sure you update any types in your
+  API to match.
+- on a similar note, you might need to check your web app code -- if your api
+  returns different keys now (it might, or it might not, based on if you alias
+  your columns), then your webapp will have to adapt. Be sure any types for your
+  webapp are updated. Running `npx fldev ts:check` might be helpful if you
+  update your types, to find all typescript errors.
+- get your "dev" versions of your web-app and API going, and make sure they are
+  talking to each other and things are working correctly.
+- Make it so you can flip your cards:
+  - the state should go in redux, not local react state
+  - you'll need to decide how the user flips a card... what action flips it?
+- commit your work
+- **Part 2:**
+- next, as a preparation for future work, I want you to make a new file called
+  `lib/token-storage.ts`, and a corresponding test file:
+  `lib/__tests__/token-storage.ts`.
+- in your non-test file, start with this code:
+
+```ts
+// returns a token from LocalStorage,
+// or null if it doesn't exist, or is expired
+export function getUserToken(now: Date = new Date()): string | null {
+  throw new Error(`Method not implemented.`);
+}
+
+// sets a token in local storage, with an optional expiration date
+export function setUserToken(token: string, expires?: Date) {
+  throw new Error(`Method not implemented.`);
+}
+```
+
+- now, implement these two functions, with tests covering all these cases:
+  - getting a token when there is nothing in storage should return null
+  - getting a token that is not expired should return the token
+  - getting a token that is expired should return null
+  - setting a token should allow it to be retrieved later with getUserToken
+  - setting a token with no expiration should allow it to be retrieved at any
+    time, even in the distant future
+  - setting a token with an expiration should allow it to be retrived before it
+    expires
+  - setting a token with an expiration should cause null to returned from
+    getUserToken after the expiration is past.
+- note, in order to "control time", the `getUserToken` function allows you to
+  pass in a date value representing now. If you don't pass one in, it defaults
+  to using the actual current time, via a default argument.
+- note 2: in order to get jest to allow you to use `localStorage` inside your
+  functions, add this to the top of your test file:
+
+```ts
+/**
+ * @jest-environment jsdom
+ */
+```
+
+- note 3: you might want to make a jest `beforeEach` that calls
+  `localStorage.clear()` to reset the state of localStorage between every test.
+- note 4: review in the old "new stuff" the week when we did localStorage.
+- commit your work
+- push up MRs for both API and web app side
+- review your diffs
+- slack me your MR urls
+- after I review your "API" MR and you merge, I want you to "deploy it to
+  production", which means update the repo on the pi to be running the latest
+  merged changes and restart the PM2 daemon. Once you've done that, deploy to
+  netlify and Slack the netlify preview deploy URL.
