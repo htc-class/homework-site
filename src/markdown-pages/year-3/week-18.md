@@ -142,8 +142,8 @@ export function setUserToken(token: string, expires?: Date) {
   - getting a token that is not expired should return the token
   - getting a token that is expired should return null
   - setting a token should allow it to be retrieved later with getUserToken
-  - setting a token with no expiration should allow it to be retrieved at any
-    time, even in the distant future
+  - setting a token with no expiration means the token is only valid for the
+    current session
   - setting a token with an expiration should allow it to be retrived before it
     expires
   - setting a token with an expiration should cause null to returned from
@@ -160,9 +160,13 @@ export function setUserToken(token: string, expires?: Date) {
  */
 ```
 
-- note 3: you might want to make a jest `beforeEach` that calls
-  `localStorage.clear()` to reset the state of localStorage between every test.
-- note 4: review in the old "new stuff" the week when we did localStorage.
+- note 3: tokens with no expiration only are good for the "session" which means
+  they should be stored in `sessionStorage` -- this means your implementation
+  will need to use both sessionStorage and localStorage -- you'll need to figure
+  out which ones (or both?) to check for a stored token, and in which one to set
+  a token. 🤔
+- note 4: review in the old "new stuff" the week when we did localStorage --
+  sessionStorage is exactly the same, except it only lasts for the session.
 - commit your work
 - push up MRs for both API and web app side
 - review your diffs
