@@ -48,6 +48,7 @@ path: "/year-3/week-18"
 - Make sure you've addressed any feedback from last week's King C assignment,
   merge, and _make a new branch_.
 - Complete Programming `Project #1`, following these steps:
+
   - All the files needed (including a `quote.txt` file for testing) are in
     [this snippet](https://gitlab.howtocomputer.link/-/snippets/15). Put them in
     a separate folder within your chapter 15 folder.
@@ -65,8 +66,44 @@ path: "/year-3/week-18"
   - look in the directory... do you see some new files? do you understand what
     they are and why they're there?
   - Finally, do what he says in the assignment: "Improve the program by having
-    `write_line` alternate between puting the larger gaps at the end of the line
-    and putting them at the beginning of the line."
+    `write_line` alternate between putting the larger gaps at the end of the
+    line and putting them at the beginning of the line." (read the below bullet
+    points first)
+  - What he means by "alternate between..." is this: right now the program is
+    weighted towards _adding more spaces towards the **end** of the line_, if
+    the spaces can't be divided evenly, like so:
+
+  ```txt
+  foo bar  baz  lol
+  jim jo it  so  my
+  ```
+
+  - when you've completed the task, it will alternate each line, putting extra
+    spaces at the end, then the beginning, resulting in this:
+
+  ```txt
+  foo bar  baz  lol
+  jim  jo  it so my
+  ```
+
+  - the reason why the program works the way it does is that when you divide two
+    `int`s in C, any decimal number that would result is **implicitly ROUNDED
+    DOWN**:
+
+  ```c
+  int x = 3 / 2; // `x` = 1
+  ```
+
+  - this causes extra spaces to keep getting deferred till later in the
+    `write_line` function
+  - to change this to _alternating_, you will have to keep track of some
+    variable to flip back and forth to know whether you should weight extra
+    spaces early or late.
+  - when you are trying to weight _early_, you'll need to **ROUND UP** when
+    dividing instead of down
+  - `<math.h>` has two functions `floor` and `ceil` that will be useful
+  - you can _cast_ an `int` to a float like this `(double) x`.
+
 - Complete `Project #2`, using the same files as project 1.
 - Complete `Project #3`, following these steps:
   - Make a new folder inside your "chapter 15" folder called `qsort/` and
