@@ -87,7 +87,18 @@ path: "/year-3/week-19"
   an _exact copy_ of the `images/yard.bmp` file. But, as you start doing actual
   pixel manipulation in your functions, you'll see the output file begin to
   change.
-- Complete the `grayscale`, `blur`, `reflect`, and `sepia` filters.
+- Complete the `grayscale`, `sepia, `reflect`, and `blur` filters. (in that
+  order!)
+- Hint 1: You may find it very helpful to make one or more helper functions for
+  some of the harder filters.
+- Hint 2: For the `blur` and `edges` filter, you can't just overwrite pixels
+  while processing each pixel, becuase the next pixel needs to know the original
+  values of the _**surrounding**_ pixels to calculate it's value. This means
+  you're going to need to loop through every pixel twice. The first time
+  calculating the pixels that you would like to overwrite but can't (instead
+  storing them in some temporary variable), and the second time taking the
+  calculated pixel values out of your temporary storage and overwriting the
+  original pixel data.
 - **Extra Credit: ✨** Complete the `edges` filter.
 - Commit your work, push up a MR, **review your diffs and cleanup!** and Slack
   me the MR URL.
