@@ -117,7 +117,7 @@ path: "/year-3/week-18"
 - Complete `Project #4`, following these steps:
   - Make a new folder inside your "chapter 15" folder called `remind/` and
     _inside that_ folder, add a file called `remind/remind.c` containing
-    [this code](https://gitlab.howtocomputer.link/-/snippets/16).
+    [this code](https://gitlab.howtocomputer.link/-/snippets/17).
   - Make the changes he describes.
   - To test that your program works, for this project I want you to use a
     `Makefile`, and commit it with your work.
