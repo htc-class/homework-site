@@ -87,7 +87,7 @@ path: "/year-3/week-19"
   an _exact copy_ of the `images/yard.bmp` file. But, as you start doing actual
   pixel manipulation in your functions, you'll see the output file begin to
   change.
-- Complete the `grayscale`, `sepia, `reflect`, and `blur` filters. (in that
+- Complete the `grayscale`, `sepia`, `reflect`, and `blur` filters. (in that
   order!)
 - Hint 1: You may find it very helpful to make one or more helper functions for
   some of the harder filters.
