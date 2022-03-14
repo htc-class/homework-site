@@ -6,14 +6,46 @@ path: "/year-3/week-19"
 
 ## Homework Plan
 
-- 1 day Monkey Assignment #27 🐒
+- 1 day Monkey Assignment #27 🐒 🧼
 - 1 day Monkey Assignment #28 🐒
 - 2 day review all flashcards in your (new Netlify) app.
-- 1 or 2 days CS50 "Filter" Assignment
+- 1 or 2 days CS50 "Filter" Assignment 🏞
 - 2 day touch typing practice
 - 1 day Flashcard **WebApp** assignment
 - 1 day Flashcard **API** assignment
 - **6** days [_Execute Program_](https://www.executeprogram.com) homework
+
+---
+
+<Checkable id="flash-app">Flashcards WebApp Assignment</Checkable>
+
+<Checkable id="flash-api">Flashcards API Assignment</Checkable>
+
+<Checkable id="monkey-27">Monkey Assignment #27 🐒 🧼</Checkable>
+
+<Checkable id="monkey-28">Monkey Assignment #28 🐒</Checkable>
+
+<Checkable id="cs50-filter">CS50 Filter Assignment 🏞</Checkable>
+
+<Checkable id="flash-review">Review Flashcards #1</Checkable>
+
+<Checkable id="flash-review-2">Review Flashcards #2</Checkable>
+
+<Checkable id="typing-1">touch typing practice #1</Checkable>
+
+<Checkable id="typing-2">touch typing practice #2</Checkable>
+
+<Checkable id="xp-1">Execute Program #1</Checkable>
+
+<Checkable id="xp-2">Execute Program #2</Checkable>
+
+<Checkable id="xp-3">Execute Program #3</Checkable>
+
+<Checkable id="xp-4">Execute Program #4</Checkable>
+
+<Checkable id="xp-5">Execute Program #5</Checkable>
+
+<Checkable id="xp-5">Execute Program #6</Checkable>
 
 ---
 
@@ -116,7 +148,9 @@ path: "/year-3/week-19"
   is a token present_ (by looking into the redux state). If the token is **not**
   there, then you should _redirect_ to the `/login` router. You might need to
   research on the React Router docs website to figure out how to properly
-  redirect a request.
+  redirect a request. (Hint: I think the easiest way to do this is actually
+  _render a component_ that redirects or navigates you to another route. Check
+  [this page out](https://reactrouter.com/docs/en/v6/api)).
 - You'll need to wire up your `<Login />` component so that it actually does
   stuff now. For instance, you'll need to track (in state) the email address
   that's being entered, and the password. I will let you decide if you want to
@@ -181,15 +215,18 @@ export function login(): Thunk {
       // 3) get the token from `json`
       let token = `???`;
 
-      // 4) dispatch that you got a token
+      // 4) store the user token for next time
+      `???`;
+
+      // 5) dispatch that you got a token
       // you'll need to MAKE the `receivedToken`
       // action creator, and handle it as well
       dispatch(receivedToken(token));
 
-      // 5) redirect to `/`
+      // 6) redirect to `/`
       // ???
     } catch (error: unknown) {
-      // 6) handle a failed login with an alert
+      // 7) handle a failed login with an alert
       window.alert(`???`);
     }
   };
@@ -212,6 +249,11 @@ fetch(`/some-url`, {
 
 - The API will use that header to determine if you're allowed to retrieve cards,
   and **which** cards to pull from the db, in the next assignment.
+- Also, make it so that if the API errors, or the login info is bad, that some
+  message is presented to the user (see the `window.alert`) section in the thunk
+  skeleton above. But more than just showing an alert, you need to make sure
+  that the _"submit" button **un-disables**_ and the user stays on the login
+  screen, so they can try again.
 - I might have missed something here you'll need to do to make this work, I'm
   not trying to be exhaustive or even chronological in my steps, just dumping
   out things I can think of, and stuff that will be helpful. You'll need to
@@ -228,4 +270,66 @@ fetch(`/some-url`, {
 
 ---
 
-- handle Bearer Token
+- Make sure you've done the WebApp assignment first.
+- Make sure you've addressed and resolved any feedback from previous week's API
+  homework.
+- Make a new branch.
+- The high-level description of what we're doing for this chunk, is that we're
+  going to now be requring that we get a Bearer authorization token when someone
+  tries to hit the `/cards` route. We'll use that token to decide if they're
+  allowed to query cards, and which cards to get.
+- You already have a "route responder" called `getCards()`. Currently it takes
+  only the `db` interface, but we're going to change that. It should now also
+  take an argument called `authorizationHeader` which has the type of
+  `string | undefined`. Add that argument, and supply a default value for the
+  argument of `undefined`.
+- You should already have at least 2 tests for this route responder, although
+  they will have typescript errors as soon as you change the signature of the
+  function. Comment out the existing tests temporarily, and then **Add TWO
+  tests,** and make them pass:
+  - if `authorizationHeader` is `undefined`, return a `403` status with some
+    sort of "unauthorized" json message
+  - if `authorizationHeader` is a string, but does not match the format
+    `Bearer <TOKEN>`, return a `403` status with some sort of "unauthorized"
+    json message
+  - NOTE: in both cases covered by these two new tests, the **database should
+    never be queried** because if we don't have a good token, there's no reason
+    to query. Update your tests to _PROVE_ that the database is never queried.
+- Now, the next thing we need to do is extract the UUID from the bearer token,
+  and pass it to our database abstraction. It's going to use that token to
+  authenticate the user and get the right cards, all in one fell swoop.
+- Change the database's `getAllCards()` method to become
+  `getUserCards(token: string)`. You'll need to update the typescript
+  `interface` for the db abstraction, and your Mock database.
+- Change the `getCards()` route responder so that it calls this modified
+  `db.getUserCards(token: string)` method, passing the token you extracted from
+  the authorization header.
+- Next, we're going to modify the SQL in this `getUserCards(token: string)`
+  method. What we want to do is _only return cards_ for the user whose owns the
+  token passed in. And, we can do this **in ONE query**.
+- Pull up Sequel Ace/Pro, and try to work out a single query that pulls just the
+  users cards, based on the `user_id` column of the row matching the passed in
+  _token_. This is hard to do, don't be discouraged, stroke your beard a bit and
+  think, and experiment to see if you can figure it out.
+- If you're totally stuck after giving it some real effort, refer to
+  [hint #1](https://gitlab.howtocomputer.link/-/snippets/18) and then go back to
+  Sequel Ace and spend some more time trying to figure it out.
+- If you're still stuck, refer to
+  [hint #2](https://gitlab.howtocomputer.link/-/snippets/19) for help.
+- Once you've got the query working add a request to your `api.http` file to
+  test the request.
+- Now, uncomment the tests you commented out in step 6, and fix them. They
+  should be covering these two cases (you can pass dummy auth headers in for
+  these tests, as long as they're in the right format):
+  - the db errors for any reason, which should return a `500` status and some
+    error json
+  - the happy path, you get some cards back
+- Finally, in your `src/index.ts` fix the call site to your route responder by
+  passing `req.headers.authorization` to the route responder's `getCards`
+  function. `req.headers` is an object containg all of the _request headers_, so
+  `req.headers.authorization` is the authorization header (if present). It has
+  the exact type we want: `string | undefined`. Fancy that!
+- Fire up your web app and make sure it can talk to your API and that your
+  web-app still works.
+- commit your work, submit a MR, carefully review your own code and clean up/fix
+  anything you notice, then slack me the MR url.
