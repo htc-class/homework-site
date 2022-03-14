@@ -100,8 +100,9 @@ path: "/year-3/week-19"
   calculated pixel values out of your temporary storage and overwriting the
   original pixel data.
 - **Extra Credit: ✨** Complete the `edges` filter.
-- Commit your work, push up a MR, **review your diffs and cleanup!** and Slack
-  me the MR URL.
+- Commit your work, push up a MR, and your MR, upload _screenshots of each
+  filter type you completed_, **review your diffs and cleanup!** and Slack me
+  the MR URL.
 
 ---
 
