@@ -125,7 +125,6 @@ path: "/year-3/week-19"
 
 ---
 
-- Do this homework **BEFORE** the API side.
 - Address all feedback from prior MR's, and merge.
 - Create a new branch.
 - Double-check that you did the first two steps.
@@ -145,6 +144,7 @@ path: "/year-3/week-19"
 
 ---
 
+- Do this homework **BEFORE** the API side.
 - Make sure you've addressed all feedback from last week's MRs (both API and
   Webapp), and have merged.
 - Open up your Webapp repo, and **make a new branch**.
