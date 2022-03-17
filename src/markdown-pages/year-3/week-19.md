@@ -136,7 +136,7 @@ path: "/year-3/week-19"
 - Commit your work.
 - As always, make sure to try to do as much as you can without the videos, but
   always also watch the videos and update your code to (mostly) match.
-- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/36--3.10-function-obj.mp4)
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/38--3.10-function-application-closures.mp4)
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
 
 ---
