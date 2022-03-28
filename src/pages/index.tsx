@@ -13,6 +13,7 @@ const IndexPage = () => (
       </span>
     </h1>
     <div>
+      <Week title="Year 3, Week #20" path="/year-3/week-20" includes={[]} />
       <Week title="Year 3, Week #19" path="/year-3/week-19" includes={[]} />
       <Week title="Year 3, Week #18" path="/year-3/week-18" includes={[]} />
       <Week title="Year 3, Week #17" path="/year-3/week-17" includes={[]} />

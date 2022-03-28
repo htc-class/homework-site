@@ -19,7 +19,7 @@ path: "/year-3/week-20"
 
 <Checkable id="monkey-29">Monkey Assignment #29 🐒</Checkable>
 
-<Checkable id="cs50-recover">CS50 Recoer Assignment 🥸</Checkable>
+<Checkable id="cs50-recover">CS50 Recover Assignment 🥸</Checkable>
 
 <Checkable id="flash-review">Review Flashcards</Checkable>
 
@@ -63,9 +63,15 @@ path: "/year-3/week-20"
   a pattern for working through this feature.
   - You'll need to `POST` to the `/signup` route instead of `/login`, but the
     _shape_ of the JSON you _send_ and _receive_ is both exactly the same.
-  - You'll need to make another thunk, which should end up very similar
+  - You'll need to make another thunk, which should end up being nearly
+    identical to the the login thunk
+  - Once you've got both thunks hooked up and working, DRY up your code by
+    extracting a helper function that will do all the work that is the same
+    between the two thunks, and take an argument to handle the small difference
+    between the two thunks. Each thunk should call out to this helper function.
 - Commit your work.
-- Next, implement the "remember me for two weeks" feature.
+- Next, implement the "remember me for two weeks" feature (if you haven't
+  already done so).
   - If it is checked when the user logs in, an expiration date should be set
     when calling `setUserToken()`.
   - Probably you don't need new Redux state for this temporary piece of info, it
@@ -85,6 +91,8 @@ path: "/year-3/week-20"
 - Push up a MR to GitLab.
 - Review your diffs, clean up anything you notice.
 - Slack me the MR url and the Netlify draft URL.
+
+---
 
 ## CS50 Recover (More Comfortable)
 
