@@ -140,13 +140,5 @@ path: "/year-3/week-20"
   where I say to stop the video, I want you to do so and try to continue on your
   own without it, returning to the video only if and when you need idt, and when
   you've worked hard to try to solve it on your own for a while.
-
-## Recover rough notes
-
-- tell them to look at "filter" for help with file manipulation
-- go over `NULL` (in class!)
-- tell them to read: `https://manual.cs50.io/3/fread` (especially bout
-  "remembering" position)
-- a good initial "baby step" is to iterate through the "blocks" of memory, and
-  count how many jpeg "starts" you find. (should be 50)
-- pretty hard, probably worth giving a skeleton
+- [Video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/cs50/recover-1.mp4)
+- [Video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/cs50/recover-2.mp4)
