@@ -6,17 +6,49 @@ path: "/year-3/week-22"
 
 ## Homework Plan
 
+- 1 day watch CS50
+  [CS50 Lecture #5 segment](https://htc-viewer.netlify.app/?id=4IrUAqYKjIA),
+  from `30.23` to `1:08:24`
 - 1 day Monkey Assignment #31 🐒
 - 1 day Monkey Assignment #32 🐒
-- 1 day review all flashcards in your (new Netlify) app.
+- 2 days review all flashcards in your (new Netlify) app.
 - 1 day read King C chapter 17 👑
 - 1 day King C programming exercizes/projects 👑
-- 1 day touch typing practice
-- 1 day Flashcards API assignment
-- 1 day watch CS50 TODO
-  [CS50 Lecture #5 segment](https://htc-viewer.netlify.app/?id=4IrUAqYKjIA),
-  from beginning to `30.23`
-- **3** days [_Execute Program_](https://www.executeprogram.com) homework
+- 2 days touch typing practice
+- 2 days Flashcards API assignment
+- **6** days [_Execute Program_](https://www.executeprogram.com) homework
+
+---
+
+<Checkable id="cs50-linked-lists">Watch CS50 Video</Checkable>
+
+<Checkable id="flash-api">Flashcards API Assignment #1</Checkable>
+
+<Checkable id="flash-api-2">Flashcards API Assignment #1</Checkable>
+
+<Checkable id="monkey-26">Monkey Assignment #31 🐒</Checkable>
+
+<Checkable id="monkey-28">Monkey Assignment #32 🐒</Checkable>
+
+<Checkable id="flash-review">Review Flashcards #1</Checkable>
+
+<Checkable id="flash-review-2">Review Flashcards #2</Checkable>
+
+<Checkable id="typing-1">touch typing practice #1</Checkable>
+
+<Checkable id="typing-2">touch typing practice #2</Checkable>
+
+<Checkable id="xp-1">Execute Program #1</Checkable>
+
+<Checkable id="xp-2">Execute Program #2</Checkable>
+
+<Checkable id="xp-3">Execute Program #3</Checkable>
+
+<Checkable id="xp-4">Execute Program #4</Checkable>
+
+<Checkable id="xp-5">Execute Program #5</Checkable>
+
+<Checkable id="xp-5">Execute Program #6</Checkable>
 
 ---
 
@@ -247,3 +279,86 @@ function validCardData(body: any): null | {
 - Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
 
 ---
+
+## King C Assignment 👑
+
+---
+
+- First, watch the CS50 video segment assigned for this week
+- Slowly and carefully read **Chapter 17** of King C _skip the last two
+  sections_, on restricted pointers and flexible array members (section `17.8`,
+  and `17.9`) - but **DO READ THE Q&A** (it gives you part of the answer for the
+  homework).
+- Merge your `king-c` repo branch from a few weeks ago, and **CREATE A NEW
+  BRANCH**.
+- Read the whole assignment before starting
+- **Project #1**:
+
+  - Write a program that sorts a series of words entered by the user, a session
+    would look like this:
+
+  ```txt
+  Enter word: zoo
+  Enter word: foobar
+  Enter word: cat
+  Enter word: Apple
+  Enter word:
+
+  You entered 4 words: Apple cat foobar zoo
+  Meow!
+  ```
+
+  - When the user enters an empty word (i. e., presses "Enter" without entering
+    a word), stop storing words and print the sorted list.
+  - The list of words must be stored in a heap-allocated **Linked List**.
+  - You may assume that each word is no longer than 20 characters long.
+  - Use the `read_line()`&nbsp;
+    [function here](https://gitlab.howtocomputer.link/-/snippets/25) to get a
+    word from the user.
+  - Your program must not leak memory.
+  - You must check for `NULL` pointers whenever you malloc and exit/return when
+    necessary.
+  - You must make a function called `make_node` that takes a `char[]` (or a
+    `char*`) and returns a _pointer to a node_. This function should be used by
+    your program.
+  - when adding to your list, the new node should be put _at the beginning_.
+  - You must make a function called `count_list` which counts the number of
+    items in the list, starting with the _head_ node. You must use this function
+    to calculate the number when writing the line `You entered 4 words.` shown
+    in the example above.
+  - make a function `bool in_list(char* word, node* list)` function that allows
+    you to search for a string contained anywhere in the list. Use this function
+    to test if the user has written the word `cat` or `Cat`. If so, print
+    `Meow!` as the last line.
+  - **Extra Credit: ✨** Add a line of output printing the words in _sorted
+    order_. Do the sort using `qsort`, as described/shown in the chapter. Hint:
+    you can't pass a linked list to `qsort`, so determine the number of items,
+    and convert the list to a variable-length-array, then pass that to `qsort`.
+    The code in the chapter and in the Q&A section will be very helpful for
+    this.
+
+- **Project #2 Extra Credit ✨**
+
+  - write a program that stores integers from the user, and then prints them in
+    sorted order:
+
+  ```txt
+  Enter number: 7
+  Enter number: 3
+  Enter number: 99
+  Enter number: -2
+  Enter number:
+
+  You entered 4 numbers: -2, 3, 7, 99
+  ```
+
+  - To achieve this, store the numbers entered by the user in a **sorted linked
+    list**.
+  - When the user enters a blank line, just iterate through your linked list,
+    printing out each number, they should _already be sorted_, since you're
+    keeping them sorted at the time of insertion.
+  - your program must not leak memory
+  - make sure you've handled the case where you need to enter a number between
+    two existing numbers, like when the user enters 5, 7, 6.
+  - hint: some of the code in the chapter comes very close to supplying what you
+    need to make this work.
