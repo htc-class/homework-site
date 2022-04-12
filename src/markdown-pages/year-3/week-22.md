@@ -6,6 +6,9 @@ path: "/year-3/week-22"
 
 ## Homework Plan
 
+- Watch
+  [Tidbits](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/tidbits/tidbits--omit-pick-array-copy.mp4)
+  addendum video
 - 1 day watch CS50
   [CS50 Lecture #5 segment](https://htc-viewer.netlify.app/?id=4IrUAqYKjIA),
   from `30.23` to `1:08:24`
@@ -56,6 +59,9 @@ path: "/year-3/week-22"
 
 ---
 
+- Make sure you've first watched the
+  [tidbits](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/tidbits/tidbits--omit-pick-array-copy.mp4)
+  video.
 - Make sure you've addressed all feedback from any prior MRs, and merged.
 - read all these instructions from beginning to end before starting
 - this homework has a video, you can use it if you need it, but try first to do
@@ -284,6 +290,9 @@ function validCardData(body: any): null | {
 
 ---
 
+- Make sure you've first watched the
+  [tidbits](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/tidbits/tidbits--omit-pick-array-copy.mp4)
+  video.
 - First, watch the CS50 video segment assigned for this week
 - Slowly and carefully read **Chapter 17** of King C _skip the last two
   sections_, on restricted pointers and flexible array members (section `17.8`,
