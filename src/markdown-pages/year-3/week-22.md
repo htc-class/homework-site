@@ -156,7 +156,8 @@ function validCategoryData(body: any): null | {
 - Review your diffs
 - Slack me the MR
 - When I approve your MR **don't merge it**, then you may continue to part 2.
-- [video link here](/TODO)
+- [video link #1](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/flashcards/20--update-category-api.mp4)
+- [video link #2](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/flashcards/21--update-category-api.mp4)
 
 ---
 
