@@ -2,7 +2,33 @@
 path: "/year-3/week-24"
 ---
 
-# Year #3, Week #24
+# Year #3, Week #24 🥋
+
+---
+
+## Monkey #36 🐒
+
+---
+
+- Read slowly and carefully the next section, labled **"Hashes Objects"**
+- You probably shouldn't attempt to do this one without watching the video, so
+  follow along with the video, since our TypeScript psuedo hashing function
+  differs from his a lot.
+- [Video link](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/46--4.5-object-hash-keys.mp4)
+- Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
+
+---
+
+## Monkey #37 🐒
+
+---
+
+- You know the drill. Work through the final few sections, referring to the
+  videos below _as needed_.
+- [Video #1 - Evaluating Hash Literals](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/47--4.5-eval-hashes.mp4)
+- [Video #2 - Evaluating Hash Index Expressions + Grand Finale](https://flp-assets.nyc3.digitaloceanspaces.com/storage/htc-videos/monkey/48--4.5-eval-hash-index-puts.mp4)
+- Submit a MR, **Review your diffs and fixup!!**, then slack the MR url
+- Congratulations! You have finished the Monkey book! 😊
 
 ---
 
