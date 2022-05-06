@@ -87,6 +87,20 @@ path: "/year-3/week-24"
   **category id**_ for each card. We'll use this later in the web app. Modify
   your types and tests as needed.
 - Commit your work.
+- Create a **new migration** that adds a **user_id** foreign key to the
+  `categories` table:
+  - You can model it off of the migration that added a user id to the `cards`
+    table, in that you can do it two parts: first supplying a default of the
+    admin user supplied by your `.env` file, and second, by removing the
+    default.
+  - make sure your down works (you'll need to drop the foreign key relation
+    before you can drop the column using syntax like:
+    `ALTER TABLE some_table DROP FOREIGN KEY fk_relation_name`)
+  - check all your route responder and database functions that have to do with
+    editing/inserting a category, they will all now have to take and return a
+    **user id** as well. Take a few minutes to carefully think this through and
+    make the required adjustments.
+- Commit your work.
 - Create a `GET /categories` route that returns _all the categories_ that belong
   to the user, with these stipulations:
   - it should be protected using the middleware you created in the last
@@ -128,3 +142,47 @@ path: "/year-3/week-24"
 
 - Slowly and Carefully read chapter 19 of King C.
 - No exercizes or projects this week. 👍
+
+---
+
+## Speller
+
+---
+
+- **Note:** `Speller` is technically part of _next week's homework_, but since
+  canoe trip, and etc, and some of you are working ahead, I put it here, you're
+  welcome to start it.
+- Make sure you've watched all of CS50, thru to the end, first.
+- Also, make sure you've read (if you haven't already),
+  [this page](https://craftinginterpreters.com/hash-tables.html) (thru section
+  `20.3`)
+- **Slowly and carefully** read the
+  [assignment from the CS50 site](https://cs50.harvard.edu/college/2019/fall/psets/5/speller/).
+- If you're feeling a little daunted, ask your parent to allow you to watch
+  these Youtube videos, which are the "walkthrough" videos made by CS50 for this
+  assignment (about 25 minutes total):
+  - [Walkthrough #1 - speller](https://htc-viewer.netlify.app/?id=_z57x5PGF4w)
+  - [Walkthrough #2 - load](https://htc-viewer.netlify.app/?id=-BX4wLZRwbc)
+  - [Walkthrough #3 - hash](https://htc-viewer.netlify.app/?id=mMj9ZmcB6ls)
+  - [Walkthrough #4 - size](https://htc-viewer.netlify.app/?id=3cD-_NGTw9A)
+  - [Walkthrough #5 - check](https://htc-viewer.netlify.app/?id=qPz_Mr69yE0)
+  - [Walkthrough #6 - unload](https://htc-viewer.netlify.app/?id=qkC4l0pUvCk)
+- **FORK this repo**:
+  [https://gitlab.howtocomputer.link/htc/cs50-speller](https://gitlab.howtocomputer.link/htc/cs50-speller),
+  then _clone YOUR fork_.
+- make a new branch
+- make sure you did the last step
+- to get all of the texts and dictionaries and "keys", you'll need to run a
+  command I put into the Makefile. run `make download` in your terminal. It will
+  take a few seconds, but when it's done, you should have some (git-ignored)
+  directories: `keys/`, `dictionaries/` and `texts/`.
+- To compile your code, I recommend using the default Makefile tarket by running
+  just `make`.
+- Complete the task as outlined in the CS50 website.
+- Check that you're getting the correct results by comparing your output with
+  the `keys/*` files.
+- Submit a MR, slack me the URL.
+- If you want to be part of a friendly HTC competition for speed, clone your
+  solution down onto the HTC pi (so that we're all benchmarking on the same
+  hardware), and run your speller code against the "bible" text. My total speed
+  was `3.45` seconds on the PI. See if you can beat that. :)
