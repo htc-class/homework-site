@@ -105,9 +105,8 @@ path: "/year-3/week-24"
   to the user, with these stipulations:
   - it should be protected using the middleware you created in the last
     assignment
-  - because our `categories` table doesn't have **user ids**, you'll need to use
-    the user id from the header-authed user to _join on the cards table_ to
-    **only get the categories that belong to the authed user**.
+  - because our `categories` table now has a `user_id` column, we'll use that to
+    get the right categories. 👍
   - return all the columns in the `categories` table (you can camel-case them if
     you like, for easier consumption on the web-app side)
   - this will involve a new route responder, and a new db method
