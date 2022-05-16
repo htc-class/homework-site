@@ -151,6 +151,18 @@ path: "/year-3/week-24"
 - **Note:** `Speller` is technically part of _next week's homework_, but since
   canoe trip, and etc, and some of you are working ahead, I put it here, you're
   welcome to start it.
+- **Note #2:** Steps 3-6 are listed first because you'll need to do them in
+  order to follow along with reading the assignment on the Harvard site, which
+  tells you to read the code and look in the various directories.
+- **FORK this repo**:
+  [https://gitlab.howtocomputer.link/htc/cs50-speller](https://gitlab.howtocomputer.link/htc/cs50-speller),
+  then _clone YOUR fork_.
+- make a new branch
+- make sure you did the last step
+- to get all of the texts and dictionaries and "keys", you'll need to run a
+  command I put into the Makefile. run `make download` in your terminal. It will
+  take a few seconds, but when it's done, you should have some (git-ignored)
+  directories: `keys/`, `dictionaries/` and `texts/`.
 - Make sure you've watched all of CS50, thru to the end, first.
 - Also, make sure you've read (if you haven't already),
   [this page](https://craftinginterpreters.com/hash-tables.html) (thru section
@@ -166,15 +178,6 @@ path: "/year-3/week-24"
   - [Walkthrough #4 - size](https://htc-viewer.netlify.app/?id=3cD-_NGTw9A)
   - [Walkthrough #5 - check](https://htc-viewer.netlify.app/?id=qPz_Mr69yE0)
   - [Walkthrough #6 - unload](https://htc-viewer.netlify.app/?id=qkC4l0pUvCk)
-- **FORK this repo**:
-  [https://gitlab.howtocomputer.link/htc/cs50-speller](https://gitlab.howtocomputer.link/htc/cs50-speller),
-  then _clone YOUR fork_.
-- make a new branch
-- make sure you did the last step
-- to get all of the texts and dictionaries and "keys", you'll need to run a
-  command I put into the Makefile. run `make download` in your terminal. It will
-  take a few seconds, but when it's done, you should have some (git-ignored)
-  directories: `keys/`, `dictionaries/` and `texts/`.
 - To compile your code, I recommend using the default Makefile tarket by running
   just `make`.
 - Complete the task as outlined in the CS50 website.
