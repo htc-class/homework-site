@@ -10,7 +10,8 @@ path: "/year-3/week-25"
 
 - 1 day King C assignment 👑
 - 3 days Execute Program
-- 2 days Flashcards Web App Final Assignment
+- 1 day Flashcards Web App Final Assignment
+- 1 day CS50 **Speller**
 
 ---
 
