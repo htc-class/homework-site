@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "WFN83LM943.YOUR_APP_ID",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "WFN83LM943.YOUR_APP_ID"
+    ]
+  }
+}
