@@ -1,5 +1,5 @@
 [build]
-  command = "gatsby build && cp apple-app-site-association public/"
+  command = "gatsby build && mkdir public/.well-known && cp apple-app-site-association public/.well-known"
   publish = "public"
 
 [build.environment]

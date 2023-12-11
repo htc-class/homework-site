@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "WFN83LM943.YOUR_APP_ID",
+        "appID": "WFN83LM943.spendable",
         "paths": [
           "*"
         ]
@@ -12,7 +12,7 @@
   },
   "webcredentials": {
     "apps": [
-      "WFN83LM943.YOUR_APP_ID"
+      "WFN83LM943.spendable"
     ]
   }
 }
